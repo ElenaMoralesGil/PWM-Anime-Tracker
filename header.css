@@ -28,11 +28,11 @@ nav a {
 nav a:hover {
     color: #ccc;
 }
-.auth-buttons {
+.authButtons {
     display: flex;
     align-items: center;
 }
-.auth-button {
+.genericButton {
     background-color: #000000;
     color: #ffffff;
     border: none;
