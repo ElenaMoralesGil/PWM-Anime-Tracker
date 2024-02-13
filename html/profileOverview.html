@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../css/profile.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
+    <link href="../css/footer.css" rel="stylesheet">
+    <title>User Profile</title>
+</head>
+<body>
+<header class="header">
+    <img alt="Logo" class="header__logo" src="../logo_image.png">
+    <nav class="header__nav">
+        <a href="#" class="header__nav-link">Home</a>
+        <a href="#" class="header__nav-link">Ranking</a>
+        <a href="#" class="header__nav-link">Profile</a>
+    </nav>
+    <div class="header__auth-buttons">
+        <button class="header__auth-button">Log In</button>
+        <button class="header__auth-button">Sign In</button>
+    </div>
+</header>
+
+<div class="container">
+    <div class="user-profile">
+        <!-- User Information -->
+        <div class="user-profile__info">
+            <img alt="User Image" class="user-profile__image" src="../logo_image.png">
+            <div class="user-profile__details">
+                <div class="user-profile__name">User Name</div>
+                <div class="user-profile__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+            <button class="user-profile__edit-btn">Edit Profile</button>
+        </div>
+
+        <!-- Secondary Navigation -->
+        <div class="user-profile__nav">
+            <div class="user-profile__nav-item">Overview</div>
+            <div class="user-profile__nav-item">Currently Watching</div>
+            <div class="user-profile__nav-item">Completed</div>
+            <div class="user-profile__nav-item">Plan to Watch</div>
+            <div class="user-profile__nav-item">Favorites</div>
+        </div>
+
+        <h2 class="user-profile__title">All Anime</h2>
+
+        <!-- Custom Table -->
+        <table class="user-profile__table">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Score</th>
+                <th>Progress</th>
+                <th>Type</th>
+                <th>List</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Anime Name</td>
+                <td>0/Episodes</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer__content">
+            <span class="footer__social-icons">
+                <i class="fa-brands fa-linkedin footer__social-icon"></i>
+                <i class="fa-brands fa-twitter footer__social-icon"></i>
+                <i class="fa-brands fa-instagram footer__social-icon"></i>
+                <i class="fa-brands fa-facebook footer__social-icon"></i>
+                <i class="fa-brands fa-youtube footer__social-icon"></i>
+            </span>
+        <p class="footer__copyright"><small>Lorem Ipsum</small></p>
+    </div>
+</footer>
+</body>
+</html>

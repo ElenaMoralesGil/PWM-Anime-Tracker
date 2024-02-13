@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* User Profile */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.user-profile__info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 60px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    height: 200px;
+}
+.user-profile__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.user-profile__details {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+.user-profile__name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.user-profile__description {
+    margin-bottom: 10px;
+}
+.user-profile__edit-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.user-profile__nav {
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.user-profile__nav-item {
+    margin-right:40px;
+    cursor: pointer;
+}
+.user-profile__nav-item:last-child {
+    margin-right: 0;
+}
+.user-profile__nav-item:hover {
+    color: #939393;
+}
+.user-profile__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.user-profile__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.user-profile__table th,
+.user-profile__table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.user-profile__table th {
+    background: #D9D9D9;
+}

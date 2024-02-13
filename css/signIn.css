@@ -16,14 +16,42 @@ body {
     position: relative;
 }
 
-input {
+.container__logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.container__title {
+    margin-top: 60px;
+}
+
+.container__form {
+    margin-top: 30px;
+}
+
+.container__form-label {
+    display: block;
+}
+
+.container__form-input {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
 }
 
-.small-btn {
+.container__form-message {
+    margin-top: 20px;
+}
+
+.container__form-link {
+    color: #000000;
+}
+
+.container__form-button {
     background-color: #000000;
     color: #ffffff;
     border: none;
@@ -32,11 +60,4 @@ input {
     margin: 0 auto;
     font-weight: bold;
     font-size: 16px;
-}
-.logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 50px;
-    height: auto;
 }
