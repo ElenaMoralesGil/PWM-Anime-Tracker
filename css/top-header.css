@@ -1,0 +1,42 @@
+img {
+    min-width: 0;
+    min-height: 0;
+    height: 65%;
+}
+
+nav {
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap:1em;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10%;
+    width: 15%;
+    height: 55%;
+    min-width: 3.5cm;
+}
+
+.buttons button:first-child{
+    background: transparent;
+    border:1px solid black;
+    border-radius: 1vw;
+    color:white;
+    width: 50%;
+}
+
+.buttons button:last-child {
+    background: #1d1d1f;
+    color:white;
+    border-radius: 1vw;
+    border: none;
+    width: 50%;
+}
+
+
+
+
