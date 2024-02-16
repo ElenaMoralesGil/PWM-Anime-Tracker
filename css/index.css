@@ -7,8 +7,7 @@ display=swap');
 
 /*
 Styling the body of our index HTML page. Dimension equals viewport.
-Relative position to the document. Margin none and sizing including
-paddings and borders.
+Margin none and sizing including paddings and borders.
 */
 
 #index-body {
@@ -18,10 +17,9 @@ paddings and borders.
     box-sizing: border-box;
 }
 
-/* Styling the main content of our index HTML page. Position absolute
-to body element. Top and bottom properties set to leave space to header
-and footer. Height defined by the browser to fill the space. Overflow
-set. Box sizing including paddings and borders. */
+/* Styling the main content of our index HTML page. Height defined by the
+browser to fill the space. Width to full screen. Overflow set. Box sizing
+including paddings and borders. */
 
 #index-body main {
     width: 100%;
@@ -31,9 +29,11 @@ set. Box sizing including paddings and borders. */
     box-sizing: border-box;
 }
 
-/* Styling container holding main element content. Position relative to the
-document. Width and height are relative to the main element. Overflow set.
-Box sizing including paddings and borders. */
+/* Styling container holding main hero elements. Position relative to the
+document. Width to full screen. Height defined by the browser to fill the
+space. Box sizing including paddings and borders. Acts as a flex container
+to the hero image elements */
+
 .index-main-hero {
     position: relative;
     width: 100%;
@@ -46,6 +46,10 @@ Box sizing including paddings and borders. */
     align-items: center;
 }
 
+/* Styling container holding main hero image and text. Loaded using JavaScript.
+Width to full screen and height defined by the browser to fill content. Acts as
+a flex container to the hero image elements in the embedded html file. */
+
 .index-main-hero article {
     width: 100%;
     height: auto;
@@ -56,15 +60,25 @@ Box sizing including paddings and borders. */
     align-items: center;
 }
 
+/* Hero image embedded in the container styled above. Dimensions to fill the viewport.*/
+
 .index-main-hero article img {
     width: 100vw;
     height: 100vh;
 }
 
+/* Anime name embedded in the container styled above. Overflow set. */
+
 .index-main-hero article p {
-    position: absolute;
-    top:60%;
+    font-size: var(--medium-big-font-size);
+    max-width: 75%;
+    max-height: 7.5%;
+    overflow: auto;
+    top:55%;
+    font-weight: bold;
 }
+
+/* Anime description. Overflow set. */
 
 .index-main-hero p {
     position: absolute;
