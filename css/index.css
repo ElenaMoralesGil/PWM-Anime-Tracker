@@ -13,11 +13,10 @@ body {
 
 header {
     flex:1;
-    background: lightblue;
+    background: #70859c;
     min-height: 2cm;
     width: 100vw;
 
-    /* Content related properties */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -26,15 +25,18 @@ header {
 
 main {
     flex:10;
-    border:1px solid black;
     background: lavenderblush;
     width: 100vw;
 }
 
 footer {
     flex:1;
-    border:1px solid black;
-    background: lightyellow;
+    background: #70859c;
     min-height: 2cm;
     width: 100vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 }

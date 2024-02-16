@@ -10,6 +10,8 @@ nav {
     flex-flow: row nowrap;
     justify-content: space-between;
     gap:1em;
+    font-size: 1em;
+    color:white;
 }
 
 .buttons {
@@ -36,7 +38,5 @@ nav {
     border: none;
     width: 50%;
 }
-
-
 
 
