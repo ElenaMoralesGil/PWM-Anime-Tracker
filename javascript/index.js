@@ -9,6 +9,7 @@ function loadPage(pageName, element) {
 
 document.addEventListener("DOMContentLoaded", function() {
     // Llamada a la función loadPage con el nombre de la página a cargar
-    loadPage('../html/top-header.html', 'header'); // Cambia el nombre y el elemento según corresponda
-    loadPage('../html/bottom-footer.html', 'footer');
+    loadPage('../html/top-header.html', 'index-header'); // Cambia el nombre y el elemento según corresponda
+    loadPage('../html/bottom-footer.html', 'index-footer');
+    loadPage('../html/anime-name-image.html', 'index-main-content-hero-image');
 });

@@ -27,11 +27,8 @@ child components */
 Height and width defined in relation to the div above.
 Box sizing including padding and margins.*/
 
-img {
-    min-width: 0;
-    min-height: 0;
+.top-header-content img {
     height: 50%;
-    box-sizing: border-box;
 }
 
 /* Child component of the header div. Its a navbar to access
@@ -39,7 +36,7 @@ some parts of the website. Width defined in relation to the
 div above. It acts as a flex container to the different
 anchor elements. Box sizing including padding and margins.*/
 
-nav {
+.top-header-content nav {
     width: 50%;
     font-size: 1em;
     color:white;
@@ -56,7 +53,7 @@ Width and height defined in relation to the div above.
 It acts as a flex container to the buttons above. Box
 sizing including padding and margin.*/
 
-.buttons {
+.top-header-content-buttons {
     width: 15%;
     height: 50%;
     min-width: 3.5cm;
@@ -69,10 +66,9 @@ sizing including padding and margin.*/
 
 /* Styling the fist button on the container above.
 Width and height defined in relation to the container.*/
-.buttons button:first-child {
+.top-header-content-buttons button:first-child {
     background: transparent;
     border:1px solid black;
-    border-radius: 1vw;
     color:white;
     width: 50%;
     height: 100%;
@@ -80,10 +76,9 @@ Width and height defined in relation to the container.*/
 
 /* Styling the second button on the container above.
 Width and height defined in relation to the container.*/
-.buttons button:last-child {
+.top-header-content-buttons button:last-child {
     background: #1d1d1f;
     border: none;
-    border-radius: 1vw;
     color:white;
     width: 50%;
     height: 100%;

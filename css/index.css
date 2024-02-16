@@ -11,13 +11,12 @@ Relative position to the document. Margin none and sizing including
 paddings and borders.
 */
 
-body {
+#index-body {
     display: block;
     position: relative;
     height: 100vh;
     width: 100vw;
     margin: 0;
-    font-family: "Roboto Light", -apple-system, 'system-ui';
     box-sizing: border-box;
 }
 
@@ -26,7 +25,7 @@ to body element. Top and bottom properties set to leave space to header
 and footer. Height defined by the browser to fill the space. Overflow
 set. Box sizing including paddings and borders. */
 
-main {
+#index-body main {
     position: absolute;
     width: 100%;
     height: auto;
@@ -40,10 +39,43 @@ main {
 /* Styling container holding main element content. Position relative to the
 document. Width and height are relative to the main element. Overflow set.
 Box sizing including paddings and borders. */
-.main_content {
+.index-main-hero {
     position: relative;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    overflow: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
+
+.index-main-hero article {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-main-hero article img {
+    width: 100%;
+    height: 100%;
+}
+
+.index-main-hero article p {
+    position: absolute;
+    top:60%;
+}
+
+.index-main-hero p {
+    position: absolute;
+    max-width: 50%;
+    top:65%;
+}
+
+

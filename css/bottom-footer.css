@@ -10,7 +10,7 @@ and margins. The div is also a flex container to his
 child components */
 
 .bottom-footer-content {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 2cm;
     background: #70859c;
@@ -28,7 +28,7 @@ to the different social media brand logos. Width is determined
 in relation to the div above. Box sizing including padding
 and margins. It sets also a gap between the different logos.
 */
-span {
+.bottom-footer-content span {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -41,7 +41,7 @@ span {
 }
 
 /* Child component of the div above. A copyright disclaimer. */
-p {
+.bottom-footer-content p {
     padding-right: 10%;
     color: rgb(255 255 255 / 0.5);
 }

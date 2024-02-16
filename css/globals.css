@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?\
+family=Roboto:ital,wght@0,100;0,300;0,400;0,500;\
+0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&\
+display=swap');
+
+:root {
+    font-family: "Roboto Light", -apple-system, 'system-ui';
+    --big-font-size:1.25em;
+    --medium-big-font-size:1.125em;
+    --medium-font-size:1em;
+    --medium-small-font-size:0.875em;
+    --small-font-size:0.75em;
+}
+
+img {
+    min-width: 0;
+    min-height: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 1vw;
+}
