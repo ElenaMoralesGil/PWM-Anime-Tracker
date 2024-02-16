@@ -10,7 +10,6 @@ and margins. The div is also a flex container to his
 child components */
 
 .bottom-footer-content {
-    position: absolute;
     width: 100%;
     height: 2cm;
     background: #70859c;

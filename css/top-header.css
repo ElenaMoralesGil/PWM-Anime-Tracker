@@ -10,10 +10,8 @@ and margins. The div is also a flex container to his
 child components */
 
 .top-header-content {
-    position: absolute;
     width: 100%;
     height: 2cm;
-    top:0;
     background: #70859c;
     box-sizing: border-box;
 
