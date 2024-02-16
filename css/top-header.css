@@ -1,42 +1,92 @@
+/* Styling the header for our different pages in the
+website that need it.*/
+
+/* This div behind is inserted in the different pages
+so its attributes are related of how the header fits
+and positions in those pages. Position is relative to
+the element containing the header. Width, height, and
+other properties as well. Box sizing including padding
+and margins. The div is also a flex container to his
+child components */
+
+.top-header-content {
+    position: absolute;
+    width: 100%;
+    height: 2cm;
+    top:0;
+    background: #70859c;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Child component of the header div. Logo of our website.
+Height and width defined in relation to the div above.
+Box sizing including padding and margins.*/
+
 img {
     min-width: 0;
     min-height: 0;
-    height: 65%;
+    height: 50%;
+    box-sizing: border-box;
 }
+
+/* Child component of the header div. Its a navbar to access
+some parts of the website. Width defined in relation to the
+div above. It acts as a flex container to the different
+anchor elements. Box sizing including padding and margins.*/
 
 nav {
-    width: 30%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    gap:1em;
+    width: 50%;
     font-size: 1em;
     color:white;
-}
 
-.buttons {
     display: flex;
     flex-flow: row nowrap;
-    gap: 10%;
-    width: 15%;
-    height: 55%;
-    min-width: 3.5cm;
+    justify-content: space-evenly;
+    gap:1em;
+    box-sizing: border-box;
 }
 
-.buttons button:first-child{
+/* Child component of the header div. Buttons container.
+Width and height defined in relation to the div above.
+It acts as a flex container to the buttons above. Box
+sizing including padding and margin.*/
+
+.buttons {
+    width: 15%;
+    height: 50%;
+    min-width: 3.5cm;
+
+    display: flex;
+    flex-flow: nowrap;
+    gap: 5%;
+    box-sizing: border-box;
+}
+
+/* Styling the fist button on the container above.
+Width and height defined in relation to the container.*/
+.buttons button:first-child {
     background: transparent;
     border:1px solid black;
     border-radius: 1vw;
     color:white;
     width: 50%;
+    height: 100%;
 }
 
+/* Styling the second button on the container above.
+Width and height defined in relation to the container.*/
 .buttons button:last-child {
     background: #1d1d1f;
-    color:white;
-    border-radius: 1vw;
     border: none;
+    border-radius: 1vw;
+    color:white;
     width: 50%;
+    height: 100%;
 }
 
 
