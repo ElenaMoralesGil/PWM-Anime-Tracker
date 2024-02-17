@@ -15,4 +15,5 @@ document.addEventListener("DOMContentLoaded", function() {
     loadPage('../html/search-bar.html', 'index-search-bar');
     loadPage('../html/search-bar.html', 'index-search-bar2');
     loadPage('../html/search-bar.html', 'index-search-bar3');
+
 });

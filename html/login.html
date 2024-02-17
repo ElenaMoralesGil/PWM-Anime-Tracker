@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="../css/normalize.css" rel="stylesheet">
     <link href="../css/signIn.css" rel="stylesheet">
     <title>Log In</title>
@@ -12,14 +12,14 @@
     <img alt="Logo" class="container__logo" src="../logo_image.png">
     <h2 class="container__title">Log In</h2>
 
-    <form action="endpoint" method="post" class="container__form">
+    <form action="endpoint" class="container__form" method="post">
         <label class="container__form-label">
-            <input type="text" name="username" placeholder="Username" required class="container__form-input">
+            <input class="container__form-input" name="username" placeholder="Username" required type="text">
         </label>
         <label class="container__form-label">
-            <input type="email" name="email" placeholder="Email" required class="container__form-input">
+            <input class="container__form-input" name="email" placeholder="Email" required type="email">
         </label>
-        <p class="container__form-message">New here? <a href="signin.html" class="container__form-link">Sign in</a></p>
+        <p class="container__form-message">New here? <a class="container__form-link" href="signin.html">Sign in</a></p>
         <button class="container__form-button" type="submit">Log In</button>
     </form>
 

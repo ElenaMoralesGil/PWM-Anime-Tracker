@@ -3,35 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link href="../css/globals.css" rel="stylesheet">
     <link href="../css/profile.css" rel="stylesheet">
-    <link href="../css/header.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
-    <link href="../css/footer.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/999e77a4f5.js"></script>
     <title>User Profile</title>
-</head>
-<body>
-<header class="header">
-    <img alt="Logo" class="header__logo" src="../logo_image.png">
-    <nav class="header__nav">
-        <a href="#" class="header__nav-link">Home</a>
-        <a href="#" class="header__nav-link">Ranking</a>
-        <a href="#" class="header__nav-link">Profile</a>
-    </nav>
-    <div class="header__auth-buttons">
-        <button class="header__auth-button">Log Out</button>
 
-    </div>
-</header>
+</head>
+<body id="profile-body">
+
+<header id="header"></header>
 
 <div class="container">
     <div class="user-profile">
         <!-- User Information -->
         <div class="user-profile__info">
-            <img alt="User Image" class="user-profile__image" src="../logo_image.png">
+            <img alt="User Image" class="user-profile__image" src="../resources/icons/icon.ico">
             <div class="user-profile__details">
                 <div class="user-profile__name">User Name</div>
-                <div class="user-profile__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="user-profile__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+                </div>
             </div>
             <button class="user-profile__edit-btn">Edit Profile</button>
         </div>
@@ -72,17 +66,10 @@
     </div>
 </div>
 
-<footer class="footer">
-    <div class="footer__content">
-            <span class="footer__social-icons">
-                <i class="fa-brands fa-linkedin footer__social-icon"></i>
-                <i class="fa-brands fa-twitter footer__social-icon"></i>
-                <i class="fa-brands fa-instagram footer__social-icon"></i>
-                <i class="fa-brands fa-facebook footer__social-icon"></i>
-                <i class="fa-brands fa-youtube footer__social-icon"></i>
-            </span>
-        <p class="footer__copyright"><small>Lorem Ipsum</small></p>
-    </div>
-</footer>
+<footer id="footer"></footer>
+<script type="module" src="../javascript/loader.js">
+</script>
+
+
 </body>
 </html>
