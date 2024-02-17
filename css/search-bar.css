@@ -1,0 +1,83 @@
+.search-bar-container {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    width: 65%;
+    gap: 3%;
+    margin: auto;
+}
+
+.combo-box-input label, select,  .search-input label, input button i {
+    display: block;
+}
+
+/*------------------  Search Label, Icon and Bottom ------------------*/
+
+.search-input {
+    flex: 1;
+}
+
+.search-input .search-input-label-and-button {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    width: 100%;
+
+    border: 1px solid #1d1d1f;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+
+.search-input .search-input-label-and-button input {
+    width: 100%;
+    height: 0.8cm;
+    color: #1d1d1f;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.search-input .search-input-label-and-button input:hover {
+    border: none;
+    outline: none;
+}
+
+.search-input .search-input-label-and-button button {
+    width: 25%;
+    height: 0.8cm;
+    background: transparent;
+    text-align: center;
+    color: #1d1d1f;
+    font-size: var(--medium-small-font-size);
+    border: none;
+}
+
+.search-input .search-input-label-and-button i {
+    position: absolute;
+    right: 7%;
+    top: 23%;
+}
+
+/*--------------------------  Combo-Boxes  --------------------------*/
+
+.combo-box-input {
+    position: relative;
+    flex: 1;
+    height: 1.32cm;
+    box-sizing: border-box;
+}
+
+.combo-box-input label {
+    height: 38%;
+}
+
+.combo-box-selector {
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}

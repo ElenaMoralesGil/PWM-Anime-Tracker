@@ -24,7 +24,6 @@ including paddings and borders. */
 #index-body main {
     width: 100%;
     height: auto;
-    overflow: auto;
     background: #657E9E15;
     box-sizing: border-box;
 }
@@ -86,4 +85,13 @@ a flex container to the hero image elements in the embedded html file. */
     max-height: 25%;
     overflow: auto;
     top:65%;
+    background: #1d1d1fbb;
+    color: white;
+    padding: 0.75%;
+    border-radius: 15px;
+}
+
+#index-search-bar {
+    padding-top: 4%;
+    padding-bottom: 4%;
 }

@@ -12,4 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     loadPage('../html/top-header.html', 'index-header'); // Cambia el nombre y el elemento según corresponda
     loadPage('../html/bottom-footer.html', 'index-footer');
     loadPage('../html/anime-name-image.html', 'index-main-content-hero-image');
+    loadPage('../html/search-bar.html', 'index-search-bar');
+    loadPage('../html/search-bar.html', 'index-search-bar2');
+    loadPage('../html/search-bar.html', 'index-search-bar3');
 });
