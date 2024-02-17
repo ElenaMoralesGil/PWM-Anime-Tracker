@@ -19,13 +19,16 @@ function loadRowImages(pageName, className) {
         .catch(error => console.error('Error fetching header:', error));
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    loadPage('list-name-image.html', 'newly-added-row');
-    loadPage('list-name-image.html', 'our-recommendations-row');
-    loadPage('list-name-image.html', 'most-liked-row');
+const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+
+document.addEventListener("DOMContentLoaded", async function() {
     loadPage('top-header.html', 'index-header');
     loadPage('bottom-footer.html', 'index-footer');
     loadPage('name-image.html', 'index-main-content-hero-image');
     loadPage('search-bar.html', 'index-search-bar');
+    loadPage('list-name-image.html', 'newly-added-row');
+    loadPage('list-name-image.html', 'our-recommendations-row');
+    loadPage('list-name-image.html', 'most-liked-row');
+    await sleep(10)
     loadRowImages('name-image.html', 'row-name-image');
 });
