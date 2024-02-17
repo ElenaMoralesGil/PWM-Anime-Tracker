@@ -7,12 +7,25 @@ function loadPage(pageName, element) {
         .catch(error => console.error('Error fetching header:', error));
 }
 
+function loadRowImages(pageName, className) {
+    fetch(pageName)
+        .then(response => response.text())
+        .then(html => {
+            let elements = document.getElementsByClassName(className);
+            for (let i = 0, length = elements.length; i < length; i++) {
+                elements[i].innerHTML = html;
+            }
+        })
+        .catch(error => console.error('Error fetching header:', error));
+}
+
 document.addEventListener("DOMContentLoaded", function() {
-    // Llamada a la función loadPage con el nombre de la página a cargar
-    loadPage('../html/top-header.html', 'index-header'); // Cambia el nombre y el elemento según corresponda
-    loadPage('../html/bottom-footer.html', 'index-footer');
-    loadPage('../html/anime-name-image.html', 'index-main-content-hero-image');
-    loadPage('../html/search-bar.html', 'index-search-bar');
-    loadPage('../html/search-bar.html', 'index-search-bar2');
-    loadPage('../html/search-bar.html', 'index-search-bar3');
+    loadPage('list-name-image.html', 'newly-added-row');
+    loadPage('list-name-image.html', 'our-recommendations-row');
+    loadPage('list-name-image.html', 'most-liked-row');
+    loadPage('top-header.html', 'index-header');
+    loadPage('bottom-footer.html', 'index-footer');
+    loadPage('name-image.html', 'index-main-content-hero-image');
+    loadPage('search-bar.html', 'index-search-bar');
+    loadRowImages('name-image.html', 'row-name-image');
 });

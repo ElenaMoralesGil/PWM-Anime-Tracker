@@ -22,3 +22,18 @@ img {
 button {
     border-radius: 1vw;
 }
+
+select {
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input {
+    color: #1d1d1f;
+    outline: none;
+    border-radius: 10px;
+}
+
+input:hover {
+    outline: none;
+}
