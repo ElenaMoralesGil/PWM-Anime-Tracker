@@ -21,17 +21,19 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;
-    margin: 2%;
+    margin-bottom: 2%;
     padding: 2%;
     background-color: #f8f8f8;
     border-radius: 10px;
 }
 
 .user-profile__image {
-    width: 12%;
-    height: 12%;
+    min-width:15%;
+    min-height: 15%;
+    max-width:20%;
+    max-height: 20%;
     border-radius: 50%;
 }
 
@@ -44,67 +46,84 @@
 }
 
 .user-profile__name {
-    font-size: 24px;
+    font-size: var(--big-font-size);
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
 }
 
 .user-profile__description {
-    margin-bottom: 10px;
+    text-align: justify;
 }
 
 .user-profile__edit-btn {
     display: flex;
     flex-flow: row nowrap;
+    padding:1% 2%;
     background-color: #000000;
     color: #ffffff;
     border: none;
     border-radius: 20px;
-    padding: 3% 3%;
     font-weight: bold;
-    font-size: 16px;
+    font-size: var(--medium-font-size);
     /
+}
+.user-profile__edit-btn a {
+    padding:10% 20%;
+    text-decoration: none;
+    color:inherit;
+/
 }
 .user-profile__nav {
     max-width: 80vw;
     display: flex;
     background-color: #f8f8f8;
     border-radius: 10px;
-    padding: 10px 10px;
+    padding:1% 1%;
     margin-bottom: 30px;
     justify-content: space-between;
+
+}
+.user-profile__nav a {
+    text-decoration: none;
+    color:inherit;
 }
 .user-profile__nav-item {
-    margin-right:40px;
     cursor: pointer;
 
 }
 
-.user-profile__nav-item:first-child {
-    margin-left: 20px;
-}
 .user-profile__nav-item:last-child {
     margin-right: 20px;
 }
 .user-profile__nav-item:hover {
     color: #939393;
 }
+.user-profile__nav-item:first-child {
+    margin-left: 20px;
+    font-weight: bold;
+}
 .user-profile__title {
-    margin-bottom: 20px;
-    font-size: 20px;
+    font-size: var(--big-font-size);
+    margin-bottom:2%;
     font-weight: bold;
 }
 .user-profile__table {
     max-width: 80vw;
     width: 100%;
-    border-collapse: collapse;
 }
 .user-profile__table th,
 .user-profile__table td {
     padding: 10px;
-    border: 1px solid #ddd;
     text-align: center;
 }
 .user-profile__table th {
-    background: #D9D9D9;
+    background-color: #f8f8f8;
+}
+.user-profile__table th:first-child {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.user-profile__table th:last-child {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
