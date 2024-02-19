@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     loadPage('../html/top-header-login.html', 'header');
     loadPage('../html/bottom-footer.html', 'footer');
+    loadPage('../html/profile/profile-table-4columns.html', 'table');
     loadPage('../html/profile/profile-nav.html', 'profile-nav');
     loadPage('../html/profile/profile-info.html', 'profile-info');
-
-
 });
+

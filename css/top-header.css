@@ -33,12 +33,14 @@ Box sizing including padding and margins.*/
 some parts of the website. Width defined in relation to the
 div above. It acts as a flex container to the different
 anchor elements. Box sizing including padding and margins.*/
-
+.top-header-content a{
+    text-decoration: none;
+    color:inherit;
+}
 .top-header-content nav {
     width: 50%;
     font-size: 1em;
     color:white;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
