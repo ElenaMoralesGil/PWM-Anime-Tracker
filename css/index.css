@@ -15,6 +15,7 @@ Margin none and sizing including paddings and borders.
     width: 100vw;
     margin: 0;
     box-sizing: border-box;
+    background: hsl(240, 16%, 18%);
 }
 
 /* Styling the main content of our index HTML page. Height defined by the
@@ -24,9 +25,10 @@ including paddings and borders. */
 #index-body main {
     width: 100%;
     height: auto;
-    background: #657E9E15;
     box-sizing: border-box;
 }
+
+/* -------------------------- Hero Image -------------------------- */
 
 /* Styling container holding main hero elements. Position relative to the
 document. Width to full screen. Height defined by the browser to fill the
@@ -89,9 +91,60 @@ a flex container to the hero image elements in the embedded html file. */
     color: white;
     padding: 0.75%;
     border-radius: 15px;
+    line-height: 0.50cm;
 }
 
+/* -------------------------- Search Bar -------------------------- */
+
 #index-search-bar {
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 6%;
+    padding-bottom: 6%;
 }
+
+/* -------------------------- Anime Rows -------------------------- */
+
+.anime-row-container .row-descriptor {
+    color: white;
+    text-align: center;
+    padding-bottom: 1%;
+    font-size: var(--medium-big-font-size);
+    font-weight: bold;
+}
+
+.anime-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 5%;
+}
+
+.anime-row .row-name-image {
+    position: relative;
+    object-fit: cover;
+    height: 9cm;
+    min-width: 5cm;
+    width: 15%;
+    box-sizing: border-box;
+}
+
+.anime-row .row-name-image p {
+    position: absolute;
+    top: -4%;
+    height: 10%;
+    color: white;
+    opacity: 75%;
+    width: 100%;
+    text-align: center;
+}
+
+.anime-row .row-name-image img {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    bottom: 0;
+    border-radius: 10px;
+}
+
