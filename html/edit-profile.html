@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link href="../css/globals.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/999e77a4f5.js"></script>
 </head>
-<body>
+<body class="container">
+    <div class=" container__edit-profile">
+        <span class="edit-profile__header">
+            <p>Edit Profile</p>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </span>
+        <div>
+            <div class="container__edit-details">
+                <span class="edit-details__header">
+                    <p>Edit Details</p>
+                </span>
+
+                <form action="endpoint" class="edit-details__form" method="post">
+                    <label class="edit-details__form-label">
+                        <input class="edit-details__form-input" name="username" placeholder="Username" required type="text">
+                    </label>
+                    <label class="edit-details__form-label">
+                        <input class="edit-details__form-input" name="email" placeholder="email" required type="text">
+                    </label>
+                    <label class="edit-details__form-label">
+                        <textarea class="edit-details__form-input" name="description" placeholder="description" required type="text"></textarea>
+                    </label>
+                    <button class="container__form-button" type="submit">Update</button>
+                </form>
+                </div>
+
+            <div class="container__edit-pfp">
+                <span class="edit-pfp__header">
+                    <p>Edit Profile Picture</p>
+                </span>
+                <button class="container__choose-image-button" type="submit">Update</button>
+                <button class="container__form-button">Update</button>
+            </div>
+            <div class="container__edit-password">
+                 <span class="edit-password__header">
+                    <p>Edit Password</p>
+                </span>
+                <form action="endpoint" class="edit-password__form" method="post">
+                    <label class="container__form-label">
+                        <input class="container__form-input" name="password" placeholder="Password" required type="password">
+                    </label>
+                    <label class="container__form-label">
+                        <input class="container__form-input" name="repeat_password" placeholder="Repeat Password" required type="password">
+                    </label>
+                    <button class="container__form-button" type="submit">Update</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 </html>
