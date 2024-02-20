@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     loadById('top-header.html', 'header');
     loadById('bottom-footer.html', 'footer')
     loadByClass('anime-cover-name-description.html', 'top-cover-image-and-description')
+    loadByClass('anime-info-aside.html', 'aside-anime-information')
     await sleep(50)
     loadByClass('name-image.html', 'cover-name')
 });
