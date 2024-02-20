@@ -1,0 +1,119 @@
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.container__edit-profile {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%; /* Adjusted width for better responsiveness */
+}
+
+/* Header styles */
+.edit-profile__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.edit-profile__header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove margin for h1 */
+}
+
+/* Sections styles */
+.sections-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__edit-details,
+.container__edit-pfp,
+.container__edit-password {
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    overflow: hidden; /* Ensure inputs stay within the background */
+    text-align: center; /* Center titles and paragraphs */
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Form styles */
+.edit-details__form,
+.edit-password__form {
+    margin-bottom: 20px;
+}
+
+.edit-details__form-label,
+.edit-password__form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.edit-details__form-input,
+.edit-password__form-input,
+.container__form-input {
+    width: calc(100% - 24px); /* Adjusted width to accommodate padding */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding doesn't increase element width */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.edit-details__form-input:focus,
+.edit-password__form-input:focus,
+.container__form-input:focus {
+    outline: none;
+    border-color: #000000; /* Highlight border color on focus */
+}
+
+.edit-details__form-textarea {
+    height: 120px;
+}
+
+/* Button styles */
+.container__form-button,
+.container__choose-image-button {
+    padding: 14px 28px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block; /* Set buttons to display as block elements */
+    width: auto; /* Let them adjust their width based on content */
+    margin: 0 auto 10px; /* Center buttons horizontally and add bottom margin */
+}
+
+.container__form-button:hover,
+.container__choose-image-button:hover {
+    background-color: #000000;
+}
+
+/* Close icon style */
+.fa-times {
+    cursor: pointer;
+    font-size: 24px;
+    color: #888888;
+    transition: color 0.3s ease;
+}
+
+.fa-times:hover {
+    color: #555555;
+}

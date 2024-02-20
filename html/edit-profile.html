@@ -5,19 +5,20 @@
     <title>Edit Profile</title>
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
     <link href="../css/globals.css" rel="stylesheet">
+    <link href="../css/edit-profile.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/999e77a4f5.js"></script>
 </head>
 <body class="container">
     <main class=" container__edit-profile">
         <span class="edit-profile__header">
-            <p>Edit Profile</p>
+            <h1>Edit Profile</h1>
             <i class="fa fa-times" aria-hidden="true"></i>
         </span>
         <section>
 
             <section class="container__edit-details">
                 <span class="edit-details__header">
-                    <p>Edit Details</p>
+                    <h2>Edit Details</h2>
                 </span>
 
                 <form action="endpoint" class="edit-details__form" method="post">
@@ -38,15 +39,17 @@
 
             <section class="container__edit-pfp">
                 <span class="edit-pfp__header">
-                    <p>Edit Profile Picture</p>
+                    <h2>Edit Profile Picture</h2>
                 </span>
-                <button class="container__choose-image-button" type="submit">Update</button>
-                <button class="container__form-button">Update</button>
+                <div class="edit-profile__button-group">
+                    <button class="container__choose-image-button" name="submit">Choose image</button>
+                    <button class="container__form-button">Update</button>
+                </div>
             </section>
 
             <section class="container__edit-password">
                  <span class="edit-password__header">
-                    <p>Edit Password</p>
+                    <h2>Edit Password</h2>
                 </span>
                 <form action="endpoint" class="edit-password__form" method="post">
                     <label class="container__form-label">
