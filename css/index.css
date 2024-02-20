@@ -132,7 +132,7 @@ a flex container to the hero image elements in the embedded html file. */
 
 .anime-row .row-name-image p {
     position: absolute;
-    top: -4%;
+    top: -2%;
     height: 10%;
     color: white;
     opacity: 75%;
