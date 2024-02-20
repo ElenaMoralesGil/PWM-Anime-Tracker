@@ -24,6 +24,7 @@ const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 document.addEventListener("DOMContentLoaded", async function() {
     loadById('top-header.html', 'header');
     loadById('bottom-footer.html', 'footer')
-    loadByClass('name-image.html', 'cover-name')
     loadByClass('anime-cover-name-description.html', 'top-cover-image-and-description')
+    await sleep(50)
+    loadByClass('name-image.html', 'cover-name')
 });
