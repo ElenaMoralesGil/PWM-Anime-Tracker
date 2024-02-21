@@ -1,11 +1,9 @@
 .anime-info-container {
     display: flex;
     flex-flow: column nowrap;
-    width: 20%;
+    width: 20vw;
     height: fit-content;
-    border-radius: 15px;
-    margin: 1%;
-    background: #70859c;
+    background: #1d1d1f;
     box-sizing: border-box;
     box-shadow: 0 0 3px black;
 }
@@ -13,7 +11,7 @@
 .anime-info-container .anime-data {
     color: white;
     text-align: center;
-    height: 5cm;
+    height: 4.15cm;
     box-sizing: border-box;
 }
 
@@ -29,6 +27,6 @@
     max-width: 80%;
     margin-left: 10%;
     height: 40%;
-    overflow: scroll;
+    overflow: auto;
     opacity: 0.8;
 }
