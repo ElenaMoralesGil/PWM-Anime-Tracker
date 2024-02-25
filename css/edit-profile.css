@@ -1,32 +1,33 @@
-/* Container styles */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-
-}
-
 .container__edit-profile {
     background-color: #ffffff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 90%;
+    padding: 20px; /* Decrease padding to make it smaller */
+    border-radius: 10px; /* Decrease border-radius to make it less round */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Decrease max-width to make it narrower */
+    width: 70%;
+    position: absolute; /* Change position to absolute */
+    top: 50%; /* Position vertically at 50% */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Ensure the form appears above other content */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.user-profile {
+    position: relative;
+    z-index: 1;
 }
 
 .edit-profile__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 10px; /* Decrease margin bottom */
 }
 
 .edit-profile__header h1,
-.fa-times {
-    font-size: 24px;
+.edit-profile__header .fa-times {
+    font-size: 18px; /* Decrease font size */
     font-weight: bold;
     margin: 0;
 }
@@ -34,38 +35,33 @@
 .container__edit-details,
 .container__edit-pfp,
 .container__edit-password {
-    margin-bottom: 3%;
-    padding: 3%;
-    border-radius: 15px;
+    margin-bottom: 10px; /* Decrease margin bottom */
+    padding: 10px; /* Decrease padding */
+    border-radius: 10px;
     overflow: hidden;
     text-align: center;
     background-color: #f8f9fa;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Decrease box shadow */
 }
 
-
-.edit-details__form,
-.edit-password__form {
-    margin-bottom: 2%;
-}
-
+/* Edit Profile Form Input */
 .edit-details__form-label,
 .edit-password__form-label {
     display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 5px; /* Decrease margin bottom */
+    font-size: 14px; /* Decrease font size */
     font-weight: bold;
 }
 
 .edit-details__form-input,
 .edit-password__form-input,
 .container__form-input {
-    width: calc(100% - 24px);
-    padding: 12px;
-    margin-bottom: 20px;
+    width: calc(100% - 10px); /* Decrease input width */
+    padding: 8px; /* Decrease padding */
+    margin-bottom: 10px; /* Decrease margin bottom */
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px; /* Decrease font size */
     box-sizing: border-box;
     transition: border-color 0.3s ease;
 }
@@ -77,24 +73,20 @@
     border-color: #000000;
 }
 
-.edit-details__form-textarea {
-    height: 20%;
-}
-
-/* Button styles */
+/* Edit Profile Form Buttons */
 .container__form-button,
 .container__choose-image-button {
-    padding: 14px 28px;
+    padding: 10px 20px; /* Decrease padding */
     background-color: #000000;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px; /* Decrease font size */
     transition: background-color 0.3s ease;
     display: block;
     width: auto;
-    margin: 0 auto 2%;
+    margin: 0 auto 5px; /* Decrease margin bottom */
 }
 
 .container__form-button:hover,
@@ -103,14 +95,14 @@
     transform: translateY(-2px); /* Add slight lift effect */
 }
 
-/* Close icon style */
-.fa-times {
+/* Close Icon Style */
+.edit-profile__header .fa-times {
     cursor: pointer;
-    font-size: 24px;
+    font-size: 18px; /* Decrease font size */
     color: #888888;
     transition: color 0.3s ease;
 }
 
-.fa-times:hover {
+.edit-profile__header .fa-times:hover {
     color: #555555;
 }

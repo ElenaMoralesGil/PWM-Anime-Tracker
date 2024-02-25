@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile info</title>
+    <!-- Link to your CSS file -->
+    <link href="../css/your-styles.css" rel="stylesheet">
 </head>
 <body>
 <div class="user-profile__info">
@@ -15,8 +17,15 @@
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
         </div>
     </div>
-    <button onclick="location.href='edit-profile.html'" class="user-profile__edit-btn">Edit Profile</button>
-
+    <button id="editProfileBtn" class="user-profile__edit-btn">Edit Profile</button>
 </div>
+
+<!-- Edit Profile Form (hidden by default) -->
+<div id="editProfileForm" class="container__edit-profile">
+    <!-- This will be populated with the content from edit-profile.html via JavaScript -->
+</div>
+
+<!-- Link to your edit-profile-popup.js file -->
+<script src="../../javascript/edit-profile-popup.js"></script>
 </body>
 </html>
