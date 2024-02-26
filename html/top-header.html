@@ -15,9 +15,10 @@
         <a target="_blank">Text</a> <!-- Expected to be an anchor to another page in the website -->
     </nav>
     <div class="top-header-content-buttons">
-        <button onclick="location.href='login.html'" name="Sign up">Text</button>
-        <button onclick="location.href='signin.html'" name="Sign in">Text</button>
+        <button onclick="location.href='login.html'"  name="Sign up">Text</button>
+        <button onclick="showSignInPopup()" id="signin-btn" name="Sign in">Sign in</button>
     </div>
+    <div class="overlay" id="signin-overlay" style="display: none;"></div>
 </div>
 </body>
 </html>

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="made the edit-profile to be a working popup">
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="deleted the edit-profile-popup.js as it was not necessary and fixed a css style issue.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/edit-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/edit-profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile/profile-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile/profile-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/edit-profile-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/edit-profile-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/top-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/top-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,34 +49,34 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2cdDgywh0nWXEhLTpmTIkyQkHX0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.edit-profile.html.executor": "Run",
-    "JavaScript Debug.profile-info.html.executor": "Run",
-    "Node.js.edit-profile-popup.js.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "elena",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.edit-profile.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.profile-info.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.edit-profile-popup.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;elena&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,7 +86,8 @@
       <option name="presentableId" value="Default" />
       <updated>1708432676090</updated>
       <workItem from="1708432677301" duration="3231000" />
-      <workItem from="1708859431330" duration="10726000" />
+      <workItem from="1708859431330" duration="11085000" />
+      <workItem from="1708980959760" duration="3230000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -118,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708889959024</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="deleted the edit-profile-popup.js as it was not necessary and fixed a css style issue.">
+      <option name="closed" value="true" />
+      <created>1708928961507</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708928961507</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +149,7 @@
     <MESSAGE value="did the edit-profile.html it still needs css" />
     <MESSAGE value="modified the edit-profile.html and did basic css" />
     <MESSAGE value="made the edit-profile to be a working popup" />
-    <option name="LAST_COMMIT_MESSAGE" value="made the edit-profile to be a working popup" />
+    <MESSAGE value="deleted the edit-profile-popup.js as it was not necessary and fixed a css style issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted the edit-profile-popup.js as it was not necessary and fixed a css style issue." />
   </component>
 </project>

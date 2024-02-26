@@ -18,7 +18,15 @@ function loadRowImages(pageName, className) {
         })
         .catch(error => console.error('Error fetching header:', error));
 }
+function showSignInPopup() {
+    loadPage('signin.html', 'signin-overlay');
+    document.getElementById('signin-overlay').style.display = 'flex';
+}
 
+// Function to hide the sign-in popup
+function hideSignInPopup() {
+    document.getElementById('signin-overlay').style.display = 'none';
+}
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 document.addEventListener("DOMContentLoaded", async function() {
@@ -31,4 +39,10 @@ document.addEventListener("DOMContentLoaded", async function() {
     loadPage('list-name-image.html', 'most-liked-row');
     await sleep(10)
     loadRowImages('name-image.html', 'row-name-image');
+// Attach click event handlers to the sign-in and close buttons
+    document.getElementById('signin-btn').addEventListener('click', showSignInPopup);
+    document.getElementById('close-signin-btn').addEventListener('click', hideSignInPopup);
+
+
 });
+

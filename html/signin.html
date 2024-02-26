@@ -9,10 +9,13 @@
         <title>Sign In</title>
     </head>
     <body>
-        <main class="container">
-            <img alt="Logo" class="container__logo" src="../resources/icons/icon.ico">
-            <h1 class="container__title">Sign In</h1>
 
+        <main class="container">
+            <span class="container__header">
+            <h1 class="container__title">Sign In</h1>
+               <i class="fa fa-times" id="close-signin-btn" aria-hidden="true"></i>
+
+            </span>
             <form action="endpoint" class="container__form" method="post">
                 <label class="container__form-label">
                     <input class="container__form-input" name="username" placeholder="Username" required type="text">
