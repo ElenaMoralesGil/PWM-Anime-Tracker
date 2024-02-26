@@ -1,16 +1,16 @@
 .container__edit-profile {
     background-color: #ffffff;
-    padding: 20px; /* Decrease padding to make it smaller */
-    border-radius: 10px; /* Decrease border-radius to make it less round */
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Decrease max-width to make it narrower */
+    max-width: 400px;
     width: 70%;
-    position: absolute; /* Change position to absolute */
-    top: 50%; /* Position vertically at 50% */
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999; /* Ensure the form appears above other content */
-    height: auto; /* Allow height to adjust based on content */
+    z-index: 999;
+    height: auto;
 }
 
 .user-profile {
@@ -22,12 +22,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px; /* Decrease margin bottom */
+    margin-bottom: 10px;
 }
 
 .edit-profile__header h1,
 .edit-profile__header .fa-times {
-    font-size: 18px; /* Decrease font size */
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
 }
@@ -35,33 +35,33 @@
 .container__edit-details,
 .container__edit-pfp,
 .container__edit-password {
-    margin-bottom: 10px; /* Decrease margin bottom */
-    padding: 10px; /* Decrease padding */
+    margin-bottom: 10px;
+    padding: 10px;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
     background-color: #f8f9fa;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Decrease box shadow */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Edit Profile Form Input */
 .edit-details__form-label,
 .edit-password__form-label {
     display: block;
-    margin-bottom: 5px; /* Decrease margin bottom */
-    font-size: 14px; /* Decrease font size */
+    margin-bottom: 5px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .edit-details__form-input,
 .edit-password__form-input,
 .container__form-input {
-    width: calc(100% - 10px); /* Decrease input width */
-    padding: 8px; /* Decrease padding */
-    margin-bottom: 10px; /* Decrease margin bottom */
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px; /* Decrease font size */
+    font-size: 14px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
 }
@@ -76,29 +76,28 @@
 /* Edit Profile Form Buttons */
 .container__form-button,
 .container__choose-image-button {
-    padding: 10px 20px; /* Decrease padding */
+    padding: 10px 20px;
     background-color: #000000;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px; /* Decrease font size */
+    font-size: 14px;
     transition: background-color 0.3s ease;
     display: block;
     width: auto;
-    margin: 0 auto 5px; /* Decrease margin bottom */
+    margin: 0 auto 5px;
 }
 
 .container__form-button:hover,
 .container__choose-image-button:hover {
-    background-color: #333333; /* Darken button on hover */
-    transform: translateY(-2px); /* Add slight lift effect */
+    background-color: #333333;
+    transform: translateY(-2px);
 }
 
-/* Close Icon Style */
 .edit-profile__header .fa-times {
     cursor: pointer;
-    font-size: 18px; /* Decrease font size */
+    font-size: 18px;
     color: #888888;
     transition: color 0.3s ease;
 }

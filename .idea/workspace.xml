@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="modified the edit-profile.html and did basic css">
-      <change afterPath="$PROJECT_DIR$/javascript/edit-profile-popup.js" afterDir="false" />
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="made the edit-profile to be a working popup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/edit-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/edit-profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/edit-profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/profile/profile-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile/profile-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profileOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profileOverview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/profileOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profileOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/edit-profile-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/edit-profile-popup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708432676090</updated>
       <workItem from="1708432677301" duration="3231000" />
-      <workItem from="1708859431330" duration="9121000" />
+      <workItem from="1708859431330" duration="10726000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -113,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708861246332</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="made the edit-profile to be a working popup">
+      <option name="closed" value="true" />
+      <created>1708889959024</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708889959024</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +138,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="did the edit-profile.html it still needs css" />
     <MESSAGE value="modified the edit-profile.html and did basic css" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified the edit-profile.html and did basic css" />
+    <MESSAGE value="made the edit-profile to be a working popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the edit-profile to be a working popup" />
   </component>
 </project>
