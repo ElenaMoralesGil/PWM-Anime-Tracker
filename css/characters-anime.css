@@ -67,6 +67,7 @@
     background: #1d1d1f;
     box-shadow: 0 0 3px black;
     min-height: 8cm;
+    max-height: 8cm;
 }
 
 .navbar-characters .character-description {
