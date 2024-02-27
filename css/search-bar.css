@@ -52,12 +52,6 @@
     border: none;
 }
 
-.search-input .search-input-label-and-button i {
-    position: absolute;
-    right: 7%;
-    top: 23%;
-}
-
 /*--------------------------  Combo-Boxes  --------------------------*/
 
 .combo-box-input {

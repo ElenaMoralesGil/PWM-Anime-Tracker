@@ -8,7 +8,7 @@ function loadPage(pageName, element) {
 }
 
 
-function loadRowImages(pageName, className) {
+function loadByClass(pageName, className) {
     fetch(pageName)
         .then(response => response.text())
         .then(html => {
@@ -31,19 +31,17 @@ function hideSignInPopup() {
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 document.addEventListener("DOMContentLoaded", async function() {
-    loadPage('top-header.html', 'index-header');
-    loadPage('bottom-footer.html', 'index-footer');
-    loadPage('name-image.html', 'index-main-content-hero-image');
-    loadPage('search-bar.html', 'index-search-bar');
-    loadPage('list-name-image.html', 'newly-added-row');
-    loadPage('list-name-image.html', 'our-recommendations-row');
-    loadPage('list-name-image.html', 'most-liked-row');
-    await sleep(10)
-    loadRowImages('name-image.html', 'row-name-image');
+    loadById('top-header.html', 'header');
+    loadById('bottom-footer.html', 'footer');
+    loadById('name-image.html', 'index-main-content-hero-image');
+    loadById('search-bar.html', 'index-search-bar');
+    loadById('list-name-image.html', 'newly-added-row');
+    loadById('list-name-image.html', 'our-recommendations-row');
+    loadById('list-name-image.html', 'most-liked-row');
+    await sleep(20)
+    loadByClass('name-image.html', 'row-name-image');
 // Attach click event handlers to the sign-in and close buttons
     document.getElementById('signin-btn').addEventListener('click', showSignInPopup);
     document.getElementById('close-signin-btn').addEventListener('click', hideSignInPopup);
 
-
 });
-
