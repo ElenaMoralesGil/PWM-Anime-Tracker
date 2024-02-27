@@ -14,7 +14,7 @@ child components */
     height: 2cm;
     background: #70859c;
     box-sizing: border-box;
-    max-width: 100vw;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -26,21 +26,19 @@ Height and width defined in relation to the div above.
 Box sizing including padding and margins.*/
 
 .top-header-content img {
-    height: 100%;
+    height: 50%;
 }
 
 /* Child component of the header div. Its a navbar to access
 some parts of the website. Width defined in relation to the
 div above. It acts as a flex container to the different
 anchor elements. Box sizing including padding and margins.*/
-.top-header-content a{
-    text-decoration: none;
-    color:inherit;
-}
+
 .top-header-content nav {
     width: 50%;
     font-size: 1em;
     color:white;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -83,5 +81,3 @@ Width and height defined in relation to the container.*/
     width: 50%;
     height: 100%;
 }
-
-

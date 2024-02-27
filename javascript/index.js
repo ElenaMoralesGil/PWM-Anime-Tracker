@@ -1,4 +1,4 @@
-function loadPage(pageName, element) {
+function loadById(pageName, element) {
     fetch(pageName)
         .then(response => response.text())
         .then(html => {
