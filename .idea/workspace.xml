@@ -4,152 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="deleted the edit-profile-popup.js as it was not necessary and fixed a css style issue.">
+    <list default="true" id="0744c59e-75dd-4fd4-9fd7-68901285427a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PWM-Anime-Tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PWM-Anime-Tracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/edit-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/top-header-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/top-header-login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/top-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/top-header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profileOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profileOverview.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;ElenaMoralesGil&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="c5e9f488-b3b1-4bb3-ae97-8d2db20233fd" />
-        <option name="url" value="https://github.com/ElenaMoralesGil/PWM-Anime-Tracker" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2cdDgywh0nWXEhLTpmTIkyQkHX0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2cx0EOUwuwMYy8gmpKM23Z7JYbT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.edit-profile.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.profile-info.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.edit-profile-popup.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;elena&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="" />
-      <created>1708432676090</created>
+      <changelist id="0744c59e-75dd-4fd4-9fd7-68901285427a" name="Changes" comment="" />
+      <created>1709037809991</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708432676090</updated>
-      <workItem from="1708432677301" duration="3231000" />
-      <workItem from="1708859431330" duration="11085000" />
-      <workItem from="1708980959760" duration="3230000" />
+      <updated>1709037809991</updated>
+      <workItem from="1709037811315" duration="4738000" />
     </task>
-    <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
-      <created>1708435889521</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1708435889521</updated>
-    </task>
-    <task id="LOCAL-00002" summary="modified the edit-profile.html and did basic css">
-      <option name="closed" value="true" />
-      <created>1708468052547</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1708468052547</updated>
-    </task>
-    <task id="LOCAL-00003" summary="modified the edit-profile.html and did basic css">
-      <option name="closed" value="true" />
-      <created>1708861246332</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1708861246332</updated>
-    </task>
-    <task id="LOCAL-00004" summary="made the edit-profile to be a working popup">
-      <option name="closed" value="true" />
-      <created>1708889959024</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1708889959024</updated>
-    </task>
-    <task id="LOCAL-00005" summary="deleted the edit-profile-popup.js as it was not necessary and fixed a css style issue.">
-      <option name="closed" value="true" />
-      <created>1708928961507</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1708928961507</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="did the edit-profile.html it still needs css" />
-    <MESSAGE value="modified the edit-profile.html and did basic css" />
-    <MESSAGE value="made the edit-profile to be a working popup" />
-    <MESSAGE value="deleted the edit-profile-popup.js as it was not necessary and fixed a css style issue." />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted the edit-profile-popup.js as it was not necessary and fixed a css style issue." />
   </component>
 </project>

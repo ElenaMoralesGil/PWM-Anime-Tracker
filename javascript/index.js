@@ -7,6 +7,7 @@ function loadPage(pageName, element) {
         .catch(error => console.error('Error fetching header:', error));
 }
 
+
 function loadRowImages(pageName, className) {
     fetch(pageName)
         .then(response => response.text())
