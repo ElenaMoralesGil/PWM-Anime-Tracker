@@ -20,15 +20,3 @@ function loadByClass(pageName, className) {
 }
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
-
-document.addEventListener("DOMContentLoaded", async function() {
-    loadById('top-header.html', 'header');
-    loadById('bottom-footer.html', 'footer');
-    loadById('name-image.html', 'index-main-content-hero-image');
-    loadById('search-bar.html', 'index-search-bar');
-    loadById('list-name-image.html', 'newly-added-row');
-    loadById('list-name-image.html', 'our-recommendations-row');
-    loadById('list-name-image.html', 'most-liked-row');
-    await sleep(20)
-    loadByClass('name-image.html', 'row-name-image');
-});

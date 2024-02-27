@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Anime Page With Characters Tab</title>
-    <meta name="description" content="A page to hold the data, information and resources to a concrete anime show.">
+    <meta name="description" content="A page to hold the data, information and resources to a concrete anime show.
+    Including Characters Content">
     <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/globals-anime.css">
     <link rel="stylesheet" href="../css/characters-anime.css">
     <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
 </head>
@@ -21,9 +23,9 @@
         <section class="top-cover-image-and-description"></section>
         <!------------------------------------------------------------------------------------------------------------->
 
-        <section class="aside-characters-container">
+        <section class="aside-main-content-container">
             <aside class="aside-anime-information"></aside>
-            <section class="navbar-characters">
+            <section class="navbar-main-content">
                 <nav>
                     <a target="_blank">Characters</a> <!-- Expected to be an anchor to another page in the website -->
                     <a target="_blank">Episodes</a> <!-- Expected to be an anchor to another page in the website -->
@@ -115,4 +117,15 @@
 </body>
 </html>
 
-<script defer src="../javascript/characters-anime.js"></script>
+<script type="text/javascript" src="../javascript/include.js"></script>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", async function() {
+        loadById('top-header.html', 'header');
+        loadById('bottom-footer.html', 'footer');
+        loadByClass('anime-cover-name-description.html', 'top-cover-image-and-description');
+        loadByClass('anime-info-aside.html', 'aside-anime-information');
+        await sleep(50);
+        loadByClass('name-image.html', 'cover-name');
+        loadByClass('name-image.html', 'anime-character-name-image');
+    });
+</script>

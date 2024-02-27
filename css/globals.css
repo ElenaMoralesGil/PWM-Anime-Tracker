@@ -18,6 +18,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background: hsl(240, 16%, 18%);
+    backdrop-filter: blur(10px);
 }
 
 img {
