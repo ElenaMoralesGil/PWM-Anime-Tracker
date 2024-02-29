@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <title>Anime Tracker for PWM</title>
         <meta name="description" content="main page for our website">
-        <link rel="stylesheet" href="../css/globals.css">
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../../css/globals/globals.css">
+        <link rel="stylesheet" href="../../css/index-page/index.css">
         <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
     </head>
     <body id="index-body">
@@ -42,7 +42,7 @@
     </body>
 </html>
 
-<script type="text/javascript" src="../javascript/include.js"></script>
+<script type="text/javascript" src="../../javascript/include.js"></script>
 <script type="text/javascript">
 
     /*
@@ -55,17 +55,17 @@
 
     function loadingRows () {
          Promise.all([
-            loadById('list-name-image.html', 'newly-added-row'),
-            loadById('list-name-image.html', 'our-recommendations-row'),
-            loadById('list-name-image.html', 'most-liked-row')
-         ]).then(() => loadByClass('name-image.html', 'row-name-image'))
+            loadById('../templates/list-name-image.html', 'newly-added-row'),
+            loadById('../templates/list-name-image.html', 'our-recommendations-row'),
+            loadById('../templates/list-name-image.html', 'most-liked-row')
+         ]).then(() => loadByClass('../templates/name-image.html', 'row-name-image'))
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-        loadById('top-header.html', 'header');
-        loadById('bottom-footer.html', 'footer');
-        loadById('name-image.html', 'index-main-content-hero-image');
-        loadById('search-bar.html', 'index-search-bar');
+        loadById('../templates/top-header.html', 'header');
+        loadById('../templates/bottom-footer.html', 'footer');
+        loadById('../templates/name-image.html', 'index-main-content-hero-image');
+        loadById('../templates/search-bar.html', 'index-search-bar');
         loadingRows();
     })
 

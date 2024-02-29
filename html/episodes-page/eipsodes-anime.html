@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Anime Page With Characters Tab</title>
+    <title>Anime Page With Episodes Tab</title>
     <meta name="description" content="A page to hold the data, information and resources to a concrete anime show.
-    Including Characters Content">
-    <link rel="stylesheet" href="../css/globals.css">
-    <link rel="stylesheet" href="../css/globals-anime.css">
-    <link rel="stylesheet" href="../css/characters-anime.css">
-    <link rel="stylesheet" href="../css/anime-character.css">
+    Including Episodes Content">
+    <link rel="stylesheet" href="../../css/globals/globals.css">
+    <link rel="stylesheet" href="../../css/globals/globals-anime.css">
+    <link rel="stylesheet" href="../../css/episodes-page/episodes-anime.css">
     <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
 </head>
 <body id="anime-body">
@@ -18,12 +17,11 @@
         <section class="top-image">
             <img alt="A wide image based on the anime show that displays in the top part of the page."
                  title="A wide image based on the anime"
-                 src="../resources/images/frieren.jpg">
+                 src="../../resources/images/frieren.jpg">
         </section>
         <!------------------------------------------------------------------------------------------------------------->
         <section class="top-cover-image-and-description"></section>
         <!------------------------------------------------------------------------------------------------------------->
-
         <section class="aside-main-content-container">
             <aside class="aside-anime-information"></aside>
             <section class="navbar-main-content">
@@ -31,13 +29,6 @@
                     <a target="_blank">Characters</a> <!-- Expected to be an anchor to another page in the website -->
                     <a target="_blank">Episodes</a> <!-- Expected to be an anchor to another page in the website -->
                 </nav>
-                <section class="characters">
-                    <article class="anime-character"></article>
-                    <article class="anime-character"></article>
-                    <article class="anime-character"></article>
-                    <article class="anime-character"></article>
-                    <article class="anime-character"></article>
-                </section>
             </section>
         </section>
     </main>
@@ -45,24 +36,17 @@
 </body>
 </html>
 
-<script type="text/javascript" src="../javascript/include.js"></script>
+<script type="text/javascript" src="../../javascript/include.js"></script>
 <script type="text/javascript">
     function loadAnimeDescImage() {
-        loadByClass('anime-cover-name-description.html', 'top-cover-image-and-description').then(()=>
-            loadByClass('name-image.html', 'cover-name'));
-    }
-
-    function loadAnimeCharacters() {
-        loadByClass('anime-character.html', 'anime-character').then(()=>
-            loadByClass('name-image.html', 'anime-character-name-image'));
+        loadByClass('../templates/anime-cover-name-description.html', 'top-cover-image-and-description').then(()=>
+            loadByClass('../templates/name-image.html', 'cover-name'));
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-        loadById('top-header.html', 'header');
-        loadById('bottom-footer.html', 'footer');
-        loadByClass('anime-info-aside.html', 'aside-anime-information');
-        loadByClass('name-image.html', 'anime-character-name-image');
+        loadById('../templates/top-header.html', 'header');
+        loadById('../templates/bottom-footer.html', 'footer');
+        loadByClass('../templates/anime-info-aside.html', 'aside-anime-information');
         loadAnimeDescImage();
-        loadAnimeCharacters()
     });
 </script>
