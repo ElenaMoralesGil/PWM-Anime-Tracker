@@ -1,0 +1,7 @@
+.navbar-main-content .episodes {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: auto;
+    max-height: 40cm;
+    height: 40cm;
+}
