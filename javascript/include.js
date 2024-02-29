@@ -1,15 +1,15 @@
-async function loadById(pageName, element) {
-    await fetch(pageName)
-        .then(async response => await response.text())
+function loadById(pageName, element) {
+    return fetch(pageName)
+        .then(response => response.text())
         .then(html => {
             document.getElementById(element).innerHTML = html;
         })
         .catch(error => console.error('Error fetching header:', error));
 }
 
-async function loadByClass(pageName, className) {
-    await fetch(pageName)
-        .then(async response => await response.text())
+function loadByClass(pageName, className) {
+    return fetch(pageName)
+        .then(response => response.text())
         .then(html => {
             let elements = document.getElementsByClassName(className);
             for (let i = 0, length = elements.length; i < length; i++) {

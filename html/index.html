@@ -45,19 +45,28 @@
 <script type="text/javascript" src="../javascript/include.js"></script>
 <script type="text/javascript">
 
-    function loadContainers() {
-        return Promise.all([
+    /*
+    function loadingRows () {
+         return loadById('list-name-image.html', 'newly-added-row')
+        .then(()=>loadById('list-name-image.html', 'our-recommendations-row'))
+        .then(()=>loadById('list-name-image.html', 'most-liked-row'));
+    }
+    */
+
+    function loadingRows () {
+         Promise.all([
             loadById('list-name-image.html', 'newly-added-row'),
             loadById('list-name-image.html', 'our-recommendations-row'),
             loadById('list-name-image.html', 'most-liked-row')
-        ]);
+         ]).then(() => loadByClass('name-image.html', 'row-name-image'))
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         loadById('top-header.html', 'header');
         loadById('bottom-footer.html', 'footer');
         loadById('name-image.html', 'index-main-content-hero-image');
         loadById('search-bar.html', 'index-search-bar');
-        loadContainers().then(() => {loadByClass('name-image.html', 'row-name-image')})
-    });
+        loadingRows();
+    })
+
 </script>
