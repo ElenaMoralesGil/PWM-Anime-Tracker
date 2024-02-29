@@ -37,13 +37,15 @@
 
 <script type="text/javascript" src="../javascript/include.js"></script>
 <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", async function() {
+    function loadAnimeDescImage() {
+        loadByClass('anime-cover-name-description.html', 'top-cover-image-and-description').then(()=>
+            loadByClass('name-image.html', 'cover-name'));
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
         loadById('top-header.html', 'header');
         loadById('bottom-footer.html', 'footer');
-        loadByClass('anime-cover-name-description.html', 'top-cover-image-and-description');
         loadByClass('anime-info-aside.html', 'aside-anime-information');
-        await sleep(50);
-        loadByClass('name-image.html', 'cover-name');
-        loadByClass('name-image.html', 'anime-character-name-image');
+        loadAnimeDescImage();
     });
 </script>

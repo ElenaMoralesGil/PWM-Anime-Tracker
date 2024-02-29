@@ -19,4 +19,5 @@ function loadByClass(pageName, className) {
         .catch(error => console.error('Error fetching header:', error));
 }
 
-const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+
+// const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
