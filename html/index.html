@@ -44,15 +44,20 @@
 
 <script type="text/javascript" src="../javascript/include.js"></script>
 <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", async function() {
+
+    function loadContainers() {
+        return Promise.all([
+            loadById('list-name-image.html', 'newly-added-row'),
+            loadById('list-name-image.html', 'our-recommendations-row'),
+            loadById('list-name-image.html', 'most-liked-row')
+        ]);
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
         loadById('top-header.html', 'header');
         loadById('bottom-footer.html', 'footer');
         loadById('name-image.html', 'index-main-content-hero-image');
         loadById('search-bar.html', 'index-search-bar');
-        loadById('list-name-image.html', 'newly-added-row');
-        loadById('list-name-image.html', 'our-recommendations-row');
-        loadById('list-name-image.html', 'most-liked-row');
-        await sleep(50)
-        loadByClass('name-image.html', 'row-name-image');
+        loadContainers().then(() => {loadByClass('name-image.html', 'row-name-image')})
     });
 </script>
