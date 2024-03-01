@@ -41,10 +41,11 @@ main {
 #result-content {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    gap: 2.5%;
-    padding-left: 3%;
-    padding-right: 3%;
+    justify-content: left;
+    width: 75%;
+    gap: 3.5%;
+    margin-left: 12.5%;
+    box-sizing: border-box;
 }
 
 #result-content .row-name-image {
