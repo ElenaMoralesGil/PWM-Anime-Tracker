@@ -1,0 +1,10 @@
+/*--------------------------------------------------------------------------------------------------------------------*/
+.navbar-main-content .characters {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: auto;
+    max-height: 40cm;
+    height: 40cm;
+}
+
+

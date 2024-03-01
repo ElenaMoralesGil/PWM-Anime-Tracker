@@ -1,5 +1,5 @@
 function loadById(pageName, element) {
-    fetch(pageName)
+    return fetch(pageName)
         .then(response => response.text())
         .then(html => {
             document.getElementById(element).innerHTML = html;
@@ -8,7 +8,7 @@ function loadById(pageName, element) {
 }
 
 function loadByClass(pageName, className) {
-    fetch(pageName)
+    return fetch(pageName)
         .then(response => response.text())
         .then(html => {
             let elements = document.getElementsByClassName(className);
@@ -18,15 +18,15 @@ function loadByClass(pageName, className) {
         })
         .catch(error => console.error('Error fetching header:', error));
 }
+function showSignInPopup() {
+    loadPage('signin.html', 'signin-overlay');
+    document.getElementById('signin-overlay').style.display = 'flex';
+}
 
+// Function to hide the sign-in popup
+function hideSignInPopup() {
+    document.getElementById('signin-overlay').style.display = 'none';
+}
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
-document.addEventListener("DOMContentLoaded", async function() {
-    loadById('top-header.html', 'header');
-    loadById('bottom-footer.html', 'footer');
-    loadByClass('anime-cover-name-description.html', 'top-cover-image-and-description');
-    loadByClass('anime-info-aside.html', 'aside-anime-information');
-    await sleep(50);
-    loadByClass('name-image.html', 'cover-name');
-    loadByClass('name-image.html', 'anime-character-name-image');
-});
+// const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))

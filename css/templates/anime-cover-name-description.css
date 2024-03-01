@@ -24,7 +24,7 @@
 .top-description-and-buttons .cover-name p {
     position: absolute;
     left: 35%;
-    top: 15%;
+    top: 20%;
     bottom: 0;
     margin: auto;
     font-size: var(--medium-big-font-size);
@@ -34,9 +34,9 @@
 
 .top-description-and-buttons .anime-description {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 35%;
-    max-width: 60%;
+    max-width: 55%;
     max-height: 55%;
     color: white;
     opacity: 0.8;
