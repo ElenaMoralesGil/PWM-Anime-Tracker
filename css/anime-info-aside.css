@@ -1,0 +1,32 @@
+.anime-info-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 20vw;
+    height: fit-content;
+    background: #1d1d1f;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px black;
+}
+
+.anime-info-container .anime-data {
+    color: white;
+    text-align: center;
+    height: 4.15cm;
+    box-sizing: border-box;
+}
+
+.anime-data  p:first-child {
+    font-size: var(--medium-big-font-size);
+    margin-top: 13%;
+    font-weight: bold;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.anime-data p:nth-child(2) {
+    max-width: 80%;
+    margin-left: 10%;
+    height: 40%;
+    overflow: auto;
+    opacity: 0.8;
+}
