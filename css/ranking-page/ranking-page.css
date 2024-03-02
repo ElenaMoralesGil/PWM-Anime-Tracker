@@ -1,0 +1,54 @@
+.info-ban {
+    background: #1d1d1faa;
+    height: 1.25cm;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    margin: 3% 10% 0 10%;
+}
+
+.info-ban .info-message {
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    box-sizing: border-box;
+    font-size: var(--medium-small-font-size);
+}
+
+.ranking-table .table-descriptor {
+    background: #1d1d1f;
+    height: 1.5cm;
+    box-sizing: border-box;
+    margin: 0 10% 0 10%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.table-descriptor #descriptor-position {
+    flex: 2;
+}
+
+.table-descriptor #descriptor-title {
+    flex: 10;
+}
+
+.table-descriptor #descriptor-score {
+    flex: 3;
+}
+
+.table-descriptor #descriptor-status {
+    flex: 3;
+}
+.ranking-table .positions {
+    max-height: 40cm;
+    overflow: auto;
+}
+
+#footer {
+    margin-top: 3%;
+}

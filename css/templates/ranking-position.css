@@ -1,0 +1,48 @@
+.position-content {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    min-height: 4cm;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: var(--medium-big-font-size);
+}
+
+.position-content:before {
+    content: "";
+    position: absolute;
+    background-image: url("../../resources/images/frieren.jpg");
+    inset: 0;
+    z-index: 0;
+    opacity: 0.25;
+    filter: blur(4px);
+}
+
+.position-content .position-number {
+    flex: 2;
+    opacity: 1;
+    z-index: 1;
+}
+
+.position-content .position-title {
+    flex: 10;
+    opacity: 1;
+    z-index: 1;
+}
+
+.position-content .position-score {
+    flex: 3;
+    opacity: 1;
+    z-index: 1;
+}
+
+.position-content .position-status {
+    flex: 3;
+    opacity: 1;
+    z-index: 1;
+}
