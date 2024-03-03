@@ -2,16 +2,14 @@ function loadRow(url, containerId) {
     fetch(url)
         .then(response => response.text())
         .then(html => {
-            const container = document.getElementById(containerId);
-            if (!container) {
-                console.error('Container element not found with ID:', containerId);
-                return;
-            }
             const tempContainer = document.createElement('div');
             tempContainer.innerHTML = html.trim();
             const row = tempContainer.querySelector('.position-content');
             if (row) {
-                container.appendChild(row);
+                const fragment = document.createDocumentFragment(); // Create a document fragment
+                fragment.appendChild(row.cloneNode(true)); // Append a clone of the row to the fragment
+                const container = document.getElementById(containerId);
+                container.appendChild(fragment); // Append the fragment to the container
             } else {
                 console.error('Table row not found in the fetched content.');
             }
