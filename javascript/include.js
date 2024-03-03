@@ -18,15 +18,5 @@ function loadByClass(pageName, className) {
         })
         .catch(error => console.error('Error fetching header:', error));
 }
-function showSignInPopup() {
-    loadPage('signin.html', 'signin-overlay');
-    document.getElementById('signin-overlay').style.display = 'flex';
-}
-
-// Function to hide the sign-in popup
-function hideSignInPopup() {
-    document.getElementById('signin-overlay').style.display = 'none';
-}
-const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 // const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
