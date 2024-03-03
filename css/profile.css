@@ -112,25 +112,5 @@
     font-size: var(--big-font-size);
     margin-bottom:2%;
     font-weight: bold;
-}
-.user-profile__table {
-    max-width: 80vw;
-    width: 100%;
-}
-.user-profile__table th,
-.user-profile__table td {
-
-    padding: 10px;
-    text-align: center;
-}
-.user-profile__table th {
-    background-color: #f8f8f8;
-}
-.user-profile__table th:first-child {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-.user-profile__table th:last-child {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    color: #fffdfd;
 }

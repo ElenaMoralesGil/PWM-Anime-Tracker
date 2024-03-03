@@ -1,0 +1,78 @@
+.user-profile-table {
+    max-width: 80vw;
+    width: 100%;
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Stretch items to fill container width */
+}
+
+.table-descriptor,
+.positions {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 1% 1%;
+
+    margin-bottom: 30px;
+}
+.table-descriptor {
+    background-color: #f8f8f8;
+}
+.table-descriptor > p {
+    flex: 1;
+    text-align: center;
+    padding: 2px;
+}
+
+.positions {
+    flex-wrap: wrap;
+    align-items: flex-start; /* Adjust alignment */
+}
+
+.table-row {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.position-content {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.position-content:before {
+    content: "";
+    position: absolute;
+    background-image: url("../../resources/images/frieren.jpg");
+    inset: 0;
+    z-index: 0;
+    opacity: 0.25;
+    filter: blur(4px);
+}
+
+.position-content > * {
+    flex: 1;
+    text-align: center;
+
+    padding: 10px;
+}
+
+/* Add margin to paragraphs to create separation between cells */
+.position-content > p {
+    margin-right: 10px;
+
+}
+
+/* Remove margin from the last paragraph in each row */
+.position-content > p:nth-child(5n) {
+    margin-right: 0;
+}
