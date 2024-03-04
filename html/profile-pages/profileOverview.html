@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/globals/globals.css">
+    <link href="../../css/profile.css" rel="stylesheet">
+    <link href="../../css/templates/profile-table.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/999e77a4f5.js"></script>
+    <title>User Profile</title>
+</head>
+<body id="profile-body">
+
+<header id="header"></header>
+
+<div class="container">
+    <div class="user-profile">
+        <div id="profile-info"></div>
+        <div id="profile-nav"></div>
+        <h2 class="user-profile__title">All Anime</h2>
+        <section class="user-profile-table">
+            <section class="table-descriptor">
+                <p class="anime-name">Name</p>
+                <p class="anime-score">Score</p>
+                <p class="anime-user-score">User Score</p>
+                <p class="anime-status">Status</p>
+                <p class="anime-list">List</p>
+            </section>
+            <section class="positions" id="positions">
+                <!-- Rows will be appended here -->
+            </section>
+        </section>
+
+        <!-- <button id="addRowButton">Add Row</button> B-->
+    </div>
+</div>
+
+<footer id="footer"></footer>
+
+<script type="text/javascript" src="../../javascript/include.js"></script>
+<script type="text/javascript" src="../../javascript/loadElement.js"></script>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        loadById('../templates/top-header-login.html', 'header');
+        loadById('../templates/bottom-footer.html', 'footer');
+        loadById('../templates/profile-nav.html', 'profile-nav');
+        loadById('../templates/profile-info.html', 'profile-info');
+        loadElement('../templates/table-row.html', 'positions', '.position-content');
+        // Add event listener to the button
+        /*
+        document.getElementById('addRowButton').addEventListener('click', function() {
+            loadElement('../templates/table-row.html', 'positions', '.position-content');
+
+
+        });
+        */
+    });
+</script>
+
+</body>
+</html>
