@@ -57,16 +57,21 @@
          Promise.all([
             loadById('../templates/list-name-image.html', 'newly-added-row'),
             loadById('../templates/list-name-image.html', 'our-recommendations-row'),
-            loadById('../templates/list-name-image.html', 'most-liked-row')
+            loadById('../templates/list-name-image.html', 'most-liked-row'),
          ]).then(() => loadByClass('../templates/name-image.html', 'row-name-image'))
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-        loadById('../templates/top-header.html', 'header');
-        loadById('../templates/bottom-footer.html', 'footer');
-        loadById('../templates/name-image.html', 'index-main-content-hero-image');
-        loadById('../templates/search-bar.html', 'index-search-bar');
-        loadingRows();
-    })
+        Promise.all([
+            loadTopHeader(),
+        ]).then(() => {
+            loadById('../templates/bottom-footer.html', 'footer'),
+                loadById('../templates/name-image.html', 'index-main-content-hero-image'),
+                loadById('../templates/search-bar.html', 'index-search-bar')
+            loadingRows();
+        }).catch(error => {
+            console.error('Error loading initial content:', error);
+        });
+    });
 
 </script>

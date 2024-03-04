@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <title>Anime Tracker for PWM</title>
+    <meta name="description" content="main page for our website">
+    <link rel="stylesheet" href="../../css/globals/globals.css">
+    <link rel="stylesheet" href="../../css/templates/top-header.css">
+    <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="top-header-content">
+    <img title="web-logo" alt="logo of our website" src="../../resources/images/image.png">
+    <nav>
+        <a target="_blank">Text</a> <!-- Expected to be an anchor to another page in the website -->
+        <a target="_blank">Text</a> <!-- Expected to be an anchor to another page in the website -->
+        <a target="_blank">Text</a> <!-- Expected to be an anchor to another page in the website -->
+    </nav>
+    <div class="top-header-content-buttons">
+        <button id="signInButton" name="Sign In">Text</button>
+        <button id="signUpButton" name="Sign Up">Text</button>
+    </div>
+</div>
 
-    <head>
-        <meta charset="UTF-8">
-        <title></title> <!-- No title for sub-template -->
-        <link rel="stylesheet" href="../../css/globals/globals.css">
-        <link rel="stylesheet" href="../../css/templates/top-header.css">
-    </head>
-    <body>
-        <div class="top-header-content">
-            <img title="web-logo" alt="logo of our website" src="../../resources/images/image.png">
-            <nav>
-                <a target="_blank">Text</a> <!-- Expected to be an anchor to another page in the website -->
-                <a target="_blank">Text</a> <!-- Expected to be an anchor to another page in the website -->
-                <a target="_blank">Text</a> <!-- Expected to be an anchor to another page in the website -->
-            </nav>
-            <div class="top-header-content-buttons">
-                <button name="Sign In">Text</button>
-                <button name="Sign Up">Text</button>
-            </div>
-        </div>
-    </body>
->>>>>>>
+<div id="signInPopup">
+
+</div>
+
+<div id="loginPopup">
+
+</div>
+
+<script type="text/javascript" src="../../javascript/include.js"></script>
+<script type="text/javascript">
+    // Define an async function to wait for DOM content to load
+    async function domContentLoaded() {
+        // Await the DOMContentLoaded event
+        await new Promise((resolve) => {
+            document.addEventListener('DOMContentLoaded', () => {
+                resolve();
+            });
+        });
+    }
+
+    // Call the async function and then execute your code
+    domContentLoaded().then(() => {
+        // Add event listeners and other code that should run after DOM content is loaded
+        document.getElementById('signInButton').addEventListener('click', openSignInPopup);
+        document.getElementById('signUpButton').addEventListener('click', openLoginPopup);
+    }).catch((error) => {
+        console.error('Error while waiting for DOM content to load:', error);
+    });
+
+</script>
+</body>
 </html>

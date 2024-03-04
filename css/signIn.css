@@ -1,84 +1,66 @@
 .container {
     background-color: #ffffff;
-    padding: 2%;
-    border-radius: 10px;
+    padding: 1%;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: auto;
+    max-width: 300px;
+    width: 60%;
+    margin: auto auto;
+    border: none; /* Remove the white border */
+    position: relative; /* Add relative positioning */
+
+}
+
+/* Style the close button */
+#closeSignInBtn ,
+#closeLoginBtn{
     position: absolute;
-
-
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-    height: auto;
-}
-.container__logo {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 25%;
-    height: 10%;
-}
-
-.container__title {
-   display: flex;
-    justify-content: center;
-    margin-bottom: 10%;
+    top: 20px;
+    right: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
 }
 
 
 .container__form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .container__form-label {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 .container__form-input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-}
-
-.container__form-link {
-    color: #000000;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
 .container__form-button {
-    padding: 4% 10%;
+    padding: 12px 20px;
     background-color: #000000;
-    color: #ffffff;
+    color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     font-weight: bold;
-    font-size: var(--medium-font-size);
+    font-size: 1.1rem;
     text-align: center;
-    align-self: center;
     width: fit-content;
-}
-.container__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-.container__header h1,
-.container__header.fa-times {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0;
+.container__header {
+    text-align: center;
+    margin-bottom: 20px;
 }
-.edit-profile__header .fa-times {
-    cursor: pointer;
-    font-size: 18px;
-    color: #888888;
-    transition: color 0.3s ease;
+
+.container__title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
 }

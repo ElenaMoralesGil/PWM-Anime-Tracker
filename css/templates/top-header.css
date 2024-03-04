@@ -85,3 +85,13 @@ Width and height defined in relation to the container.*/
 }
 
 
+/* Style the close button */
+#closeSignInBtn ,
+#closeLoginBtn{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}

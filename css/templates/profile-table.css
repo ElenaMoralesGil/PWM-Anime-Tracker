@@ -76,3 +76,13 @@
 .position-content > p:nth-child(5n) {
     margin-right: 0;
 }
+.progress {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
