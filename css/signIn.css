@@ -3,17 +3,22 @@
     padding: 1%;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 350px;
     width: 60%;
+    justify-content: center;
+    text-align: center;
     margin: auto auto;
-    border: none; /* Remove the white border */
-    position: relative; /* Add relative positioning */
-
+    border: none;
+    position: fixed; /* Changed from relative to fixed */
+    z-index: 9999;
+    top: 50%; /* Positioning the popup in the center of the viewport */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering the popup */
 }
 
 /* Style the close button */
-#closeSignInBtn ,
-#closeLoginBtn{
+#closeSignInBtn,
+#closeLoginBtn {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -22,11 +27,11 @@
     color: #333;
 }
 
-
 .container__form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 .container__form-label {

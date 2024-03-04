@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="added row loading by document fragment, it works">
-      <change afterPath="$PROJECT_DIR$/html/templates/table-row-progress.html" afterDir="false" />
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="now openning and closing of signing works in top-header and index, still needs fixing with being on top">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index-page/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index-page/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/templates/profile-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/profile-table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/templates/top-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/top-header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/index-page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index-page/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/table-row.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/top-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/top-header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/include.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/include.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/loadRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/loadElement.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,27 +58,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.edit-profile.html.executor": "Run",
-    "JavaScript Debug.profile-info.html.executor": "Run",
-    "JavaScript Debug.profileOverview.html.executor": "Run",
-    "Node.js.edit-profile-popup.js.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "elena",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.edit-profile.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.profile-info.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.profileOverview.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.edit-profile-popup.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;elena&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\elena\WebstormProjects\pruebasPWM\html\templates" />
@@ -101,6 +95,7 @@
       <workItem from="1708432677301" duration="3231000" />
       <workItem from="1708859431330" duration="11085000" />
       <workItem from="1708980959760" duration="3230000" />
+      <workItem from="1709534851936" duration="587000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -165,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709456941550</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="now openning and closing of signing works in top-header and index, still needs fixing with being on top">
+      <option name="closed" value="true" />
+      <created>1709534374446</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709534374447</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +193,7 @@
     <MESSAGE value="fixed simple merge issues and ProfileOverview" />
     <MESSAGE value="added row loading by appending to a container, it works" />
     <MESSAGE value="added row loading by document fragment, it works" />
-    <option name="LAST_COMMIT_MESSAGE" value="added row loading by document fragment, it works" />
+    <MESSAGE value="now openning and closing of signing works in top-header and index, still needs fixing with being on top" />
+    <option name="LAST_COMMIT_MESSAGE" value="now openning and closing of signing works in top-header and index, still needs fixing with being on top" />
   </component>
 </project>

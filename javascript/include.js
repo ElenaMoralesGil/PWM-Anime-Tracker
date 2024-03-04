@@ -21,6 +21,10 @@ function loadByClass(pageName, className) {
 
 // Function to open sign in popup
 async function openSignInPopup() {
+
+    if (document.getElementById('loginPopup').style.display === 'block') {
+        closeLoginPopup();
+    }
     document.getElementById('signInPopup').style.display = 'block';
     await loadById('../signing-pages/signin.html', 'signInPopup');
     document.getElementById('closeSignInBtn').addEventListener('click', closeSignInPopup);
@@ -33,6 +37,10 @@ function closeSignInPopup() {
 
 // Function to open login popup
 async function openLoginPopup() {
+
+    if (document.getElementById('signInPopup').style.display === 'block') {
+        closeSignInPopup();
+    }
     document.getElementById('loginPopup').style.display = 'block';
     await loadById('../signing-pages/login.html', 'loginPopup');
     document.getElementById('closeLoginBtn').addEventListener('click', closeLoginPopup);
