@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
+#editProfileForm {
+    position: fixed;
+    display: none;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    backdrop-filter: blur(6px);
+    background: rgba(231, 231, 231, 0.8);
+    z-index: 999;
+}
 #profile-body {
     height: 100vh;
     max-width: 100vw;
