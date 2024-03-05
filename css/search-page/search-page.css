@@ -49,7 +49,7 @@ main {
     min-width: 10cm;
 }
 
-#result-content .row-name-image {
+#result-content .result-anime {
     position: relative;
     object-fit: cover;
     height: 9cm;
@@ -59,7 +59,7 @@ main {
     min-width: calc(5cm - 3%);
 }
 
-#result-content .row-name-image p {
+#result-content .result-anime p {
     position: absolute;
     top: -2%;
     height: 10%;
@@ -69,7 +69,7 @@ main {
     text-align: center;
 }
 
-#result-content .row-name-image img {
+#result-content .result-anime img {
     position: absolute;
     width: 100%;
     height: 90%;

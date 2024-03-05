@@ -14,27 +14,19 @@
         <main>
             <section class="index-main-hero">
                 <article id="index-main-content-hero-image"></article>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                </p>
+                <p id="hero-anime-description"> </p>
             </section>
             <section id="index-search-bar"></section>
             <section class="anime-row-container">
-                <p class="row-descriptor"> MOST LIKED </p>
+                <p class="row-descriptor"> Text </p>
                 <section id="most-liked-row" class="anime-row"></section>
             </section>
             <section class="anime-row-container">
-                <p class="row-descriptor"> NEWLY ADDED ROW </p>
+                <p class="row-descriptor"> Text </p>
                 <section id="newly-added-row" class="anime-row"></section>
             </section>
             <section class="anime-row-container">
-                <p class="row-descriptor"> OUR RECOMMENDATIONS </p>
+                <p class="row-descriptor"> Text </p>
                 <section id="our-recommendations-row" class="anime-row"></section>
             </section>
         </main>
@@ -43,36 +35,6 @@
 </html>
 
 <script type="text/javascript" src="../../javascript/include.js"></script>
-<script type="text/javascript">
-
-    /*
-    function loadingRows () {
-         return loadById('list-name-image.html', 'newly-added-row')
-        .then(()=>loadById('list-name-image.html', 'our-recommendations-row'))
-        .then(()=>loadById('list-name-image.html', 'most-liked-row'));
-    }
-    */
-
-    function loadingRows () {
-         Promise.all([
-            loadById('../templates/list-name-image.html', 'newly-added-row'),
-            loadById('../templates/list-name-image.html', 'our-recommendations-row'),
-            loadById('../templates/list-name-image.html', 'most-liked-row')
-         ]).then(() => loadByClass('../templates/name-image.html', 'row-name-image'))
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        // No need to do anything in header element... Either on footer
-        loadById('../templates/top-header.html', 'header');
-        loadById('../templates/bottom-footer.html', 'footer');
-        /*
-        I need the hero image to display an image dynamically.
-        1. Insert the template inside the DOM
-        2. Get the data to display the image.
-        3. Manipulate the template with that information (those manipulate the DOM).
-        */
-        loadById('../templates/name-image.html', 'index-main-content-hero-image');
-        loadById('../templates/search-bar.html', 'index-search-bar');
-        loadingRows();
-    })
-</script>
+<script type="text/javascript" src="../../javascript/index/index.js"></script>
+<script type="text/javascript" src="../../javascript/templates/list-name-image.js"></script>
+<script type="text/javascript" src="../../javascript/templates/search-bar.js"></script>
