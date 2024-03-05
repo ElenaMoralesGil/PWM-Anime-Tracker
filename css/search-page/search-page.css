@@ -43,19 +43,20 @@ main {
     flex-flow: row wrap;
     justify-content: left;
     width: 75%;
-    gap: 3.5%;
+    gap: 3%;
     margin-left: 12.5%;
     box-sizing: border-box;
+    min-width: 10cm;
 }
 
 #result-content .row-name-image {
     position: relative;
     object-fit: cover;
     height: 9cm;
-    min-width: 5cm;
     width: 15%;
     box-sizing: border-box;
     margin-bottom: 5%;
+    min-width: calc(5cm - 3%);
 }
 
 #result-content .row-name-image p {
