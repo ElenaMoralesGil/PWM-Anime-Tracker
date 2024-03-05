@@ -62,11 +62,17 @@
     }
 
     document.addEventListener("DOMContentLoaded", function () {
+        // No need to do anything in header element... Either on footer
         loadById('../templates/top-header.html', 'header');
         loadById('../templates/bottom-footer.html', 'footer');
+        /*
+        I need the hero image to display an image dynamically.
+        1. Insert the template inside the DOM
+        2. Get the data to display the image.
+        3. Manipulate the template with that information (those manipulate the DOM).
+        */
         loadById('../templates/name-image.html', 'index-main-content-hero-image');
         loadById('../templates/search-bar.html', 'index-search-bar');
         loadingRows();
     })
-
 </script>
