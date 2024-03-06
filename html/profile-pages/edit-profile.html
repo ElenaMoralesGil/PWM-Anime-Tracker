@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+    <!-- Link to external CSS files -->
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link href="../css/globals.css" rel="stylesheet">
+    <link href="../../css/edit-profile.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/999e77a4f5.js"></script>
+</head>
+<body class="container">
+<main class="container__edit-profile">
+    <span class="edit-profile__header">
+        <h1>Edit Profile</h1>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </span>
+    <section>
+        <section class="container__edit-details">
+            <span class="edit-details__header">
+                <h2>Edit Details</h2>
+            </span>
+            <form action="endpoint" class="edit-details__form" method="post">
+                <label class="edit-details__form-label">
+                    <input class="edit-details__form-input" name="username" placeholder="Username" required type="text">
+                </label>
+                <label class="edit-details__form-label">
+                    <input class="edit-details__form-input" name="email" placeholder="email" required type="text">
+                </label>
+                <label class="edit-details__form-label">
+                    <textarea class="edit-details__form-input" name="description" placeholder="description" required type="text"></textarea>
+                </label>
+                <button class="container__form-button" type="submit">Update</button>
+            </form>
+        </section>
+        <section class="container__edit-pfp">
+            <span class="edit-pfp__header">
+                <h2>Edit Profile Picture</h2>
+            </span>
+            <div class="edit-profile__button-group">
+                <button class="container__choose-image-button" name="submit">Choose image</button>
+                <button class="container__form-button">Update</button>
+            </div>
+        </section>
+        <section class="container__edit-password">
+             <span class="edit-password__header">
+                <h2>Edit Password</h2>
+            </span>
+            <form action="endpoint" class="edit-password__form" method="post">
+                <label class="container__form-label">
+                    <input class="container__form-input" name="password" placeholder="Password" required type="password">
+                </label>
+                <label class="container__form-label">
+                    <input class="container__form-input" name="repeat_password" placeholder="Repeat Password" required type="password">
+                </label>
+                <button class="container__form-button" type="submit">Update</button>
+            </form>
+        </section>
+    </section>
+</main>
+
+<!-- Link to your edit-profile-popup.js file -->
+<script src="../javascript/edit-profile-popup.js"></script>
+</body>
+</html>

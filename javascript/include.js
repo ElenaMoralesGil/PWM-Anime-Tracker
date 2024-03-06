@@ -50,13 +50,11 @@ async function openLoginPopup() {
 function closeLoginPopup() {
     document.getElementById('loginPopup').style.display = 'none';
 }
-function loadTopHeader() {
-    return loadById('../templates/top-header.html', 'header').then(() => {
-        // Add event listeners
+async function loadTopHeader() {
+    await loadById('../templates/top-header.html', 'header').then(() => {
         document.getElementById('signInButton').addEventListener('click', openSignInPopup);
         document.getElementById('signUpButton').addEventListener('click', openLoginPopup);
     }).catch(error => {
         console.error('Error loading top header:', error);
     });
 }
-// const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
