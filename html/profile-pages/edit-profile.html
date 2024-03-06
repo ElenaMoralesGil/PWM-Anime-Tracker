@@ -13,53 +13,58 @@
 <main class="container__edit-profile">
     <span class="edit-profile__header">
         <h1>Edit Profile</h1>
-        <i class="fa fa-times" aria-hidden="true"></i>
+        <i aria-hidden="true" class="fa fa-times" id="closeBtn"></i>
     </span>
-    <section>
+    <section class="container__edit-details-pfp">
         <section class="container__edit-details">
-            <span class="edit-details__header">
-                <h2>Edit Details</h2>
-            </span>
+        <span class="edit-details__header">
+            <h2>Edit Details</h2>
+        </span>
             <form action="endpoint" class="edit-details__form" method="post">
                 <label class="edit-details__form-label">
                     <input class="edit-details__form-input" name="username" placeholder="Username" required type="text">
                 </label>
                 <label class="edit-details__form-label">
-                    <input class="edit-details__form-input" name="email" placeholder="email" required type="text">
+                    <input class="edit-details__form-input" name="email" placeholder="Email" required type="email">
                 </label>
                 <label class="edit-details__form-label">
-                    <textarea class="edit-details__form-input" name="description" placeholder="description" required type="text"></textarea>
+                    <textarea class="edit-details__form-input" name="description" placeholder="Description"
+                              required></textarea>
                 </label>
                 <button class="container__form-button" type="submit">Update</button>
             </form>
         </section>
         <section class="container__edit-pfp">
-            <span class="edit-pfp__header">
-                <h2>Edit Profile Picture</h2>
-            </span>
+        <span class="edit-pfp__header">
+            <h2>Edit Profile Picture</h2>
+        </span>
             <div class="edit-profile__button-group">
-                <button class="container__choose-image-button" name="submit">Choose image</button>
-                <button class="container__form-button">Update</button>
+                <input accept="image/*" class="container__choose-image-button" id="profileImage" name="profileImage" type="file">
+                <label for="profileImage" class="container__choose-image-label">Choose Image</label>
+                <img alt="Selected Image" class="container__chosen-image" id="chosenImage" src="#" style="display: none;">
+                <button class="container__form-button" onclick="updateProfilePicture()">Update</button>
             </div>
+
         </section>
-        <section class="container__edit-password">
-             <span class="edit-password__header">
-                <h2>Edit Password</h2>
-            </span>
-            <form action="endpoint" class="edit-password__form" method="post">
-                <label class="container__form-label">
-                    <input class="container__form-input" name="password" placeholder="Password" required type="password">
-                </label>
-                <label class="container__form-label">
-                    <input class="container__form-input" name="repeat_password" placeholder="Repeat Password" required type="password">
-                </label>
-                <button class="container__form-button" type="submit">Update</button>
-            </form>
-        </section>
+    </section>
+    <section class="container__edit-password">
+        <span class="edit-password__header">
+            <h2>Edit Password</h2>
+        </span>
+        <form action="endpoint" class="edit-password__form" method="post">
+            <label class="container__form-label">
+                <input class="container__form-input" name="password" placeholder="New Password" required
+                       type="password">
+            </label>
+            <label class="container__form-label">
+                <input class="container__form-input" name="repeat_password" placeholder="Repeat Password" required
+                       type="password">
+            </label>
+            <button class="container__form-button" type="submit">Update</button>
+        </form>
     </section>
 </main>
 
-<!-- Link to your edit-profile-popup.js file -->
-<script src="../javascript/edit-profile-popup.js"></script>
+<script src="../../javascript/edit-profile.js"></script>
 </body>
 </html>
