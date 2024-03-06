@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/globals/globals.css">
     <link rel="stylesheet" href="../../css/globals/globals-anime.css">
     <link rel="stylesheet" href="../../css/episodes-page/episodes-anime.css">
+    <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
 </head>
 <body id="anime-body">
     <header id="header"></header>
@@ -25,28 +26,10 @@
             <aside class="aside-anime-information"></aside>
             <section class="navbar-main-content">
                 <nav>
-                    <a target="_blank">Characters</a> <!-- Expected to be an anchor to another page in the website -->
-                    <a target="_blank">Episodes</a> <!-- Expected to be an anchor to another page in the website -->
+                    <a target="_blank">Text</a> <!-- Expected to be an anchor to another page in the website -->
+                    <a target="_blank">Text</a> <!-- Expected to be an anchor to another page in the website -->
                 </nav>
-                <section class="episodes">
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                    <article class="episode"></article>
-                </section>
+                <section class="episodes"></section>
             </section>
         </section>
     </main>
@@ -55,17 +38,7 @@
 </html>
 
 <script type="text/javascript" src="../../javascript/include.js"></script>
-<script type="text/javascript">
-    function loadAnimeDescImage() {
-        loadByClass('../templates/anime-cover-name-description.html', 'top-cover-image-and-description').then(()=>
-            loadByClass('../templates/name-image.html', 'cover-name'));
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-        loadById('../templates/top-header.html', 'header');
-        loadById('../templates/bottom-footer.html', 'footer');
-        loadByClass('../templates/anime-info-aside.html', 'aside-anime-information');
-        loadByClass('anime-episode.html', 'episode');
-        loadAnimeDescImage();
-    });
-</script>
+<script type="text/javascript" src="../../javascript/episodes-page/episodes-page.js"></script>
+<script type="text/javascript" src="../../javascript/templates/anime-episode.js"></script>
+<script type="text/javascript" src="../../javascript/templates/anime-cover-name-description.js"></script>
+<script type="text/javascript" src="../../javascript/templates/anime-info-aside.js"></script>

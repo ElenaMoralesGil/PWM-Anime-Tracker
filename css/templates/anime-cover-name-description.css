@@ -5,6 +5,26 @@
     height: 40vh;
 }
 
+.top-description-and-buttons .anime-score-container {
+    position: absolute;
+    width: 10%;
+    font-size: var(--extra-big-font-size);
+    top: 70%;
+    right: 2%;
+    text-align: center;
+    background: #1d1d1fcc;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.anime-score-container i {
+    font-size: var(--small-font-size);
+}
+
 .top-description-and-buttons .cover-name {
     position: relative;
     max-width: 100%;
@@ -23,7 +43,7 @@
 
 .top-description-and-buttons .cover-name p {
     position: absolute;
-    left: 35%;
+    left: 32.5%;
     top: 20%;
     bottom: 0;
     margin: auto;
@@ -35,13 +55,13 @@
 .top-description-and-buttons .anime-description {
     position: absolute;
     top: 25%;
-    left: 35%;
-    max-width: 55%;
+    left: 32.5%;
+    max-width: 50%;
     max-height: 55%;
     color: white;
     opacity: 0.8;
     line-height: 1.5;
-    overflow: scroll;
+    overflow: auto;
 }
 
 /* ----------------------------------------------------- */
@@ -56,37 +76,18 @@
 }
 
 .button-palette .rate-container {
-    position: relative;
+    height: 100%;
     flex:4;
     min-height: 1cm;
 }
 
-.rate-container input {
-    position: absolute;
+.rate-container select {
     height: 100%;
     width: 100%;
     border: none;
-    border-radius: 10px;
-    box-sizing: border-box;
 }
 
-.rate-container button {
-    position: absolute;
-    height: 100%;
-    border-radius: 10px;
-    box-sizing: border-box;
-    background: #1d1d1f;
-    border: none;
-    margin-left: 64.5%;
-    width: 35.6%;
-    color: white;
-}
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 /* ----------------------------------------------------- */
 
 .button-palette .add-list-container {

@@ -53,19 +53,19 @@
 
 /*--------------------------  Combo-Boxes  --------------------------*/
 
-.combo-box-input {
+.select-input {
     position: relative;
     flex: 1;
     height: 1.32cm;
     box-sizing: border-box;
 }
 
-.combo-box-input label {
+.select-input label {
     height: 38%;
     color: white;
 }
 
-.combo-box-select {
+.search-select {
     position: absolute;
     width: 100%;
     height: 65%;

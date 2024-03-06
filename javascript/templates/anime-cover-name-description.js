@@ -15,8 +15,23 @@ function loadAnimeDescription() {
         "Duis aute irure dolor in reprehenderit.";
 }
 
+function loadAnimeRate() {
+    document.querySelector(".anime-score-container p").innerHTML="5";
+}
+
 function loadListCombobox() {
     let listCombobox = document.querySelector(".add-list-combobox");
+    let documentFragment = new DocumentFragment();
+    for (let i = 0; i < 5; i++){
+        let option = document.createElement("option");
+        option.innerHTML="Text";
+        documentFragment.appendChild(option);
+    }
+    listCombobox.appendChild(documentFragment);
+}
+
+function loadRateCombobox() {
+    let listCombobox = document.querySelector(".rate-combobox");
     let documentFragment = new DocumentFragment();
     for (let i = 0; i < 5; i++){
         let option = document.createElement("option");
@@ -34,5 +49,7 @@ function loadAnimeTopDescription() {
         loadAnimeCover();
         loadAnimeDescription();
         loadListCombobox();
+        loadRateCombobox();
+        loadAnimeRate();
     })
 }
