@@ -4,14 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="added unversioned files to be versioned">
-      <change afterPath="$PROJECT_DIR$/html/profile-pages/edit-profile.html" afterDir="false" />
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="header knows loads well in all pages though in episodes page the closebtn is not loaded and ranking page the style is loaded weirdly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/templates/top-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/top-header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/character-page/characters-anime.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/character-page/characters-anime.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/episodes-page/eipsodes-anime.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/episodes-page/eipsodes-anime.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/index-page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index-page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/ranking-page/ranking-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ranking-page/ranking-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/search-page/search-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/search-page/search-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signing-pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signing-pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signing-pages/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signing-pages/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/profile-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/profile-nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/table-row-progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row-progress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/table-row.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/top-header-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/top-header-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/top-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/top-header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/include.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/include.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +115,7 @@
       <workItem from="1708859431330" duration="11085000" />
       <workItem from="1708980959760" duration="3230000" />
       <workItem from="1709534851936" duration="5082000" />
-      <workItem from="1709658770912" duration="2102000" />
+      <workItem from="1709658770912" duration="8446000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -191,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709570249654</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="header knows loads well in all pages though in episodes page the closebtn is not loaded and ranking page the style is loaded weirdly">
+      <option name="closed" value="true" />
+      <created>1709742998242</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709742998242</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +240,7 @@
     <MESSAGE value="now openning and closing of signing works in top-header and index, still needs fixing with being on top" />
     <MESSAGE value="made the signIn popup and login popup to be on top and now they cant appear at the same time" />
     <MESSAGE value="added unversioned files to be versioned" />
-    <option name="LAST_COMMIT_MESSAGE" value="added unversioned files to be versioned" />
+    <MESSAGE value="header knows loads well in all pages though in episodes page the closebtn is not loaded and ranking page the style is loaded weirdly" />
+    <option name="LAST_COMMIT_MESSAGE" value="header knows loads well in all pages though in episodes page the closebtn is not loaded and ranking page the style is loaded weirdly" />
   </component>
 </project>

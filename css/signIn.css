@@ -1,27 +1,28 @@
 .container {
     background-color: #ffffff;
-    padding: 1%;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    max-width: 25rem;
+    width: 80%;
     justify-content: center;
     text-align: center;
-    margin: auto auto;
+    margin: auto;
     border: none;
-    position: fixed; /* Changed from relative to fixed */
+    position: fixed;
     z-index: 9999;
-    top: 50%; /* Positioning the popup in the center of the viewport */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centering the popup */
+    transform: translate(-50%, -50%);
 }
 
-/* Style the close button */
 #closeSignInBtn,
 #closeLoginBtn {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 1.5rem;
+    right: 2rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: #333;
@@ -31,41 +32,51 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .container__form-label {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container__form-label > span {
+    margin-right: 1rem;
 }
 
 .container__form-input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 0.5rem;
     border: 1px solid #ccc;
 }
 
 .container__form-button {
-    padding: 12px 20px;
+    padding: 1rem 2rem;
     background-color: #000000;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     width: fit-content;
     cursor: pointer;
+    align-self: center;
 }
 
 .container__header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .container__title {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
     color: #333;
 }

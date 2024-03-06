@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
-    <link href="../../css/globals/globals.css" rel="stylesheet">
-    <link href="../../css/signIn.css" rel="stylesheet">
-    <title>Log In</title>
-</head>
-<body>
 <main class="container">
-    <span class="container__header">
-        <h1 class="container__title">Log In</h1>
-       <i class="fa fa-times" id="closeLoginBtn" aria-hidden="true"></i>
-    </span>
+
+    <h1 class="container__title">Log In</h1>
+    <i aria-hidden="true" class="fa fa-times" id="closeLoginBtn"></i>
+
     <form action="endpoint" class="container__form" method="post">
         <label class="container__form-label">
             <input class="container__form-input" name="username" placeholder="Username" required type="text">
@@ -21,10 +10,10 @@
         <label class="container__form-label">
             <input class="container__form-input" name="email" placeholder="Email" required type="email">
         </label>
-        <p class="container__form-message">Already signed up? <a class="container__form-link" href="signin.html">Sign in</a></p>
+        <p class="container__form-message">Already signed up? <a class="container__form-link" id="signinLink" href="#">Sign
+            in</a></p>
         <button class="container__form-button" type="submit">Log In</button>
     </form>
 </main>
-</body>
-</html>
+
 

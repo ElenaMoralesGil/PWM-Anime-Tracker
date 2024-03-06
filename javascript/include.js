@@ -21,13 +21,18 @@ function loadByClass(pageName, className) {
 
 // Function to open sign in popup
 async function openSignInPopup() {
-
     if (document.getElementById('loginPopup').style.display === 'block') {
         closeLoginPopup();
     }
     document.getElementById('signInPopup').style.display = 'block';
     await loadById('../signing-pages/signin.html', 'signInPopup');
     document.getElementById('closeSignInBtn').addEventListener('click', closeSignInPopup);
+
+    // Add event listener to the "Log in" link in the sign-in popup
+    document.getElementById('loginLink').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        openLoginPopup(); 
+    });
 }
 
 // Function to close sign in popup
@@ -44,6 +49,11 @@ async function openLoginPopup() {
     document.getElementById('loginPopup').style.display = 'block';
     await loadById('../signing-pages/login.html', 'loginPopup');
     document.getElementById('closeLoginBtn').addEventListener('click', closeLoginPopup);
+
+    document.getElementById('signinLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        openSignInPopup();
+    });
 }
 
 // Function to close login popup
@@ -54,6 +64,7 @@ async function loadTopHeader() {
     await loadById('../templates/top-header.html', 'header').then(() => {
         document.getElementById('signInButton').addEventListener('click', openSignInPopup);
         document.getElementById('signUpButton').addEventListener('click', openLoginPopup);
+        
     }).catch(error => {
         console.error('Error loading top header:', error);
     });
