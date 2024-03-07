@@ -13,6 +13,13 @@ function loadProfileInfo() {
             const tempContainer = document.createElement('div');
             tempContainer.innerHTML = html.trim();
 
+            const editProfileBtn = tempContainer.querySelector('#editProfileBtn');
+            if (editProfileBtn) {
+                editProfileBtn.addEventListener('click', openEditProfilePopup);
+            } else {
+                console.error('Edit profile button not found in profile info.');
+            }
+
             const profileInfoContainer = document.getElementById('profile-info');
 
             // user image
@@ -36,6 +43,7 @@ function loadProfileInfo() {
         })
         .catch(error => console.error('Error fetching profile info:', error));
 }
+
 
 function loadTableRows(rowCount) {
     fetch('../templates/profile-table.html')
@@ -66,4 +74,16 @@ function loadTableRows(rowCount) {
             }
         })
         .catch(error => console.error('Error fetching table HTML:', error));
+}
+async function openEditProfilePopup() {
+    console.log("Edit Profile button clicked!"); // Add this line for debugging
+    document.getElementById('editProfilePopup').style.display = 'block';
+    await loadById('../templates/edit-profile.html', 'editProfilePopup');
+    document.getElementById('closeBtn').addEventListener('click', closeEditProfilePopup);
+}
+
+
+// Function to close sign in popup
+function closeEditProfilePopup() {
+    document.getElementById('editProfilePopup').style.display = 'none';
 }

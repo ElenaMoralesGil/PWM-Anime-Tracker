@@ -4,23 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="minus code refractoring and improved profile style">
-      <change afterPath="$PROJECT_DIR$/html/templates/profile-table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/profile-pages/profile.js" afterDir="false" />
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="loading of profile and edit-profile  done, also added background blur to the heade buttons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/templates/profile-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/profile-table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/edit-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/signing-pages/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signing-pages/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/templates/bottom-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/bottom-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/templates/top-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/top-header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/edit-profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/templates/profile-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/profile-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/table-row.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/edit-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/edit-profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/edit-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/edit-profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/loadElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profile4columnTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profileOverview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profileWatching.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +90,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\elena\WebstormProjects\pruebasPWM\javascript\profile-pages" />
       <recent name="C:\Users\elena\WebstormProjects\pruebasPWM\html\templates" />
     </key>
   </component>
@@ -231,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709836682720</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="loading of profile and edit-profile  done, also added background blur to the heade buttons">
+      <option name="closed" value="true" />
+      <created>1709852976032</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709852976032</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +267,7 @@
     <MESSAGE value="now header works for every page and the links to change from login to sigin popups and vise versa works" />
     <MESSAGE value="improved edit-profle design and  &quot; choose profile picture&quot; functionality" />
     <MESSAGE value="minus code refractoring and improved profile style" />
-    <option name="LAST_COMMIT_MESSAGE" value="minus code refractoring and improved profile style" />
+    <MESSAGE value="loading of profile and edit-profile  done, also added background blur to the heade buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="loading of profile and edit-profile  done, also added background blur to the heade buttons" />
   </component>
 </project>
