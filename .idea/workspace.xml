@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="improved edit-profle design and  &quot; choose profile picture&quot; functionality">
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="minus code refractoring and improved profile style">
+      <change afterPath="$PROJECT_DIR$/html/templates/profile-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/profile-pages/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/edit-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/edit-profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/edit-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/templates/profile-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/profile-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/edit-profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/top-header-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/top-header-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signing-pages/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signing-pages/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/profile-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/profile-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/table-row.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/edit-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/edit-profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709833548195</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="minus code refractoring and improved profile style">
+      <option name="closed" value="true" />
+      <created>1709836682720</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709836682720</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +262,7 @@
     <MESSAGE value="header knows loads well in all pages though in episodes page the closebtn is not loaded and ranking page the style is loaded weirdly" />
     <MESSAGE value="now header works for every page and the links to change from login to sigin popups and vise versa works" />
     <MESSAGE value="improved edit-profle design and  &quot; choose profile picture&quot; functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved edit-profle design and  &quot; choose profile picture&quot; functionality" />
+    <MESSAGE value="minus code refractoring and improved profile style" />
+    <option name="LAST_COMMIT_MESSAGE" value="minus code refractoring and improved profile style" />
   </component>
 </project>

@@ -14,3 +14,5 @@ function updateProfilePicture() {
         reader.readAsDataURL(file);
     }
 }
+
+
