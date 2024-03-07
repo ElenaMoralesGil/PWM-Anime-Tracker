@@ -10,8 +10,7 @@ function loadHeroImage(){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // No need to do anything in header element... Either on footer
-    loadById('../templates/top-header.html', 'header').then(/*doNothing*/)
+    loadTopHeader();
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/)
     loadById('../templates/name-image.html', 'index-main-content-hero-image').then(loadHeroImage);
     loadSearchBar();

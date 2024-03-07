@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="now header works for every page and the links to change from login to sigin popups and vise versa works">
-      <change afterPath="$PROJECT_DIR$/javascript/edit-profile.js" afterDir="false" />
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="improved edit-profle design and  &quot; choose profile picture&quot; functionality">
+      <change afterPath="$PROJECT_DIR$/javascript/templates/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PWM-Anime-Tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PWM-Anime-Tracker.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/edit-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/edit-profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/edit-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search-page/search-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/search-page/search-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signing-pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signing-pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/character-page/character-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/character-page/character-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/include.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/include.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "elena",
+    "git-widget-placeholder": "merges",
     "last_opened_file_path": "C:/Users/elena/Desktop/ps_uwu_tracker",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -233,6 +237,7 @@
     <MESSAGE value="added unversioned files to be versioned" />
     <MESSAGE value="header knows loads well in all pages though in episodes page the closebtn is not loaded and ranking page the style is loaded weirdly" />
     <MESSAGE value="now header works for every page and the links to change from login to sigin popups and vise versa works" />
-    <option name="LAST_COMMIT_MESSAGE" value="now header works for every page and the links to change from login to sigin popups and vise versa works" />
+    <MESSAGE value="improved edit-profle design and  &quot; choose profile picture&quot; functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved edit-profle design and  &quot; choose profile picture&quot; functionality" />
   </component>
 </project>

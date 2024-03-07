@@ -55,7 +55,7 @@ function loadAnimeCharacters() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadById('../templates/top-header.html', 'header');
+    loadTopHeader();
     loadById('../templates/bottom-footer.html', 'footer');
     loadAnimeTopDescription();
     loadInfoAside();
