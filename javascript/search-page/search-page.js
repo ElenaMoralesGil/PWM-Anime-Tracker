@@ -1,38 +1,22 @@
-let selectedOptions = [];
-
-function addSelectorListeners() {
-    let options = document.querySelectorAll(".search-select .select-search-option");
-    for (options of options){
-        options.onclick = function (){
-            updateSearchTags();
-        }
-    }
+function createTag(checkBox) {
+    let tagContainer = document.createElement("article");
+    let tagText = document.createElement("p");
+    tagContainer.className="tag";
+    tagText.innerHTML=checkBox.id;
+    tagContainer.id=`tag-${checkBox.id}`;
+    tagContainer.appendChild(tagText);
+    document.querySelector(".search-tags").appendChild(tagContainer);
 }
 
-function updateSearchTags() {
-    console.log("Hi");
-    /*
-    let selectedOption = selector.options[selector.selectedIndex].text;
-    if (!selectedOptions.includes(selectedOption)){
-        selectedOptions.push(selectedOption);
-        let tagBox = document.createElement("article");
-        let tagText = document.createElement("p");
-        tagBox.className="tag";
-        tagBox.id=`tag + ${selectedOption}`
-        tagText.textContent=selectedOption;
-        tagBox.appendChild(tagText);
-        document.querySelector(".search-tags").appendChild(tagBox);
-    } else {
-        selectedOptions = selectedOptions.filter(elem => elem !== selectedOption);
-        let childToRemove = document.getElementById(`tag + ${selectedOption}`)
-        document.querySelector(".search-tags").removeChild(childToRemove);
-    }
-    */
+function removeTag(checkBox){
+    let tagToRemove = document.querySelector(`#tag-${checkBox.id}`);
+    let tagParent = tagToRemove.parentNode;
+    tagParent.removeChild(tagToRemove);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     loadById('../templates/top-header.html', 'header').then(/*doNothing*/);
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
-    loadSearchBar().then(addSelectorListeners);
-    loadByClass('../templates/name-image.html', 'result-anime');
+    initSearchBar();
+    // loadByClass('../templates/name-image.html', 'result-anime');
 });

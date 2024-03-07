@@ -3,27 +3,47 @@
 <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
 
 <div class="search-bar-container">
-    <div class="search-input">
-        <label for="search-input-label"> Search </label>
+    <section class="search-input">
+        <label for="search-input-label"> Text </label>
         <div class="search-input-label-and-button">
             <input type="search" class="search-input-label" id="search-input-label">
             <button type="submit" class="fa fa-search"></button>
         </div>
-    </div>
-    <div id="genres-select-input" class="select-input">
-        <label for="genre-select"> Text </label>
-        <select class="search-select" id="genre-select"></select>
-    </div>
-    <div id="year-select-input" class="select-input">
-        <label for="year-select"> Text </label>
-        <select class="search-select" id="year-select"></select>
-    </div>
-    <div id="season-select-input" class="select-input">
-        <label for="season-select"> Text </label>
-            <select class="search-select" id="season-select"></select>
-    </div>
-    <div id="format-select-input" class="select-input">
-        <label for="format-select"> Text </label>
-        <select class="search-select" id="format-select"></select>
-    </div>
+    </section>
+
+    <section id="genres-select-input" class="search-bar-input">
+        <div class="dropdown-button-container">
+            <label for="genre-dropdown-button"> Text </label>
+            <button id ="genre-dropdown-button" type="button" class="dropdown-button"></button>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div style="display: none" id="genre-dropdown-list" class="dropdown-list-container"></div>
+    </section>
+
+    <section id="year-select-input" class="search-bar-input">
+        <div class="dropdown-button-container">
+            <label for="year-dropdown-button"> Text </label>
+            <button id ="year-dropdown-button" type="button" class="dropdown-button"></button>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div style="display: none" id="year-dropdown-list" class="dropdown-list-container"></div>
+    </section>
+
+    <section id="season-select-input" class="search-bar-input">
+        <div class="dropdown-button-container">
+            <label for="season-dropdown-button"> Text </label>
+            <button id ="season-dropdown-button" type="button" class="dropdown-button"></button>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div style="display: none" id="season-dropdown-list" class="dropdown-list-container"></div>
+    </section>
+
+    <section id="format-select-input" class="search-bar-input">
+        <div class="dropdown-button-container">
+            <label for="format-dropdown-button"> Text </label>
+            <button id ="format-dropdown-button" type="button" class="dropdown-button"></button>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div style="display: none" id="format-dropdown-list" class="dropdown-list-container"></div>
+    </section>
 </div>
