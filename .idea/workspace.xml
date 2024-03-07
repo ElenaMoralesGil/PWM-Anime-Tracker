@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="improved edit-profle design and  &quot; choose profile picture&quot; functionality">
-      <change afterPath="$PROJECT_DIR$/javascript/templates/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PWM-Anime-Tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PWM-Anime-Tracker.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search-page/search-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/search-page/search-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/signing-pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signing-pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/character-page/character-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/character-page/character-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/include.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/include.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/edit-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/edit-profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/edit-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/top-header-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/top-header-login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="merges" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "merges",
+    "git-widget-placeholder": "elena",
     "last_opened_file_path": "C:/Users/elena/Desktop/ps_uwu_tracker",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -207,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709751284974</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="merge with adrian sucessful, solved conflicts">
+      <option name="closed" value="true" />
+      <created>1709833548195</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709833548195</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

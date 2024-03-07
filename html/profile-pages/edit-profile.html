@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit Profile</title>
-    <!-- Link to external CSS files -->
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
-    <link href="../css/globals.css" rel="stylesheet">
+    <link href="../../css/globals/globals.css" rel="stylesheet">
     <link href="../../css/edit-profile.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/999e77a4f5.js"></script>
 </head>
@@ -34,19 +33,7 @@
                 <button class="container__form-button" type="submit">Update</button>
             </form>
         </section>
-        <section class="container__edit-pfp">
-        <span class="edit-pfp__header">
-            <h2>Edit Profile Picture</h2>
-        </span>
-            <div class="edit-profile__button-group">
-                <input accept="image/*" class="container__choose-image-button" id="profileImage" name="profileImage" type="file">
-                <label for="profileImage" class="container__choose-image-label">Choose Image</label>
-                <img alt="Selected Image" class="container__chosen-image" id="chosenImage" src="#" style="display: none;">
-                <button class="container__form-button" onclick="updateProfilePicture()">Update</button>
-            </div>
 
-        </section>
-    </section>
     <section class="container__edit-password">
         <span class="edit-password__header">
             <h2>Edit Password</h2>
@@ -63,8 +50,21 @@
             <button class="container__form-button" type="submit">Update</button>
         </form>
     </section>
+        <section class="container__edit-pfp">
+        <span class="edit-pfp__header">
+            <h2>Edit Profile Picture</h2>
+        </span>
+            <div class="edit-profile__button-group">
+                <input accept="image/*" class="container__choose-image-button" id="profileImage" name="profileImage"
+                       type="file">
+                <label class="container__choose-image-label" for="profileImage">Choose Image</label>
+                <img alt="Selected Image" class="container__chosen-image" id="chosenImage" src="#"
+                     style="display: none;">
+                <button class="container__form-button" onclick="updateProfilePicture()">Update</button>
+            </div>
+        </section>
+    </section>
 </main>
-
-<script src="../../javascript/edit-profile.js"></script>
 </body>
 </html>
+<script src="../../javascript/edit-profile.js"></script>
