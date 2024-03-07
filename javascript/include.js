@@ -12,12 +12,13 @@ function loadByClass(pageName, className) {
         .then(response => response.text())
         .then(html => {
             let elements = document.getElementsByClassName(className);
-            for (let i = 0, length = elements.length; i < length; i++) {
-                elements[i].innerHTML = html;
+            for (let element of elements){
+                element.innerHTML = html;
             }
         })
         .catch(error => console.error('Error fetching header:', error));
 }
+
 
 // Function to open sign in popup
 async function openSignInPopup() {

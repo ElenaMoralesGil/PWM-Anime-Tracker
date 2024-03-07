@@ -1,0 +1,19 @@
+/*
+function loadingRows () {
+     return loadById('list-name-image.html', 'newly-added-row')
+    .then(()=>loadById('list-name-image.html', 'our-recommendations-row'))
+    .then(()=>loadById('list-name-image.html', 'most-liked-row'));
+}
+*/
+
+
+
+
+
+
+/*
+    loadByClass('../templates/anime-character.html', 'anime-character').
+    then(()=>
+        loadByClass('../templates/name-image.html', 'anime-character-name-image')).
+    then(() => {});
+    */

@@ -44,6 +44,7 @@
 .table-descriptor #descriptor-status {
     flex: 3;
 }
+
 .ranking-table .positions {
     max-height: 40cm;
     overflow: auto;

@@ -35,8 +35,11 @@
             <!---------------------- Search-Tags ---------------------->
         </section>
 
-        <section>
-            <article id="result-content"></article>
+        <section id="result-content">
+            <article class="result-anime"></article>
+            <article class="result-anime"></article>
+            <article class="result-anime"></article>
+            <article class="result-anime"></article>
         </section>
 
     </main>
@@ -46,14 +49,10 @@
 
 <script type="text/javascript" src="../../javascript/include.js"></script>
 <script type="text/javascript">
-    function loadResultContent(){
-        loadById('../templates/list-name-image.html', 'result-content').then(()=>
-        loadByClass('../templates/name-image.html', 'row-name-image'));
-    }
     document.addEventListener("DOMContentLoaded", function() {
         loadTopHeader();
         loadById('../templates/bottom-footer.html', 'footer');
         loadById('../templates/search-bar.html', 'search-bar');
-        loadResultContent();
+        loadByClass('../templates/name-image.html', 'result-anime');
     });
 </script>

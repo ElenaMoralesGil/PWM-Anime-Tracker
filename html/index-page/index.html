@@ -1,76 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <meta charset="UTF-8">
-    <title>Anime Tracker for PWM</title>
-    <meta name="description" content="main page for our website">
-    <link rel="stylesheet" href="../../css/globals/globals.css">
-    <link rel="stylesheet" href="../../css/index-page/index.css">
-    <link href="../../css/templates/top-header.css" rel="stylesheet">
-    <link href="../../css/signIn.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
-</head>
-<body id="index-body">
-<header id="header"></header>
-<main>
-    <section class="index-main-hero">
-        <article id="index-main-content-hero-image"></article>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
-        </p>
-    </section>
-    <section id="index-search-bar"></section>
-    <section class="anime-row-container">
-        <p class="row-descriptor"> MOST LIKED </p>
-        <section id="most-liked-row" class="anime-row"></section>
-    </section>
-    <section class="anime-row-container">
-        <p class="row-descriptor"> NEWLY ADDED ROW </p>
-        <section id="newly-added-row" class="anime-row"></section>
-    </section>
-    <section class="anime-row-container">
-        <p class="row-descriptor"> OUR RECOMMENDATIONS </p>
-        <section id="our-recommendations-row" class="anime-row"></section>
-    </section>
-</main>
-<footer id="footer"></footer>
-</body>
+    <head>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <title>Anime Tracker for PWM</title>
+        <meta name="description" content="main page for our website">
+        <link rel="stylesheet" href="../../css/globals/globals.css">
+        <link rel="stylesheet" href="../../css/index-page/index.css">
+        <link rel="stylesheet" href="../../css/templates/top-header.css">
+        <link rel="stylesheet" href="../../css/signIn.css" >
+        <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="index-body">
+        <header id="header"></header>
+        <main>
+            <section class="index-main-hero">
+                <article id="index-main-content-hero-image"></article>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+            </section>
+            <section id="index-search-bar"></section>
+            <section class="anime-row-container">
+                <p class="row-descriptor">  TEXT </p>
+                <section id="most-liked-row" class="anime-row"></section>
+            </section>
+            <section class="anime-row-container">
+                <p class="row-descriptor"> TEXT </p>
+                <section id="newly-added-row" class="anime-row"></section>
+            </section>
+            <section class="anime-row-container">
+                <p class="row-descriptor"> TEXT </p>
+                <section id="our-recommendations-row" class="anime-row"></section>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+    </body>
 </html>
 
 <script type="text/javascript" src="../../javascript/include.js"></script>
-<script type="text/javascript">
-
-    /*
-    function loadingRows () {
-         return loadById('list-name-image.html', 'newly-added-row')
-        .then(()=>loadById('list-name-image.html', 'our-recommendations-row'))
-        .then(()=>loadById('list-name-image.html', 'most-liked-row'));
-    }
-    */
-
-    function loadingRows() {
-        Promise.all([
-            loadById('../templates/list-name-image.html', 'newly-added-row'),
-            loadById('../templates/list-name-image.html', 'our-recommendations-row'),
-            loadById('../templates/list-name-image.html', 'most-liked-row'),
-        ]).then(() => loadByClass('../templates/name-image.html', 'row-name-image'))
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-
-        loadTopHeader()
-        loadById('../templates/bottom-footer.html', 'footer')
-        loadById('../templates/name-image.html', 'index-main-content-hero-image')
-        loadById('../templates/search-bar.html', 'index-search-bar')
-        loadingRows();
-    });
-
-
-</script>
+<script type="text/javascript" src="../../javascript/index/index.js"></script>
+<script type="text/javascript" src="../../javascript/templates/list-name-image.js"></script>
+<script type="text/javascript" src="../../javascript/templates/search-bar.js"></script>
