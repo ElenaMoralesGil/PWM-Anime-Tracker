@@ -18,7 +18,6 @@ function updateProfilePicture() {
 
 function loadDeleteProfilePopup() {
 
-    // Function to load delete profile popup
     const deleteProfilePopup = document.getElementById('deleteProfilePopup');
     deleteProfilePopup.style.display = 'flex';
     if (!deleteProfilePopup) {
@@ -28,7 +27,6 @@ function loadDeleteProfilePopup() {
 
     loadById('../../html/templates/averagePopup.html', 'deleteProfilePopup')
         .then(() => {
-            // After loading popup content, set its text
             const textElement = deleteProfilePopup.querySelector('.average-popup__text');
             if (textElement) {
                 textElement.textContent = "Are you sure you want to delete your profile?";
@@ -37,11 +35,11 @@ function loadDeleteProfilePopup() {
             }
 
             // Add event listeners to accept and decline buttons
-            const acceptBtn = document.getElementById('acceptDelete');
-            const declineBtn = document.getElementById('declineDelete');
+            const acceptBtn = document.getElementById('accept');
+            const declineBtn = document.getElementById('decline');
             if (acceptBtn && declineBtn) {
-                acceptBtn.addEventListener('click', acceptDelete);
-                declineBtn.addEventListener('click', declineDelete);
+                acceptBtn.addEventListener('click', accept);
+                declineBtn.addEventListener('click', decline);
             } else {
                 console.error('Accept or Decline buttons not found in delete profile popup.');
             }
@@ -50,11 +48,11 @@ function loadDeleteProfilePopup() {
 }
 
 
-function acceptDelete() {
+function accept() {
     document.getElementById('deleteProfilePopup').style.display = 'none';
 
 }
 
-function declineDelete() {
+function decline() {
     document.getElementById('deleteProfilePopup').style.display = 'none';
 }

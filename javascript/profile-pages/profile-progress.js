@@ -97,6 +97,9 @@ function loadTableRows(rowCount) {
                                 if (count < maxCount) {
                                     count++;
                                     updateCounterText(count);
+                                    if (count === maxCount) {
+                                        loadAnimeCompletedPopup();
+                                    }
                                 }
                             });
                         });
@@ -118,4 +121,43 @@ async function openEditProfilePopup() {
 // Function to close sign in popup
 function closeEditProfilePopup() {
     document.getElementById('editProfilePopup').style.display = 'none';
+}
+function loadAnimeCompletedPopup() {
+    const animeCompletedPopup = document.getElementById('animeCompletedPopup');
+    if (!animeCompletedPopup) {
+        console.error('animeCompletedPopup element not found.');
+        return;
+    }
+
+    animeCompletedPopup.style.display = 'flex';
+
+    loadById('../../html/templates/averagePopup.html', 'animeCompletedPopup')
+        .then(() => {
+            const textElement = animeCompletedPopup.querySelector('.average-popup__text');
+            if (textElement) {
+                textElement.textContent = "Do you want to move this anime to the Completed list?";
+            } else {
+                console.error('Text element not found in animeCompletedPopup popup.');
+            }
+
+            // Add event listeners to accept and decline buttons
+            const acceptBtn = document.getElementById('accept');
+            const declineBtn = document.getElementById('decline');
+            if (acceptBtn && declineBtn) {
+                acceptBtn.addEventListener('click', acceptCompleted);
+                declineBtn.addEventListener('click', declineCompleted);
+            } else {
+                console.error('Accept or Decline buttons not found in animeCompletedPopup popup.');
+            }
+        })
+        .catch(error => console.error('Error loading animeCompletedPopup popup:', error));
+}
+
+
+function acceptCompleted() {
+    document.getElementById('animeCompletedPopup').style.display = 'none';
+}
+
+function declineCompleted() {
+    document.getElementById('animeCompletedPopup').style.display = 'none';
 }

@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="improved profile style">
-      <change afterPath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" afterDir="false" />
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="profile progress counter works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/docsJavascript" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/table-row-progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row-progress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/averagePopup.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/averagePopup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/profile-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/profile-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/edit-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/edit-profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,7 @@
       <workItem from="1708980959760" duration="3230000" />
       <workItem from="1709534851936" duration="5082000" />
       <workItem from="1709658770912" duration="15360000" />
-      <workItem from="1709919129992" duration="4935000" />
+      <workItem from="1709919129992" duration="7575000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -278,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709923017682</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="profile progress counter works">
+      <option name="closed" value="true" />
+      <created>1709924331221</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709924331221</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +325,7 @@
     <MESSAGE value="now the loading image in edit-rpofile works in the profile pages" />
     <MESSAGE value="now delete profile is done" />
     <MESSAGE value="improved profile style" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved profile style" />
+    <MESSAGE value="profile progress counter works" />
+    <option name="LAST_COMMIT_MESSAGE" value="profile progress counter works" />
   </component>
 </project>
