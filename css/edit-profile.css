@@ -1,166 +1,132 @@
+
 #overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
-    backdrop-filter: blur(2px); /* Apply blur effect to the overlay */
-    z-index: 9998; /* Ensure the overlay is behind the container */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 9998;
 }
+
+
 .container__edit-profile {
-    background-color: #ffffff;
-    padding: 2%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    height: auto;
-    width:80%;
-    max-width: 100%;
-    max-height:60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 60%;
+     max-width: 80%;
+    max-height: 85%;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     overflow: auto;
-
 }
 
-.user-profile {
-    position: relative;
-    z-index: 1;
-}
 
 .edit-profile__header {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 5%;
+    justify-content: space-between;
     align-items: center;
-
+    width: 100%;
+    margin-bottom: 2em;
 }
 
-.edit-profile__header h1,
-#closeBtn {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-.container__edit-details,
-.container__edit-pfp,
-.container__edit-password {
-    width: 48%;
-    min-width: 20%;
-    max-height: 50%;
-    padding: 2%;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    background-color: #f8f9fa;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    height: min-content;
-    margin:3% 1%;
-}
-.container__edit-pfp{
-    height: 20%;
-}
 .edit-details__form-label,
-.edit-password__form-label {
+.container__form-label {
     display: block;
-    margin-bottom: 3%;
+    margin-bottom: 0.5em;
 }
+
 
 .edit-details__form-input,
-.edit-password__form-input,
-.container__form-input {
-    width: calc(100% - 20px);
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.container__form-input,
+.edit-details__form-input textarea {
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    border: 0.1em solid #ccc;
     box-sizing: border-box;
-
-    transition: border-color 0.3s ease;
+    margin-bottom: 1em;
 }
 
-.edit-details__form-input:focus,
-.edit-password__form-input:focus,
-.container__form-input:focus {
-    outline: none;
-    border-color: #000000;
-}
 
-.container__form-button,
-.container__choose-image-button {
-    padding: 10px 20px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-    display: block;
-    margin: 0 auto 2%;
+.edit-details__form-input textarea {
+    height: 8em;
 }
-
-.container__form-button:hover,
-.container__choose-image-button:hover {
-    background-color: #333333;
-    transform: translateY(-2px);
-}
-
-.edit-profile__header #closeBtn {
-    cursor: pointer;
-    font-size: 18px;
-    color: #888888;
-    transition: color 0.3s ease;
-}
-
-#closeBtn :hover {
-    color: #555555;
-}
-
 #closeBtn {
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    font-size: 1.5rem;
     cursor: pointer;
-    color: #333;
+    font-size: 1.5em;
+    color: #555;
 }
 
 .container__edit-details-pfp {
     display: flex;
-    wrap-option: wrap;
-    margin-bottom: 2%;
-    height: min-content;
-    max-height: min-content;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+}
+.left-section {
+    display: flex;
+    flex-direction: column;
+    width: 45%; /* Adjust as needed */
+}
+.container__edit-details,
+.container__edit-password,
+.container__edit-pfp {
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 0.5em;
+    height: auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container__choose-image-label {
-    padding: 10px 20px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.container__edit-pfp {
+    width: 45%;
+    height: auto;
+}
+
+.container__form-button,
+.container__choose-image-label,
+.deleteProfile {
     display: inline-block;
-    width: auto;
-    margin: 0 auto 5px;
+    padding: 0.8em 2em;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-/* Hide the default input appearance */
-.container__choose-image-button[type=file] {
-    display: none;
+
+.container__form-button:hover,
+.container__choose-image-label:hover,
+.deleteProfile:hover {
+    background-color: #0056b3;
 }
+
 
 .container__chosen-image {
     display: block;
-    margin: 0 auto;
     max-width: 100%;
     height: auto;
+    margin-top: 1em;
+}
+
+.deleteProfile {
+    background-color: #dc3545;
 }
