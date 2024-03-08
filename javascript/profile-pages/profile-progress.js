@@ -72,23 +72,32 @@ function loadTableRows(rowCount) {
 
                         // event listeners for plus and minus buttons
                         document.querySelectorAll('.progress').forEach(function(progress) {
-                            const minusBtn = progress.querySelector('#minusBtn');
-                            const plusBtn = progress.querySelector('#plusBtn');
-                            const counter = progress.querySelector('#counter');
-                            const maxCount = 10;
+                            const minusBtn = progress.querySelector('.fa-minus');
+                            const plusBtn = progress.querySelector('.fa-plus');
 
-                            function updateCounterText(count) {
-                                counter.textContent = count + '/' + maxCount;
+                            const counter = progress.querySelector('.progress-counter');
+
+                            if (!counter) {
+                                console.error('Counter element not found in progress:', progress);
+                                return;
                             }
 
-                            // Initial counter text
-                            updateCounterText(0);
+                            const maxCount = parseInt(progress.getAttribute('data-max-count'));
+                            if (isNaN(maxCount)) {
+                                console.error('Max count attribute not found or not a number in progress:', progress);
+                                return;
+                            }
+
+                            function updateCounterText(count, maxCount) {
+                                counter.textContent = count + '/' + maxCount;
+                            }
+                            updateCounterText(0, maxCount);
 
                             minusBtn.addEventListener('click', function() {
                                 let count = parseInt(counter.textContent.split('/')[0]);
                                 if (count > 0) {
                                     count--;
-                                    updateCounterText(count);
+                                    updateCounterText(count, maxCount);
                                 }
                             });
 
@@ -96,7 +105,7 @@ function loadTableRows(rowCount) {
                                 let count = parseInt(counter.textContent.split('/')[0]);
                                 if (count < maxCount) {
                                     count++;
-                                    updateCounterText(count);
+                                    updateCounterText(count, maxCount);
                                     if (count === maxCount) {
                                         loadAnimeCompletedPopup();
                                     }
@@ -111,6 +120,7 @@ function loadTableRows(rowCount) {
         })
         .catch(error => console.error('Error fetching table HTML:', error));
 }
+
 async function openEditProfilePopup() {
     document.getElementById('editProfilePopup').style.display = 'block';
     await loadById('../templates/edit-profile.html', 'editProfilePopup');
@@ -159,5 +169,19 @@ function acceptCompleted() {
 }
 
 function declineCompleted() {
+    const counter = document.querySelector('.progress-counter');
+    if (!counter) {
+        console.error('Counter element not found.');
+        return;
+    }
+
+    let count = parseInt(counter.textContent.split('/')[0]);
+    const maxCount = parseInt(counter.textContent.split('/')[1]);
+
+    if (count > 0) {
+        count--;
+        counter.textContent = count + '/' + maxCount;
+    }
+
     document.getElementById('animeCompletedPopup').style.display = 'none';
 }
