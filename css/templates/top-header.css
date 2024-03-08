@@ -73,7 +73,10 @@ Width and height defined in relation to the container.*/
     width: 50%;
     height: 100%;
 }
-
+.top-header-content-buttons button:first-child:hover {
+    background: #fcfcfc;
+    color: #000000;
+}
 /* Styling the second button on the container above.
 Width and height defined in relation to the container.*/
 .top-header-content-buttons button:last-child {
@@ -82,4 +85,8 @@ Width and height defined in relation to the container.*/
     color:white;
     width: 50%;
     height: 100%;
+}
+.top-header-content-buttons button:last-child:hover {
+    background: #4f4f4f;
+    color:white;
 }

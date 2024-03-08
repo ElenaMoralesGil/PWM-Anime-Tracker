@@ -34,7 +34,6 @@ function loadDeleteProfilePopup() {
                 console.error('Text element not found in delete profile popup.');
             }
 
-            // Add event listeners to accept and decline buttons
             const acceptBtn = document.getElementById('accept');
             const declineBtn = document.getElementById('decline');
             if (acceptBtn && declineBtn) {

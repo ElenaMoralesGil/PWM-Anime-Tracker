@@ -59,7 +59,9 @@
     font-size: 0.8em;
     text-decoration: none;
 }
-
+.user-profile__edit-btn:hover {
+    background-color: #333333;
+}
 .user-profile__nav {
     display: flex;
     background-color: #f8f8f8;

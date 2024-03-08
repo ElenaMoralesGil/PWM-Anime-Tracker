@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="now counter decreases by one when declining the completed popup">
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="now accepting the delete profile redirects to home">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search-page/search-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/search-page/search-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/table-row.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/top-header-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/top-header-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/top-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/top-header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/profile-pages/edit-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/edit-profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/ranking-page/ranking-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/ranking-page/ranking-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/search-page/search-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/search-page/search-page.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +113,7 @@
       <workItem from="1708980959760" duration="3230000" />
       <workItem from="1709534851936" duration="5082000" />
       <workItem from="1709658770912" duration="15360000" />
-      <workItem from="1709919129992" duration="10224000" />
+      <workItem from="1709919129992" duration="11777000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -300,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709928777579</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="now accepting the delete profile redirects to home">
+      <option name="closed" value="true" />
+      <created>1709929481090</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1709929481090</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +364,7 @@
     <MESSAGE value="profile progress counter works" />
     <MESSAGE value="popup for completed works but need to decrease counter" />
     <MESSAGE value="now counter decreases by one when declining the completed popup" />
-    <option name="LAST_COMMIT_MESSAGE" value="now counter decreases by one when declining the completed popup" />
+    <MESSAGE value="now accepting the delete profile redirects to home" />
+    <option name="LAST_COMMIT_MESSAGE" value="now accepting the delete profile redirects to home" />
   </component>
 </project>

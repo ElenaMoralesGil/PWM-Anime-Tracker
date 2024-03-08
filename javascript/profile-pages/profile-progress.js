@@ -70,7 +70,6 @@ function loadTableRows(rowCount) {
                         const profileTableContainer = document.getElementById('table');
                         profileTableContainer.innerHTML = tempTableContainer.innerHTML;
 
-                        // event listeners for plus and minus buttons
                         document.querySelectorAll('.progress').forEach(function(progress) {
                             const minusBtn = progress.querySelector('.fa-minus');
                             const plusBtn = progress.querySelector('.fa-plus');
@@ -128,7 +127,6 @@ async function openEditProfilePopup() {
 }
 
 
-// Function to close sign in popup
 function closeEditProfilePopup() {
     document.getElementById('editProfilePopup').style.display = 'none';
 }
@@ -150,7 +148,6 @@ function loadAnimeCompletedPopup() {
                 console.error('Text element not found in animeCompletedPopup popup.');
             }
 
-            // Add event listeners to accept and decline buttons
             const acceptBtn = document.getElementById('accept');
             const declineBtn = document.getElementById('decline');
             if (acceptBtn && declineBtn) {

@@ -39,6 +39,11 @@
     color: #333;
 }
 
+#closeSignInBtn,
+#closeLoginBtn:hover {
+    color: #000000;
+}
+
 .container__form {
     display: flex;
     flex-direction: column;
@@ -80,7 +85,9 @@
     cursor: pointer;
     align-self: center;
 }
-
+.container__form-button:hover {
+    background-color: #333;
+}
 .container__header {
     text-align: center;
     margin-bottom: 2rem;
