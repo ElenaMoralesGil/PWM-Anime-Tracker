@@ -11,8 +11,8 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    border-radius: 2em;
+    margin-bottom: 2em;
 }
 .table-descriptor {
     background-color: #f8f8f8;
@@ -33,8 +33,8 @@
     flex-flow: row nowrap;
     width: 100%;
     background-color: #f8f8f8;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 2em;
+    margin-bottom: 2em;
 }
 
 .position-content {
@@ -42,37 +42,24 @@
     flex-flow: row nowrap;
     width: 100%;
 
-    border-radius: 10px;
-
+    border-radius: 2em;
     position: relative;
 }
 
 .position-content:before {
     content: "";
     position: absolute;
-    background-image: url("../../resources/images/frieren.jpg");
+    background-image: url("../../resources/images/image.png");
     inset: 0;
     z-index: 0;
     opacity: 0.25;
-    filter: blur(4px);
+    filter: blur(0.4em);
 }
 
 .position-content > * {
     flex: 1;
     text-align: center;
-
-    padding: 10px;
-}
-
-/* Add margin to paragraphs to create separation between cells */
-.position-content > p {
-    margin-right: 10px;
-
-}
-
-/* Remove margin from the last paragraph in each row */
-.position-content > p:nth-child(5n) {
-    margin-right: 0;
+    padding: 1em;
 }
 .progress {
     flex: 1;
@@ -80,7 +67,6 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    padding: 10px;
     border-radius: 10px;
     justify-content: space-around;
 }
