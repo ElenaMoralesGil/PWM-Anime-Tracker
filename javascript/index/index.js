@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     loadTopHeader();
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/)
     loadById('../templates/name-image.html', 'index-main-content-hero-image').then(loadHeroImage);
-    loadSearchBar();
+    initSearchBar();
     loadingRows();
 })

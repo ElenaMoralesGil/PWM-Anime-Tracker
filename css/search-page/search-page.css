@@ -10,6 +10,7 @@ main {
 
 #search-bar {
     margin-top: 5%;
+    margin-left: -0.5%;
 }
 
 .search-tags {
@@ -53,7 +54,7 @@ main {
     position: relative;
     object-fit: cover;
     height: 9cm;
-    width: 15%;
+    width: 17.6%;
     box-sizing: border-box;
     margin-bottom: 5%;
     min-width: calc(5cm - 3%);

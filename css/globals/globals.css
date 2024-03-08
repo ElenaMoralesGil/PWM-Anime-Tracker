@@ -5,6 +5,7 @@ display=swap');
 
 :root {
     font-family: "Roboto Light", -apple-system, 'system-ui';
+    --extra-big-font-size:2em;
     --big-font-size:1.25em;
     --medium-big-font-size:1.125em;
     --medium-font-size:1em;

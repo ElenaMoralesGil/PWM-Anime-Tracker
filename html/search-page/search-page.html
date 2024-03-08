@@ -7,51 +7,26 @@
     <link rel="stylesheet" href="../../css/globals/globals.css">
     <link rel="stylesheet" href="../../css/search-page/search-page.css">
     <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
-<body>
+<body id="search-body">
     <header id="header"></header>
     <main>
-
         <section class="search-bar-tags">
             <section id="search-bar"></section>
             <!---------------------- Search-Tags ---------------------->
-            <section class="search-tags">
-                <label> Tags: </label>
-                <article class="tag">
-                    <p>Romance</p>
-                </article>
-                <article class="tag">
-                    <p>Series</p>
-                </article>
-                <article class="tag">
-                    <p>2012</p>
-                </article>
-                <article class="tag">
-                    <p>Summer</p>
-                </article>
-            </section>
+            <section class="search-tags"></section>
             <!---------------------- Search-Tags ---------------------->
         </section>
 
-        <section id="result-content">
-            <article class="result-anime"></article>
-            <article class="result-anime"></article>
-            <article class="result-anime"></article>
-            <article class="result-anime"></article>
-        </section>
-
+        <section id="result-content"></section>
     </main>
     <footer id="footer"></footer>
 </body>
 </html>
 
 <script type="text/javascript" src="../../javascript/include.js"></script>
+
+<script type="text/javascript" src="../../javascript/search-page/search-page.js"></script>
+<script type="text/javascript" src="../../javascript/templates/search-bar.js"></script>
 <script type="text/javascript" src="../../javascript/templates/header.js"></script>
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function() {
-        loadTopHeader();
-        loadById('../templates/bottom-footer.html', 'footer');
-        loadById('../templates/search-bar.html', 'search-bar');
-        loadByClass('../templates/name-image.html', 'result-anime');
-    });
-</script>

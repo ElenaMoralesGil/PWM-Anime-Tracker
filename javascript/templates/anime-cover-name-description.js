@@ -15,15 +15,68 @@ function loadAnimeDescription() {
         "Duis aute irure dolor in reprehenderit.";
 }
 
-function loadListCombobox() {
-    let listCombobox = document.querySelector(".add-list-combobox");
+function loadAnimeRate() {
+    document.querySelector(".anime-score-container p").innerHTML="5";
+}
+
+function getContainer(dropDown){
+    let optionContainer = document.createElement("article");
+    optionContainer.className = `${dropDown}-option`;
+    return optionContainer;
+}
+
+function getLabel(dropDown, number) {
+    let optionLabel = document.createElement("label");
+    optionLabel.className = `${dropDown}-label`;
+    optionLabel.innerHTML = "Text";
+    optionLabel.setAttribute("for", `${dropDown}-option${number}`);
+    return optionLabel;
+}
+
+function getInput(dropDown, number) {
+    let optionInput = document.createElement("input");
+    optionInput.id=`${dropDown}-option${number}`;
+    optionInput.type="radio";
+    optionInput.name=`${dropDown}-radio`;
+    optionInput.className=`${dropDown}-input`;
+    return optionInput;
+}
+
+function loadRateDropDown() {
+    let rateContainer = document.querySelector("#rate-dropdown-container");
     let documentFragment = new DocumentFragment();
     for (let i = 0; i < 5; i++){
-        let option = document.createElement("option");
-        option.innerHTML="Text";
-        documentFragment.appendChild(option);
+        let dropDown = rateContainer.id.split("-")[0];
+        let [container, ...components] =
+            [getContainer(dropDown), getLabel(dropDown, i), getInput(dropDown, i)]
+        components.forEach(elem => container.appendChild(elem));
+        documentFragment.appendChild(container);
     }
-    listCombobox.appendChild(documentFragment);
+    rateContainer.appendChild(documentFragment);
+}
+
+function loadListDropDown() {
+    let listsContainer = document.querySelector("#addList-dropdown-container");
+    let documentFragment = new DocumentFragment();
+    for (let i = 0; i < 3; i++){
+        let dropDown = listsContainer.id.split("-")[0];
+        let [container, ...components] =
+            [getContainer(dropDown), getLabel(dropDown, i), getInput(dropDown, i)]
+        components.forEach(elem => container.appendChild(elem));
+        documentFragment.appendChild(container);
+    }
+    listsContainer.appendChild(documentFragment);
+}
+
+function loadDropDownButtonsEvent() {
+    let dropDownButtons = document.querySelectorAll(".anime-menu-button-container input");
+    dropDownButtons.forEach(elem => {
+        elem.addEventListener("click", () => {
+            let identifier = elem.id.split("-")[0];
+            let dropDown = document.querySelector(`#${identifier}-dropdown-container`);
+            dropDown.style.display = dropDown.style.display === "none" ? "flex" : "none";
+        })
+    })
 }
 
 function loadAnimeTopDescription() {
@@ -33,6 +86,9 @@ function loadAnimeTopDescription() {
         loadAnimeName();
         loadAnimeCover();
         loadAnimeDescription();
-        loadListCombobox();
+        loadRateDropDown();
+        loadListDropDown();
+        loadAnimeRate();
+        loadDropDownButtonsEvent();
     })
 }
