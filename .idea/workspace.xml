@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="now edit profile popup works">
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="changed profile style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/edit-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/edit-profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signIn.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709855905529</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="changed profile style">
+      <option name="closed" value="true" />
+      <created>1709857321040</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709857321040</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +275,7 @@
     <MESSAGE value="minus code refractoring and improved profile style" />
     <MESSAGE value="loading of profile and edit-profile  done, also added background blur to the heade buttons" />
     <MESSAGE value="now edit profile popup works" />
-    <option name="LAST_COMMIT_MESSAGE" value="now edit profile popup works" />
+    <MESSAGE value="changed profile style" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed profile style" />
   </component>
 </project>
