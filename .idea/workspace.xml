@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="popup for completed works but need to decrease counter">
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="now counter decreases by one when declining the completed popup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/table-row-progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row-progress.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/edit-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/edit-profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,7 @@
       <workItem from="1708980959760" duration="3230000" />
       <workItem from="1709534851936" duration="5082000" />
       <workItem from="1709658770912" duration="15360000" />
-      <workItem from="1709919129992" duration="9358000" />
+      <workItem from="1709919129992" duration="10224000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -293,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709927036017</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="now counter decreases by one when declining the completed popup">
+      <option name="closed" value="true" />
+      <created>1709928777579</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1709928777579</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +341,7 @@
     <MESSAGE value="improved profile style" />
     <MESSAGE value="profile progress counter works" />
     <MESSAGE value="popup for completed works but need to decrease counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="popup for completed works but need to decrease counter" />
+    <MESSAGE value="now counter decreases by one when declining the completed popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="now counter decreases by one when declining the completed popup" />
   </component>
 </project>

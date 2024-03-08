@@ -50,9 +50,10 @@ function loadDeleteProfilePopup() {
 
 function accept() {
     document.getElementById('deleteProfilePopup').style.display = 'none';
-
+    window.location.href = '../../html/index-page/index.html';
 }
 
 function decline() {
     document.getElementById('deleteProfilePopup').style.display = 'none';
+
 }
