@@ -74,7 +74,7 @@
 .edit-details__form-input,
 .edit-password__form-input,
 .container__form-input {
-    width: calc(100% - 20px); /* Adjusted width */
+    width: calc(100% - 20px);
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
