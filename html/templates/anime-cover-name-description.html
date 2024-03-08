@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../css/globals/globals.css">
+<link rel="stylesheet" href="../../css/globals/globals.css" xmlns="http://www.w3.org/1999/html">
 <link rel="stylesheet" href="../../css/templates/anime-cover-name-description.css">
 <script src="https://kit.fontawesome.com/999e77a4f5.js" crossorigin="anonymous"></script>
 <section class="top-description-and-buttons">
@@ -14,23 +14,26 @@
 
     <section class="button-palette">
         <div class="rate-container">
-            <label>
-                <select class="rate-combobox">
-                    <option value="" disabled selected>Text</option>
-                </select>
-            </label>
+            <div id="rate-container" class="anime-menu-button-container">
+                <label for="rate-button" id="rate-label"> Add </label>
+                <input type="button" id="rate-button">
+                <i id="rate-button-icon" class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="anime-dropdown-menu" id="rate-dropdown-container"></div>
         </div>
 
-        <div class="add-list-container">
-            <label>
-                <select class="add-list-combobox">
-                    <option value="" disabled selected>Text</option>
-                </select>
-            </label>
+        <div class="addList-container">
+            <div id="addList-container" class="anime-menu-button-container">
+                <label for="addList-button" id="addList-label"> Text </label>
+                <input type="button" id="addList-button">
+                <i id="addList-button-icon" class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="anime-dropdown-menu" id="addList-dropdown-container"></div>
         </div>
 
         <div class="favourite-container">
             <button type="button" class="fa fa-heart"></button>
         </div>
+
     </section>
 </section>
