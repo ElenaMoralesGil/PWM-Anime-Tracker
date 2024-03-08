@@ -1,0 +1,43 @@
+.average-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    text-align: center;
+}
+
+.average-popup__text {
+    margin-bottom: 20px;
+}
+
+.average-popup__bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-accept, .bottom-decline {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-accept {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.bottom-decline {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.bottom-accept:hover, .bottom-decline:hover {
+    filter: brightness(90%);
+}
