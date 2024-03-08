@@ -76,7 +76,6 @@ function loadTableRows(rowCount) {
         .catch(error => console.error('Error fetching table HTML:', error));
 }
 async function openEditProfilePopup() {
-    console.log("Edit Profile button clicked!"); // Add this line for debugging
     document.getElementById('editProfilePopup').style.display = 'block';
     await loadById('../templates/edit-profile.html', 'editProfilePopup');
     document.getElementById('closeBtn').addEventListener('click', closeEditProfilePopup);
