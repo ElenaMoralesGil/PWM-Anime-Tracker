@@ -1,10 +1,10 @@
-
 .user-profile-table {
-    height:100%;
-    max-width: 80vw;
+    height: 100%;
+    max-height:100%;
     width: 100%;
     flex-direction: column;
 }
+
 .table-descriptor {
     height:10%;
     align-items: center;
@@ -13,9 +13,11 @@
     justify-content: space-around;
     font-size: var(--small-font-size);
 }
+
 .table-descriptor {
     background-color: #1D1D1F;
 }
+
 .table-descriptor > p {
     flex: 1;
     text-align: center;
@@ -26,18 +28,18 @@
     height: 90%;
     display:block;
     color: #f5f5f5;
-    min-height: 4cm;
     overflow: auto;
 }
+
 .positions::-webkit-scrollbar {
     display: none;
 }
+
 .table-row {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
     background-color: #f8f8f8;
-    margin-bottom: 2em;
 }
 
 .position-content {
@@ -60,8 +62,9 @@
 .position-content > * {
     flex: 1;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
 }
+
 .progress {
     flex: 1;
     position: relative;
