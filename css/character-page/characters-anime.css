@@ -3,8 +3,8 @@
     display: flex;
     flex-flow: column nowrap;
     overflow: auto;
-    max-height: 40cm;
-    height: 40cm;
+    max-height: 98%;
+    height: 98%;
 }
 .characters::-webkit-scrollbar {
     display: none;

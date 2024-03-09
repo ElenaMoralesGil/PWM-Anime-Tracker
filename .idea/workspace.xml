@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="redirection to profile works">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/character-page/characters-anime.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/character-page/characters-anime.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/edit-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/edit-profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/globals/globals-anime.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/globals/globals-anime.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/globals/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/globals/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/templates/anime-character.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/anime-character.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/templates/anime-cover-name-description.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/anime-cover-name-description.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/templates/anime-info-aside.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/anime-info-aside.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/templates/profile-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/profile-table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/templates/ranking-position.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/ranking-position.css" afterDir="false" />
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="hidded scrollbars">
+      <change beforePath="$PROJECT_DIR$/html/character-page/characters-anime.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/character-page/characters-anime.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/episodes-page/episodes-anime.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/episodes-page/episodes-anime.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,29 +57,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.edit-profile.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.profile-info.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.profileOverview.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.edit-profile-popup.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;elena&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/elena/Desktop/ps_uwu_tracker&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.edit-profile.html.executor": "Run",
+    "JavaScript Debug.profile-info.html.executor": "Run",
+    "JavaScript Debug.profileOverview.html.executor": "Run",
+    "Node.js.edit-profile-popup.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging elena",
+    "last_opened_file_path": "C:/Users/elena/Desktop/ps_uwu_tracker",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\elena\WebstormProjects\pruebasPWM\javascript\profile-pages" />
@@ -108,7 +99,7 @@
       <workItem from="1708980959760" duration="3230000" />
       <workItem from="1709534851936" duration="5082000" />
       <workItem from="1709658770912" duration="15360000" />
-      <workItem from="1709919129992" duration="30535000" />
+      <workItem from="1709919129992" duration="30994000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -357,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709997275699</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="hidded scrollbars">
+      <option name="closed" value="true" />
+      <created>1709999347510</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1709999347510</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +374,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed simple merge issues and ProfileOverview" />
     <MESSAGE value="added row loading by appending to a container, it works" />
     <MESSAGE value="added row loading by document fragment, it works" />
     <MESSAGE value="now openning and closing of signing works in top-header and index, still needs fixing with being on top" />
@@ -400,6 +398,7 @@
     <MESSAGE value="fixed fonts and em instead of px" />
     <MESSAGE value="new profile style" />
     <MESSAGE value="redirection to profile works" />
-    <option name="LAST_COMMIT_MESSAGE" value="redirection to profile works" />
+    <MESSAGE value="hidded scrollbars" />
+    <option name="LAST_COMMIT_MESSAGE" value="hidded scrollbars" />
   </component>
 </project>
