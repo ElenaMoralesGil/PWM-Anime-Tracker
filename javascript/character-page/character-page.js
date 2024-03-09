@@ -43,6 +43,7 @@ function loadAnimeCharacters() {
 document.addEventListener("DOMContentLoaded", function() {
     loadTopHeader();
     loadById('../templates/bottom-footer.html', 'footer');
+    loadMainImage();
     loadAnimeTopDescription();
     loadInfoAside();
     loadAnimeCharacters();

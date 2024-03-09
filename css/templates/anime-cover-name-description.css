@@ -131,7 +131,7 @@
 /*-------------------------------------------------*/
 
 .anime-dropdown-menu {
-    display: flex;
+    display: none;
     flex-flow: column nowrap;
     position: relative;
     z-index: 1;

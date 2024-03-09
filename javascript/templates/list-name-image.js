@@ -18,8 +18,10 @@ function loadingRows () {
                     elem.setAttribute("src", source);
                     elem.setAttribute("alt", alt);
                     elem.setAttribute("title", title);
-                    console.log(elem);
-                });
+                    elem.addEventListener("click", ()=>{
+                        location.assign("../../html/character-page/characters-anime.html");
+                    })
+                })
             })
     })
 }

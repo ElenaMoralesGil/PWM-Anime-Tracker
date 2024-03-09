@@ -11,8 +11,12 @@
 .anime-info-container .anime-data {
     color: white;
     text-align: center;
-    height: 4.15cm;
+    height: fit-content;
     box-sizing: border-box;
+}
+
+.anime-data {
+    margin-bottom: 15.35%;
 }
 
 .anime-data  p:first-child {

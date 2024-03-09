@@ -1,5 +1,5 @@
 function loadRankingPosition(positionContainer){
-    let rankingData = positionContainer.querySelectorAll("span");
+    let rankingData = positionContainer.querySelectorAll("p");
     for (let data of rankingData){
         data.innerHTML="Text";
     }

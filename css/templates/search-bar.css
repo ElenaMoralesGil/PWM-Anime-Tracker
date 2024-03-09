@@ -7,7 +7,8 @@
     gap: 1cm;
     margin: auto;
     box-sizing: border-box;
-    height: 1.5cm;
+    height: 6.75vh;
+    min-height: 1.5cm;
 }
 
 /*------------------  Search Label, Icon and Bottom ------------------*/
