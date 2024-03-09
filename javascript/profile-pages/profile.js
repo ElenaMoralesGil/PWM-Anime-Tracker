@@ -56,10 +56,13 @@ function loadTableRows(rowCount) {
                 fetch('../templates/table-row.html')
                     .then(response => response.text())
                     .then(rowHtml => {
-                        const fragment = document.createDocumentFragment(); // Create a document fragment
+
+                        const fragment = document.createDocumentFragment();
                         for (let i = 0; i < rowCount; i++) {
                             const tempRowContainer = document.createElement('div');
+
                             tempRowContainer.innerHTML = rowHtml.trim();
+                            loadPosition(tempRowContainer.querySelector('.position-content'));
                             const clonedRowContent = tempRowContainer.querySelector('.position-content').cloneNode(true);
                             fragment.appendChild(clonedRowContent);
                         }
@@ -75,14 +78,23 @@ function loadTableRows(rowCount) {
         })
         .catch(error => console.error('Error fetching table HTML:', error));
 }
+
 async function openEditProfilePopup() {
     document.getElementById('editProfilePopup').style.display = 'block';
     await loadById('../templates/edit-profile.html', 'editProfilePopup');
     document.getElementById('closeBtn').addEventListener('click', closeEditProfilePopup);
 }
 
-
-// Function to close sign in popup
 function closeEditProfilePopup() {
     document.getElementById('editProfilePopup').style.display = 'none';
+}
+function loadPosition(positionContainer){
+    let dataItems = positionContainer.querySelectorAll("p");
+    for (let data of dataItems){
+        data.innerHTML="Text";
+    }
+    let image = positionContainer.querySelector("img");
+    image.alt="anime cover";
+    image.title="anime cover";
+    image.src="../../resources/images/image.png";
 }

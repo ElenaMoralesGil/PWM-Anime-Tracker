@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="fixed profile weird placement in laptop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/profile-pages/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile-pages/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/globals/globals-anime.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/globals/globals-anime.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/templates/profile-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/profile-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/table-row-progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row-progress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/table-row.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "main__branch",
     "last_opened_file_path": "C:/Users/elena/Desktop/ps_uwu_tracker",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",

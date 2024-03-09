@@ -62,6 +62,7 @@ function loadTableRows(rowCount) {
                         for (let i = 0; i < rowCount; i++) {
                             const tempRowContainer = document.createElement('div');
                             tempRowContainer.innerHTML = rowHtml.trim();
+                            loadPosition(tempRowContainer.querySelector('.position-content'));
                             const clonedRowContent = tempRowContainer.querySelector('.position-content').cloneNode(true);
                             fragment.appendChild(clonedRowContent);
                         }
@@ -181,4 +182,14 @@ function declineCompleted() {
     }
 
     document.getElementById('animeCompletedPopup').style.display = 'none';
+}
+function loadPosition(positionContainer){
+    let dataItems = positionContainer.querySelectorAll("p");
+    for (let data of dataItems){
+        data.innerHTML="Text";
+    }
+    let image = positionContainer.querySelector("img");
+    image.alt="anime cover";
+    image.title="anime cover";
+    image.src="../../resources/images/image.png";
 }
