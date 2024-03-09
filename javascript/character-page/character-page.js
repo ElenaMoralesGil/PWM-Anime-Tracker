@@ -2,7 +2,7 @@ function loadMainImage() {
     let topImage = document.createElement("img");
     topImage.alt="A wide image based on the anime show that displays in the top part of the page.";
     topImage.title="A wide image based on the anime";
-    topImage.src="../../resources/images/frieren.jpg";
+    topImage.src="../../resources/images/image.png";
     document.querySelector(".top-image").appendChild(topImage);
 }
 

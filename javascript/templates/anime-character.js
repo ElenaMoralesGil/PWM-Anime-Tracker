@@ -3,7 +3,7 @@ function loadCharacterName(element) {
 }
 
 function loadCharacterImage(element) {
-    element.querySelector(".anime-character-name-image img").src="../../resources/images/shoujo-shuumatsu.jpeg";
+    element.querySelector(".anime-character-name-image img").src="../../resources/images/image.png";
 }
 
 function loadCharacterDescription(element) {

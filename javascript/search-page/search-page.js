@@ -22,7 +22,7 @@ function loadResultImage(resultContainer) {
     let image = resultContainer.querySelector("img");
     image.alt = "cover of anime result";
     image.title = "cover of anime result";
-    image.src = "../../resources/images/shoujo-shuumatsu.jpeg";
+    image.src = "../../resources/images/image.png";
 }
 
 function loadResult(resultContainer) {

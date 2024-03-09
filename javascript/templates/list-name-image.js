@@ -1,5 +1,5 @@
 function loadingRows () {
-    const source = "../../resources/images/frieren.jpg";
+    const source = "../../resources/images/image.png";
     const alt = "An anime cover image";
     const title = "Anime cover image";
     Promise.all([
