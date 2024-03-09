@@ -59,4 +59,9 @@ function addHeaderEvent(){
             location.assign("../../html/ranking-page/ranking-page.html");
         }
     })
+    document.querySelector("#profile-anchor").addEventListener("click", ()=>{
+        if (document.querySelector("body").id !== "profile-body"){
+            location.assign("../../html/profile-pages/profileOverview.html");
+        }
+    })
 }

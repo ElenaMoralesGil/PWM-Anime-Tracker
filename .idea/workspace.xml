@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="fixed fonts and em instead of px">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/globals/globals-anime.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/globals/globals-anime.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/templates/profile-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/profile-table.css" afterDir="false" />
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="new profile style">
       <change beforePath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/profile-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/profile-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/profile-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/profile-nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/templates/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/templates/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/templates/top-header.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <workItem from="1708980959760" duration="3230000" />
       <workItem from="1709534851936" duration="5082000" />
       <workItem from="1709658770912" duration="15360000" />
-      <workItem from="1709919129992" duration="28215000" />
+      <workItem from="1709919129992" duration="28621000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -342,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709988970174</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="new profile style">
+      <option name="closed" value="true" />
+      <created>1709996950135</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1709996950135</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +362,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="made the edit-profile to be a working popup" />
     <MESSAGE value="deleted the edit-profile-popup.js as it was not necessary and fixed a css style issue." />
     <MESSAGE value="fixed simple merge issues and ProfileOverview" />
     <MESSAGE value="added row loading by appending to a container, it works" />
@@ -385,6 +386,7 @@
     <MESSAGE value="now accepting the delete profile redirects to home" />
     <MESSAGE value="basic style changes with buttons when hovering" />
     <MESSAGE value="fixed fonts and em instead of px" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed fonts and em instead of px" />
+    <MESSAGE value="new profile style" />
+    <option name="LAST_COMMIT_MESSAGE" value="new profile style" />
   </component>
 </project>
