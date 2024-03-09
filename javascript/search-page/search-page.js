@@ -31,28 +31,39 @@ function loadResult(resultContainer) {
 }
 
 function loadResults() {
-    const resultRoute = "../../html/templates/name-image.html";
-    let resultHTML = undefined;
+    return new Promise((resolve) => {
+        const resultRoute = "../../html/templates/name-image.html";
+        let resultHTML = undefined;
 
-    let resultFetch = new Promise((resolve) =>{
-        fetch(resultRoute).
-        then(response => response.text()).
-        then(html => {
-            resultHTML = html;
+        let resultFetch = new Promise((resolve) =>{
+            fetch(resultRoute).
+            then(response => response.text()).
+            then(html => {
+                resultHTML = html;
+                resolve();
+            })
+        })
+
+        resultFetch.then(() => {
+            let documentFragment = new DocumentFragment();
+            for (let i = 0; i < 10; i++){
+                let resultContainer = document.createElement("article");
+                resultContainer.className = "result-anime";
+                resultContainer.innerHTML = resultHTML;
+                loadResult(resultContainer);
+                documentFragment.appendChild(resultContainer);
+            }
+            document.querySelector("#result-content").appendChild(documentFragment);
             resolve();
         })
     })
+}
 
-    resultFetch.then(() => {
-        let documentFragment = new DocumentFragment();
-        for (let i = 0; i < 10; i++){
-            let resultContainer = document.createElement("article");
-            resultContainer.className = "result-anime";
-            resultContainer.innerHTML = resultHTML;
-            loadResult(resultContainer);
-            documentFragment.appendChild(resultContainer);
-        }
-        document.querySelector("#result-content").appendChild(documentFragment);
+function addResultEvents(){
+    document.querySelectorAll(".result-anime img").forEach(elem => {
+        elem.addEventListener("click", () => {
+            location.assign("../../html/character-page/characters-anime.html");
+        })
     })
 }
 
@@ -60,5 +71,5 @@ document.addEventListener("DOMContentLoaded", function() {
     loadById('../templates/top-header.html', 'header').then(addHeaderEvent);
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
     initSearchBar();
-    loadResults();
+    loadResults().then(addResultEvents);
 });

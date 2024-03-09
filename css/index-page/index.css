@@ -96,6 +96,7 @@ a flex container to the hero image elements in the embedded html file. */
 /* -------------------------- Anime Rows -------------------------- */
 
 .anime-row-container .row-descriptor {
+    height: 10%;
     color: white;
     text-align: center;
     padding-bottom: 1%;
@@ -104,6 +105,7 @@ a flex container to the hero image elements in the embedded html file. */
 }
 
 .anime-row {
+    height: 90%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -115,9 +117,10 @@ a flex container to the hero image elements in the embedded html file. */
 .anime-row .row-name-image {
     position: relative;
     object-fit: cover;
-    height: 10cm;
-    min-width: 5cm;
+    height: 45vh;
+    min-height: 10cm;
     width: 15%;
+    min-width: 5cm;
     box-sizing: border-box;
 }
 
@@ -126,14 +129,15 @@ a flex container to the hero image elements in the embedded html file. */
     top: -2%;
     color: white;
     opacity: 75%;
+    height: 10%;
     width: 100%;
     text-align: center;
 }
 
 .anime-row .row-name-image img {
     position: absolute;
-    width: 100%;
     height: 90%;
+    width: 100%;
     bottom: 0;
     border-radius: 10px;
 }

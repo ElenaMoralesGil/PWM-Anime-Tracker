@@ -34,7 +34,7 @@
     box-sizing: border-box;
     height: auto;
     width: 80%;
-    max-height: 41.5cm;
+    max-height: 200vh;
     margin: 1% 8% 1% 1%;
 }
 
@@ -44,7 +44,7 @@
     justify-content: space-evenly;
     align-items: center;
     background: #1d1d1f;
-    height: 1.5cm;
+    height: 3.5%;
     color: white;
     box-sizing: border-box;
     box-shadow: 0 0 3px black;
