@@ -64,7 +64,10 @@
     overflow: auto;
 }
 
-/* ----------------------------------------------------- */
+.top-description-and-buttons .anime-description::-webkit-scrollbar {
+    display: none;
+}
+    /* ----------------------------------------------------- */
 
 .top-description-and-buttons .button-palette {
     display: flex;
@@ -145,7 +148,9 @@
     overflow: auto;
     background: #70859caa;
 }
-
+.anime-dropdown-menu::-webkit-scrollbar {
+    display: none;
+}
 .anime-dropdown-menu article {
     display: flex;
     flex-flow: row nowrap;

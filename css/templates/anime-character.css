@@ -17,7 +17,12 @@
     text-align: center;
     overflow: scroll;
 }
-
+.character-description::-webkit-scrollbar {
+    display: none;
+}
+.anime-character-container::-webkit-scrollbar {
+    display: none;
+}
 .characters .anime-character-name-image {
     box-sizing: border-box;
     min-height: 8cm;

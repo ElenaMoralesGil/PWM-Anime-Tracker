@@ -12,6 +12,9 @@ display=swap');
     --medium-small-font-size:0.875em;
     --small-font-size:0.75em;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 body {
     height: 100vh;

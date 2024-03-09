@@ -29,7 +29,9 @@
     min-height: 4cm;
     overflow: auto;
 }
-
+.positions::-webkit-scrollbar {
+    display: none;
+}
 .table-row {
     display: flex;
     flex-flow: row nowrap;

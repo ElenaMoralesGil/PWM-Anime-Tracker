@@ -34,3 +34,6 @@
     overflow: auto;
     opacity: 0.8;
 }
+.anime-data p:nth-child(2)::-webkit-scrollbar {
+    display: none;
+}

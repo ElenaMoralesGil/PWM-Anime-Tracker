@@ -6,5 +6,7 @@
     max-height: 40cm;
     height: 40cm;
 }
-
+.characters::-webkit-scrollbar {
+    display: none;
+}
 
