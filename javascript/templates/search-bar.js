@@ -58,7 +58,7 @@ function addInputListeners(){
             if (elem.checked){
                 // Here we have a tech debt for the next sprint. On page redirection we should track status.
                 if (document.querySelector("body").id === "index-body"){
-                    location.assign('http://localhost:63342/Templates/html/search-page/search-page.html');
+                    location.assign('../../html/search-page/search-page.html');
                     // No more code is executed below due to page redirect applied.
                 }
                 createTag(elem);

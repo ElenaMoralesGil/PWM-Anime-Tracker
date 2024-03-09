@@ -25,7 +25,7 @@ function loadRankingPositions() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadById('../templates/top-header.html', 'header').then(/*doNothing*/)
+    loadById('../templates/top-header.html', 'header').then(addHeaderEvent);
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
     loadRankingPositions();
 });
