@@ -1,10 +1,13 @@
 
 .user-profile-table {
+    height:100%;
     max-width: 80vw;
     width: 100%;
     flex-direction: column;
 }
 .table-descriptor {
+    height:10%;
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -20,9 +23,11 @@
 }
 
 .positions {
+    height: 90%;
     display:block;
     color: #f5f5f5;
     min-height: 4cm;
+    overflow: auto;
 }
 
 .table-row {

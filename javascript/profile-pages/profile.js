@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     loadById('../templates/bottom-footer.html', 'footer');
     loadById('../templates/profile-nav.html', 'profile-nav');
     loadProfileInfo()
-    loadTableRows(5)
+    loadTableRows(20)
 });
 function loadProfileInfo() {
     fetch('../templates/profile-info.html')
