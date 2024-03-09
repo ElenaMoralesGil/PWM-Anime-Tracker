@@ -5,29 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="adrian changes and final push">
+      <change beforePath="$PROJECT_DIR$/.idea/PWM-Anime-Tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PWM-Anime-Tracker.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/edit-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile-pages/edit-profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/globals/globals-anime.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/globals/globals-anime.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile-pages/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/signIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/character-page/characters-anime.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/character-page/characters-anime.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileCompleted.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileFavorites.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileOverview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profilePlanToWatch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/profile-pages/profileWatching.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/signing-pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signing-pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/signing-pages/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signing-pages/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/edit-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/profile-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/profile-nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/character-page/character-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/character-page/character-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/episodes-page/episodes-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/episodes-page/episodes-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/search-page/search-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/search-page/search-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/templates/anime-character.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/templates/anime-character.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/templates/anime-cover-name-description.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/templates/anime-cover-name-description.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/templates/list-name-image.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/templates/list-name-image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/templates/ranking-position.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/templates/ranking-position.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/profile-pages/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile-pages/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/templates/top-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/top-header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/templates/top-header-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/top-header-login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="elena_secondbranch" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "elena",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/elena/Desktop/ps_uwu_tracker",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -123,6 +105,7 @@
       <workItem from="1709534851936" duration="5082000" />
       <workItem from="1709658770912" duration="15360000" />
       <workItem from="1709919129992" duration="32150000" />
+      <workItem from="1710007104555" duration="1309000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>

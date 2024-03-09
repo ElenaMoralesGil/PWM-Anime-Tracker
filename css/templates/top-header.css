@@ -26,7 +26,7 @@ Height and width defined in relation to the div above.
 Box sizing including padding and margins.*/
 
 .top-header-content img {
-    height: 100%;
+    height: 80%;
 }
 
 /* Child component of the header div. Its a navbar to access
