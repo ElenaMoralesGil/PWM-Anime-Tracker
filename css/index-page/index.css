@@ -27,7 +27,7 @@ document. Width to full screen. Height defined by the browser to fill the
 space. Box sizing including paddings and borders. Acts as a flex container
 to the hero image elements */
 
-.index-main-hero {
+.hero-box {
     position: relative;
     width: 100%;
     height: auto;
@@ -43,7 +43,7 @@ to the hero image elements */
 Width to full screen and height defined by the browser to fill content. Acts as
 a flex container to the hero image elements in the embedded html file. */
 
-.index-main-hero article {
+.hero-box article {
     width: 100%;
     height: auto;
 
@@ -55,14 +55,14 @@ a flex container to the hero image elements in the embedded html file. */
 
 /* Hero image embedded in the container styled above. Dimensions to fill the viewport.*/
 
-.index-main-hero article img {
+.hero-box article img {
     width: 100vw;
     height: 100vh;
 }
 
 /* Anime name embedded in the container styled above. Overflow set. */
 
-.index-main-hero article p {
+.hero-box article p {
     font-size: var(--medium-big-font-size);
     max-width: 75%;
     max-height: 7.5%;
@@ -73,7 +73,7 @@ a flex container to the hero image elements in the embedded html file. */
 
 /* Anime description. Overflow set. */
 
-.index-main-hero p {
+.hero-box p {
     position: absolute;
     max-width: 50%;
     max-height: 25%;

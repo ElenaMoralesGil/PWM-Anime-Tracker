@@ -1,8 +1,9 @@
 .anime-info-container {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 100%;
     width: 20vw;
-    height: fit-content;
     background: #1d1d1f;
     box-sizing: border-box;
     box-shadow: 0 0 3px black;
