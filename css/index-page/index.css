@@ -9,15 +9,7 @@ display=swap');
 Styling the body of our index HTML page. Dimension equals viewport.
 Margin none and sizing including paddings and borders.
 */
-/*
-#index-body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    box-sizing: border-box;
-    background: hsl(240, 16%, 18%);
-}
-*/
+
 /* Styling the main content of our index HTML page. Height defined by the
 browser to fill the space. Width to full screen. Overflow set. Box sizing
 including paddings and borders. */

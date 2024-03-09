@@ -68,7 +68,7 @@ function addResultEvents(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadTopHeader();
+    loadTopHeader().then(addHeaderEvent);
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
     initSearchBar();
     loadResults().then(addResultEvents);

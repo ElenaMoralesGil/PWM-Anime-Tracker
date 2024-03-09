@@ -20,11 +20,11 @@
     text-align: center;
 }
 
-.average-popup__text {
+.average-popup-text {
     margin-bottom: 2em;
 }
 
-.average-popup__bottom {
+.average-popup-bottom {
     display: flex;
     justify-content: center;
 }

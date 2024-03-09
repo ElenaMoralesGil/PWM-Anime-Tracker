@@ -27,7 +27,7 @@ function loadDeleteProfilePopup() {
 
     loadById('../../html/templates/averagePopup.html', 'deleteProfilePopup')
         .then(() => {
-            const textElement = deleteProfilePopup.querySelector('.average-popup__text');
+            const textElement = deleteProfilePopup.querySelector('.average-popup-text');
             if (textElement) {
                 textElement.textContent = "Are you sure you want to delete your profile?";
             } else {

@@ -23,7 +23,7 @@ function addHeroImageEvent() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadTopHeader();
+    loadTopHeader().then(addHeaderEvent);
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/)
     loadById('../templates/name-image.html', 'index-main-content-hero-image').
     then(loadHeroImage).

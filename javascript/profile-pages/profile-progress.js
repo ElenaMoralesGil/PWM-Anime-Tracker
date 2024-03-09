@@ -25,15 +25,15 @@ function loadProfileInfo() {
             const profileInfoContainer = document.getElementById('profile-info');
 
             // user image
-            const userImageElement = tempContainer.querySelector('.user-profile__image');
+            const userImageElement = tempContainer.querySelector('.user-profile-image');
             userImageElement.src =  "../../resources/images/image.png"
 
             // user name
-            const userNameElement = tempContainer.querySelector('.user-profile__name');
+            const userNameElement = tempContainer.querySelector('.user-profile-name');
             userNameElement.textContent = "UserName";
 
             // user description
-            const userDescriptionElement = tempContainer.querySelector('.user-profile__description');
+            const userDescriptionElement = tempContainer.querySelector('.user-profile-description');
             userDescriptionElement.textContent =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n" +
                 "sed do eiusmod tempor incididunt ut labore et dolore magna\n" +
                 "aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n" +
@@ -141,7 +141,7 @@ function loadAnimeCompletedPopup() {
 
     loadById('../../html/templates/averagePopup.html', 'animeCompletedPopup')
         .then(() => {
-            const textElement = animeCompletedPopup.querySelector('.average-popup__text');
+            const textElement = animeCompletedPopup.querySelector('.average-popup-text');
             if (textElement) {
                 textElement.textContent = "Do you want to move this anime to the Completed list?";
             } else {

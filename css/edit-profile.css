@@ -11,7 +11,7 @@
 }
 
 
-.container__edit-profile {
+.container-edit-profile {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -33,7 +33,7 @@
 }
 
 
-.edit-profile__header {
+.edit-profile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,16 +42,16 @@
     color: #ffffff;
 }
 
-.edit-details__form-label,
-.container__form-label {
+.edit-details-form-label,
+.container-form-label {
     display: block;
     margin-bottom: 0.5em;
 }
 
 
-.edit-details__form-input,
-.container__form-input,
-.edit-details__form-input textarea {
+.edit-details-form-input,
+.container-form-input,
+.edit-details-form-input textarea {
     width: 100%;
     padding: 0.8em;
     border-radius: 0.5em;
@@ -61,7 +61,7 @@
 }
 
 
-.edit-details__form-input textarea {
+.edit-details-form-input textarea {
     height: 8em;
 }
 #closeBtn {
@@ -70,7 +70,7 @@
     color: #ffffff;
 }
 
-.container__edit-details-pfp {
+.container-edit-details-pfp {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -80,17 +80,17 @@
     flex-direction: column;
     width: 45%; /* Adjust as needed */
 }
-.edit-pfp__header h2,
-.edit-details__header h2,
-.edit-password__header h2{
+.edit-pfp-header h2,
+.edit-details-header h2,
+.edit-password-header h2{
 
     font-size: var(--big-font-size);
     font-weight: bold;
     color: #000000;
 }
-.container__edit-details,
-.container__edit-password,
-.container__edit-pfp {
+.container-edit-details,
+.container-edit-password,
+.container-edit-pfp {
     box-sizing: border-box;
     margin-bottom: 2em;
     padding: 1em;
@@ -100,13 +100,13 @@
     box-shadow: 0 0 20em rgba(0, 0, 0, 0.1);
 }
 
-.container__edit-pfp {
+.container-edit-pfp {
     width: 45%;
     height: auto;
 }
 
-.container__form-button,
-.container__choose-image-label,
+.container-form-button,
+.container-choose-image-label,
 .deleteProfile {
     display: inline-block;
     padding: 0.8em 2em;
@@ -120,18 +120,18 @@
     border: none;
     transition: background-color 0.3s ease;
 }
-.container__choose-image-button {
+.container-choose-image-button {
     color: #000000;
     border-radius: 0em;
 }
-.container__form-button:hover,
-.container__choose-image-label:hover,
+.container-form-button:hover,
+.container-choose-image-label:hover,
 .deleteProfile:hover {
     background-color: #0056b3;
 }
 
 
-.container__chosen-image {
+.container-chosen-image {
     display: block;
     max-width: 100%;
     height: auto;

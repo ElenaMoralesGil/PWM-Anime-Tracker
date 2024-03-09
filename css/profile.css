@@ -1,25 +1,24 @@
 
 .container {
-    padding: 2em 5em;
-    display: flex;
+    padding: 2em 2em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 #profile-info, #profile-nav {
-    max-width: 50em;
-    width: 100%;
-    display: flex;
+    max-width: 80%;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-bottom: 2em;
 }
-.user-profile__nav a {
+.user-profile-nav a {
     text-decoration: none;
     color: inherit;
 }
-.user-profile__info {
+.user-profile-info {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -29,27 +28,27 @@
     gap: 3em;
 }
 
-.user-profile__image {
+.user-profile-image {
     width: 8em;
     height: 8em;
     border-radius: 50%;
 }
 
-.user-profile__details {
+.user-profile-details {
     max-width: 40%;
 }
 
-.user-profile__name {
+.user-profile-name {
     font-size: var(--big-font-size);
     font-weight: bold;
     margin-bottom: 0.5em;
 }
 
-.user-profile__description {
+.user-profile-description {
     text-align: justify;
 }
 
-.user-profile__edit-btn {
+.user-profile-edit-btn {
     padding: 1em 2em;
     background-color: #000000;
     color: #ffffff;
@@ -59,48 +58,47 @@
     font-size:var(--medium-font-size);
     text-decoration: none;
 }
-.user-profile__edit-btn:hover {
+.user-profile-edit-btn:hover {
     background-color: #333333;
 }
-.user-profile__nav {
+.user-profile-nav {
     display: flex;
     background-color: #f8f8f8;
     border-radius: 0.8em;
     padding: 1em 1em;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
 }
 
-.user-profile__nav-item {
+.user-profile-nav-item {
     cursor: pointer;
     font-size: var(--medium-font-size);
 }
 
-.user-profile__nav-item:hover {
+.user-profile-nav-item:hover {
     color: #939393;
 }
 
-.user-profile__nav-item:first-child {
+.user-profile-nav-item:first-child {
     margin-right: auto;
     margin-left: 2em;
     font-weight: bold;
 }
 
-.user-profile__nav-item:last-child {
+.user-profile-nav-item:last-child {
     margin-left: auto;
     margin-right: 2em;
 }
 
 
-.user-profile__title {
+.user-profile-title {
     font-size: 0.8em;
     margin-bottom: 2%;
     font-weight: bold;
     color: #fffdfd;
 }
 
-#table {
+#table,.user-profile-info, .user-profile-nav {
     width: 100%;
     display: flex;
     justify-content: center;

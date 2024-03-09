@@ -33,7 +33,7 @@ function loadAnimeEpisodes() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadById('../templates/top-header.html', 'header').then(addHeaderEvent);
+    loadTopHeader().then(addHeaderEvent);
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
     loadMainImage();
     loadAnimeEpisodes();

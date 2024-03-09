@@ -13,59 +13,59 @@
 
 <body>
 <div id="overlay"></div>
-<main class="container__edit-profile">
-        <span class="edit-profile__header">
+<main class="container-edit-profile">
+        <span class="edit-profile-header">
             <h1>Edit Profile</h1>
             <i aria-hidden="true" class="fa fa-times" id="closeBtn"></i>
         </span>
     <div class="left-section">
-        <section class="container__edit-details">
-                <span class="edit-details__header">
+        <section class="container-edit-details">
+                <span class="edit-details-header">
                     <h2>Edit Details</h2>
                 </span>
-            <form action="endpoint" class="edit-details__form" method="post">
-                <label class="edit-details__form-label">
-                    <input class="edit-details__form-input" name="username" placeholder="Username" required
+            <form action="endpoint" class="edit-details-form" method="post">
+                <label class="edit-details-form-label">
+                    <input class="edit-details-form-input" name="username" placeholder="Username" required
                            type="text">
                 </label>
-                <label class="edit-details__form-label">
-                    <input class="edit-details__form-input" name="email" placeholder="Email" required
+                <label class="edit-details-form-label">
+                    <input class="edit-details-form-input" name="email" placeholder="Email" required
                            type="email">
                 </label>
-                <label class="edit-details__form-label">
-                        <textarea class="edit-details__form-input" name="description" placeholder="Description"
+                <label class="edit-details-form-label">
+                        <textarea class="edit-details-form-input" name="description" placeholder="Description"
                                   required></textarea>
                 </label>
-                <button class="container__form-button" type="submit">Update</button>
+                <button class="container-form-button" type="submit">Update</button>
             </form>
         </section>
-        <section class="container__edit-password">
-                <span class="edit-password__header">
+        <section class="container-edit-password">
+                <span class="edit-password-header">
                     <h2>Edit Password</h2>
                 </span>
-            <form action="endpoint" class="edit-password__form" method="post">
-                <label class="container__form-label">
-                    <input class="container__form-input" name="password" placeholder="New Password" required
+            <form action="endpoint" class="edit-password-form" method="post">
+                <label class="container-form-label">
+                    <input class="container-form-input" name="password" placeholder="New Password" required
                            type="password">
                 </label>
-                <label class="container__form-label">
-                    <input class="container__form-input" name="repeat_password" placeholder="Repeat Password"
+                <label class="container-form-label">
+                    <input class="container-form-input" name="repeat_password" placeholder="Repeat Password"
                            required type="password">
                 </label>
-                <button class="container__form-button" type="submit">Update</button>
+                <button class="container-form-button" type="submit">Update</button>
             </form>
         </section>
     </div>
-    <section class="container__edit-pfp">
-            <span class="edit-pfp__header">
+    <section class="container-edit-pfp">
+            <span class="edit-pfp-header">
                 <h2>Edit Profile Picture</h2>
             </span>
-        <div class="edit-profile__button-group">
-            <input accept="image/*" class="container__choose-image-button" id="profileImage"
+        <div class="edit-profile-button-group">
+            <input accept="image/*" class="container-choose-image-button" id="profileImage"
                    name="profileImage" type="file">
-            <img alt="Selected Image" class="container__chosen-image" id="chosenImage" src="#"
+            <img alt="Selected Image" class="container-chosen-image" id="chosenImage" src="#"
                  style="display: none;">
-            <button class="container__form-button" onclick="updateProfilePicture()">Update</button>
+            <button class="container-form-button" onclick="updateProfilePicture()">Update</button>
         </div>
     </section>
     <section id="deleteProfilePopup"></section>
