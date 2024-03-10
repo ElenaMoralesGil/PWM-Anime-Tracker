@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="fixed profile weird placement in laptop">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/globals/globals-anime.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/globals/globals-anime.css" afterDir="false" />
+    <list default="true" id="d96ad427-c8e2-4af6-b268-876345101687" name="Changes" comment="fixed table row loading">
       <change beforePath="$PROJECT_DIR$/css/templates/profile-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templates/profile-table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/table-row-progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row-progress.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/templates/table-row.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/templates/table-row.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/profile-progress.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/profile-pages/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/profile-pages/profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +374,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710008525723</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fixed table row loading">
+      <option name="closed" value="true" />
+      <created>1710027520634</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1710027520634</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +400,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="now openning and closing of signing works in top-header and index, still needs fixing with being on top" />
     <MESSAGE value="made the signIn popup and login popup to be on top and now they cant appear at the same time" />
     <MESSAGE value="added unversioned files to be versioned" />
     <MESSAGE value="header knows loads well in all pages though in episodes page the closebtn is not loaded and ranking page the style is loaded weirdly" />
@@ -423,6 +424,7 @@
     <MESSAGE value="hidded scrollbars" />
     <MESSAGE value="adrian changes and final push" />
     <MESSAGE value="fixed profile weird placement in laptop" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed profile weird placement in laptop" />
+    <MESSAGE value="fixed table row loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed table row loading" />
   </component>
 </project>
