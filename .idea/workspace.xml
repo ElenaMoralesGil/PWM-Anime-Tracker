@@ -71,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "main__branch",
     "last_opened_file_path": "C:/Users/elena/Desktop/ps_uwu_tracker",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -105,7 +105,7 @@
       <workItem from="1709534851936" duration="5082000" />
       <workItem from="1709658770912" duration="15360000" />
       <workItem from="1709919129992" duration="32150000" />
-      <workItem from="1710007104555" duration="1309000" />
+      <workItem from="1710007104555" duration="4918000" />
     </task>
     <task id="LOCAL-00001" summary="did the edit-profile.html it still needs css">
       <created>1708435889521</created>
@@ -370,7 +370,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709999923113</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fixed profile weird placement in laptop">
+      <option name="closed" value="true" />
+      <created>1710008525723</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1710008525723</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fixed table row loading">
+      <option name="closed" value="true" />
+      <created>1710027520634</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1710027520634</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,8 +404,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added row loading by document fragment, it works" />
-    <MESSAGE value="now openning and closing of signing works in top-header and index, still needs fixing with being on top" />
     <MESSAGE value="made the signIn popup and login popup to be on top and now they cant appear at the same time" />
     <MESSAGE value="added unversioned files to be versioned" />
     <MESSAGE value="header knows loads well in all pages though in episodes page the closebtn is not loaded and ranking page the style is loaded weirdly" />
@@ -413,6 +427,8 @@
     <MESSAGE value="redirection to profile works" />
     <MESSAGE value="hidded scrollbars" />
     <MESSAGE value="adrian changes and final push" />
-    <option name="LAST_COMMIT_MESSAGE" value="adrian changes and final push" />
+    <MESSAGE value="fixed profile weird placement in laptop" />
+    <MESSAGE value="fixed table row loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed table row loading" />
   </component>
 </project>
