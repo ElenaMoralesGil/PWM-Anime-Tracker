@@ -24,7 +24,7 @@ function loadProfileInfo() {
 
             // user image
             const userImageElement = tempContainer.querySelector('.user-profile-image');
-            userImageElement.src =  "../../resources/images/image.png"
+            userImageElement.src =  "../../resources/images/frieren.jpg"
 
             // user name
             const userNameElement = tempContainer.querySelector('.user-profile-name');
@@ -56,7 +56,6 @@ function loadTableRows(rowCount) {
                 fetch('../templates/table-row.html')
                     .then(response => response.text())
                     .then(rowHtml => {
-
                         const fragment = document.createDocumentFragment();
                         for (let i = 0; i < rowCount; i++) {
                             const tempRowContainer = document.createElement('div');
@@ -66,7 +65,6 @@ function loadTableRows(rowCount) {
                             const clonedRowContent = tempRowContainer.querySelector('.position-content').cloneNode(true);
                             fragment.appendChild(clonedRowContent);
                         }
-
                         positionsContainer.appendChild(fragment);
                         const profileTableContainer = document.getElementById('table');
                         profileTableContainer.innerHTML = tempTableContainer.innerHTML;
@@ -96,5 +94,5 @@ function loadPosition(positionContainer){
     let image = positionContainer.querySelector("img");
     image.alt="anime cover";
     image.title="anime cover";
-    image.src="../../resources/images/image.png";
+    image.src="../../resources/images/frieren.jpg";
 }
