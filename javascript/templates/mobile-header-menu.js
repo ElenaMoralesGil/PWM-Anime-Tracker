@@ -28,6 +28,8 @@ function loadMenuRedirections() {
             location.assign("/html/profile-pages/profileCompleted.html");
         }
     });
+
+    // Add events to the sign in and sign up anchors
 }
 
 function addMobileMenuEvent(){
