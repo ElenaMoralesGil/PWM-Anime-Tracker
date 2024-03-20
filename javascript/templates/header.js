@@ -65,11 +65,3 @@ function addHeaderEvent(){
         }
     })
 }
-
-function mobileMenuEvent(){
-    document.querySelector("#header-mobile-menu-button").addEventListener("click", () => {
-        let wrapper_display = document.querySelector("#wrapper");
-        (wrapper_display.style.display === "none") ? wrapper_display.setAttribute("style", "display:block") :
-         wrapper_display.setAttribute("style", "display:none");
-    })
-}

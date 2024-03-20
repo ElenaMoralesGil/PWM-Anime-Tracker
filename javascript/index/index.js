@@ -22,12 +22,8 @@ function addHeroImageEvent() {
     })
 }
 
-function loadMobileMenu() {
-    return loadById('../../html/templates/mobile-header-menu.html', 'mobile-menu');
-}
-
 document.addEventListener("DOMContentLoaded", function () {
-    loadTopHeader().then(addHeaderEvent).then(loadMobileMenu).then(mobileMenuEvent);
+    loadTopHeader().then(addHeaderEvent).then(loadMobileMenu);
     loadById('../../html/templates/bottom-footer.html', 'footer').then(/*doNothing*/)
     loadById('../../html/templates/name-image.html', 'index-main-content-hero-image').
     then(loadHeroImage).

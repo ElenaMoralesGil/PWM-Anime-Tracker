@@ -12,7 +12,7 @@
     gap: 2%;
 }
 
-#mobile-menu-box p{
-    font-size: x-large;
+#mobile-menu-box a{
+    font-size: large;
     margin-right: 25%;
 }
