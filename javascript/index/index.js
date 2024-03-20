@@ -4,7 +4,7 @@ function loadHeroImage(){
         heroImage.id="index-hero-image";
         heroImage.alt="a fullscreen picture of a popular well know anime";
         heroImage.title="hero image";
-        heroImage.src="../../resources/images/image.png";
+        heroImage.src="../../resources/images/frieren.jpg";
         document.querySelector("#index-main-content-hero-image p").innerHTML="Text";
         document.querySelector("#hero-anime-description").innerHTML=
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n" +

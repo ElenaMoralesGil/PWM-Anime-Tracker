@@ -26,7 +26,7 @@ function loadProfileInfo() {
 
             // user image
             const userImageElement = tempContainer.querySelector('.user-profile-image');
-            userImageElement.src =  "../../resources/images/image.png"
+            userImageElement.src =  "../../resources/images/frieren.jpg"
 
             // user name
             const userNameElement = tempContainer.querySelector('.user-profile-name');
@@ -191,5 +191,5 @@ function loadPosition(positionContainer){
     let image = positionContainer.querySelector("img");
     image.alt="anime cover";
     image.title="anime cover";
-    image.src="../../resources/images/image.png";
+    image.src="../../resources/images/frieren.jpg";
 }

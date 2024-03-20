@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: column;
     padding: 2em;
-    border-radius: 1.5em;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     max-width: 25em;
     width: 80%;
@@ -107,14 +106,13 @@
         display: none;
     }
 
-    /* Esto es lo que hice para que se vea el container de esa manera 
+    /* Esto es lo que hice para que se vea el container de esa manera */
     .container {
         inset: 0;
         min-width: 100vw;
         min-height: 100vh;
         margin-top: 2cm;
         border-radius: 0;
-        background: #ffffffdd;
+        background: #ffffffff;
     }
-    */
 }
