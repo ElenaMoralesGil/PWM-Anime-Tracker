@@ -26,6 +26,7 @@
     inset: 2cm 0 0 0;
     margin: auto;
     box-sizing: border-box;
+    border-radius: 1.5rem;
 }
 
 #closeSignInBtn,
