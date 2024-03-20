@@ -22,10 +22,14 @@ function addHeroImageEvent() {
     })
 }
 
+function loadMobileMenu() {
+    return loadById('../../html/templates/mobile-header-menu.html', 'mobile-menu');
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-    loadTopHeader().then(addHeaderEvent);
-    loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/)
-    loadById('../templates/name-image.html', 'index-main-content-hero-image').
+    loadTopHeader().then(addHeaderEvent).then(loadMobileMenu).then(mobileMenuEvent);
+    loadById('../../html/templates/bottom-footer.html', 'footer').then(/*doNothing*/)
+    loadById('../../html/templates/name-image.html', 'index-main-content-hero-image').
     then(loadHeroImage).
     then(addHeroImageEvent);
     initSearchBar();
