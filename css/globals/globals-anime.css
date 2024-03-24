@@ -22,21 +22,21 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 2%;
+    padding: 3%;
+    gap: 1.5%;
 }
 
 .aside-main-content-container .aside-anime-information {
+    flex: 2;
     box-sizing: border-box;
-    width: auto;
-    margin: 1% 1% 1% 8%;
+    height: auto;
 }
 
 .navbar-main-content {
     box-sizing: border-box;
     height: auto;
-    width: 80%;
+    flex: 8;
     min-height: 100%;
-    margin: 1% 8% 1% 1%;
 }
 
 .navbar-main-content nav {
@@ -74,5 +74,10 @@
         height: auto;
         box-sizing: border-box;
         position: relative;
+    }
+
+    .aside-main-content-container {
+        flex-flow: column nowrap;
+        gap: 2rem;
     }
 }

@@ -186,9 +186,9 @@
     }
 
     .top-description-and-buttons .anime-score-container {
-        top: -30%;
+        top: -28%;
         font-size: var(--medium-font-size);
-        right: 5%;
+        right: 1%;
         height: 25%;
         width: 15%;
         border-radius: 0.3rem;
