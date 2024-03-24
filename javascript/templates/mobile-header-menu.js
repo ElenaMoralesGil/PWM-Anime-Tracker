@@ -13,23 +13,28 @@ function loadMenuRedirections() {
 
     document.querySelector("#search").addEventListener("click", () => {
         if(document.querySelector("body").id !== "search-body"){
-            location.assign("/html/search-page/search-page.html");
+            location.assign("../../html/search-page/search-page.html");
         }
     });
 
     document.querySelector("#ranking").addEventListener("click", () => {
         if(document.querySelector("body").id !== "ranking-body"){
-            location.assign("/html/ranking-page/ranking-page.html");
+            location.assign("../../html/ranking-page/ranking-page.html");
         }
     });
 
     document.querySelector("#profile").addEventListener("click", () => {
         if(document.querySelector("body").id !== "ranking-body"){
-            location.assign("/html/profile-pages/profileCompleted.html");
+            location.assign("../../html/profile-pages/profileCompleted.html");
         }
     });
 
-    // Add events to the sign in and sign up anchors
+    document.querySelector("#signin").addEventListener("click", () => {
+        openSignInPopup();
+    });
+    document.querySelector("#login").addEventListener("click", () => {
+        openLoginPopup();
+    });
 }
 
 function addMobileMenuEvent(){
