@@ -102,8 +102,13 @@
     font-weight: bold;
     font-size:var(--medium-font-size);
     text-decoration: none;
-    height: 15%;
     overflow: hidden;
+    padding: 1em 1em;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+
 }
 
 .user-profile-edit-btn:hover {
@@ -117,4 +122,32 @@
 
 .nav-item:hover {
     color: #646465;
+}
+
+@media screen and (width < 35rem) {
+
+
+    .user-profile-details {
+        flex:10;
+        height:100%;
+        color:white;
+        text-align: left;
+        display: flex;
+        margin: 5% 5%;
+
+    }
+    #profile-info {
+        height: 40vh;
+    }
+    .user-profile-info {
+        flex-flow: column nowrap;
+    }
+
+    .user-profile-image {
+        margin-top: 5%;
+        flex:15;
+        height: 65%;
+        margin-left:3.5%;
+    }
+
 }
