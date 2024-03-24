@@ -3,6 +3,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 40vh;
+    min-height: 20rem;
 }
 
 .top-description-and-buttons .anime-score-container {
@@ -14,7 +15,7 @@
     text-align: center;
     background: #1d1d1fcc;
     color: white;
-    border-radius: 15px;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,10 +162,40 @@
 
 /* ------------------------ Media Querys ------------------------ */
 
-@media screen and (width < 35rem){
+@media screen and (width < 70rem){
+
+    .top-description-and-buttons .cover-name p {
+        left: 40%;
+    }
+
     .top-description-and-buttons .cover-name img {
+        width: 27.5%;
+    }
+
+    .top-description-and-buttons .anime-description {
+        left: 40%;
+        max-width: 55%;
+    }
+
+    .top-description-and-buttons .anime-score-container {
+        top: -28%;
+        font-size: var(--medium-font-size);
+        right: 1%;
+        height: 25%;
+        width: 15%;
+    }
+
+    .top-description-and-buttons .button-palette {
+        width: 27.5%;
+    }
+}
+
+@media screen and (width < 36rem){
+    .top-description-and-buttons .cover-name img {
+        top: -60%;
+        width: 35%;
         height: 100%;
-        width: 7.5rem;
+        min-width: 7.5rem;
     }
 
     .top-description-and-buttons .cover-name p {
@@ -181,16 +212,7 @@
     .top-description-and-buttons .button-palette {
         position: absolute;
         top: 10%;
-        left: 30%;
-        width: 57%;
-    }
-
-    .top-description-and-buttons .anime-score-container {
-        top: -28%;
-        font-size: var(--medium-font-size);
-        right: 1%;
-        height: 25%;
-        width: 15%;
-        border-radius: 0.3rem;
+        left: 40%;
+        width: 48%;
     }
 }

@@ -35,7 +35,7 @@
 
 /* --------------------- Media Querys -------------------------- */
 
-@media screen and (width < 35rem){
+@media screen and (width < 70rem){
 
     .anime-info-container {
         flex-flow: row nowrap;
