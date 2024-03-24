@@ -103,11 +103,12 @@
     font-size:var(--medium-font-size);
     text-decoration: none;
     overflow: hidden;
-    padding: 1em 1em;
+    padding: 1em 0.5em;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     height:fit-content;
+    margin: 2% 2%;
 
 }
 
@@ -124,7 +125,7 @@
     color: #646465;
 }
 
-@media screen and (width < 35rem) {
+@media screen and (width < 40rem) {
 
 
     .user-profile-details {
@@ -133,7 +134,7 @@
         color:white;
         text-align: left;
         display: flex;
-        margin: 5% 5%;
+        margin: 0 5%;
 
     }
     #profile-info {
@@ -145,7 +146,7 @@
 
     .user-profile-image {
         margin-top: 5%;
-        flex:15;
+        flex:30;
         height: 65%;
         margin-left:3.5%;
     }

@@ -1,13 +1,18 @@
-<link href="../../css/templates/top-header.css" rel="stylesheet">
-
+<link rel="stylesheet" href="../../css/globals/globals.css">
+<link rel="stylesheet" href="../../css/templates/top-header.css">
 <div class="top-header-content">
-    <img alt="logo of our website" src="../../resources/images/image.png" title="web-logo">
+    <img title="web-logo" alt="logo of our website" src="../../resources/images/image.png">
     <nav>
-        <a href="../index-page/index.html">Text</a>
-        <a href="../ranking-page/ranking-page.html">Text</a>
-        <a href="../profile-pages/profileOverview.html">Text</a>
+        <a id="home-anchor">Text</a> <!-- Expected to be an anchor to another page in the website -->
+        <a id="ranking-anchor">Text</a> <!-- Expected to be an anchor to another page in the website -->
+        <a id="profile-anchor">Text</a> <!-- Expected to be an anchor to another page in the website -->
     </nav>
     <div class="top-header-content-buttons">
-        <button name="Log out" onclick="location.href='../index-page/index.html'">Text</button>
+        <button id="logOutButton" name="Log Out">Text</button>
+    </div>
+    <div class="top-header-mobile-menu">
+        <button id="header-mobile-menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </div>
 </div>

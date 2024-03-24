@@ -49,6 +49,19 @@ async function loadTopHeader() {
         console.error('Error loading top header:', error);
     });
 }
+async function loadTopHeaderLogin() {
+    await loadById('../templates/top-header-login.html', 'header').then(() => {
+        addHeaderEvent();
+        document.querySelector("#logOutButton").addEventListener("click", ()=>{
+            if (document.querySelector("body").id !== "index-body"){
+                location.assign("../../html/index-page/index.html");
+            }
+        })
+    }).catch(error => {
+        console.error('Error loading top header:', error);
+    });
+}
+
 
 function addHeaderEvent(){
     document.querySelector("#home-anchor").addEventListener("click", ()=>{
@@ -67,3 +80,4 @@ function addHeaderEvent(){
         }
     })
 }
+

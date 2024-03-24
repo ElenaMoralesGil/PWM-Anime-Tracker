@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadById('../templates/top-header-login.html', 'header');
+    loadTopHeaderLogin().then(loadMobileMenuLogin);
     loadById('../templates/bottom-footer.html', 'footer');
     loadById('../templates/profile-nav.html', 'profile-nav');
     loadProfileInfo()
