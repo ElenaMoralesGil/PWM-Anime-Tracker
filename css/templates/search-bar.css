@@ -93,7 +93,6 @@
 /*--------------------------------- DropDown Menus ---------------------------------*/
 
 .search-bar-input .dropdown-list-container {
-    display: none;
     flex-flow: column nowrap;
     height: auto;
     color: white;

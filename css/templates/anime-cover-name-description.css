@@ -158,3 +158,39 @@
     gap: 50%;
     margin: 10%;
 }
+
+/* ------------------------ Media Querys ------------------------ */
+
+@media screen and (width < 35rem){
+    .top-description-and-buttons .cover-name img {
+        height: 100%;
+        width: 7.5rem;
+    }
+
+    .top-description-and-buttons .cover-name p {
+        top: 50%;
+        left: 8%;
+    }
+
+    .top-description-and-buttons .anime-description {
+        top: 45%;
+        left: 8%;
+        max-width: 85%;
+    }
+
+    .top-description-and-buttons .button-palette {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        width: 57%;
+    }
+
+    .top-description-and-buttons .anime-score-container {
+        top: -30%;
+        font-size: var(--medium-font-size);
+        right: 5%;
+        height: 25%;
+        width: 15%;
+        border-radius: 0.3rem;
+    }
+}

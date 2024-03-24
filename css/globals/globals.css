@@ -47,3 +47,7 @@ input {
 input:hover {
     outline: none;
 }
+
+.hidden {
+    display: none;
+}
