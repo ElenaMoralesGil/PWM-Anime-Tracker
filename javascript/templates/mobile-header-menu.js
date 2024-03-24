@@ -68,7 +68,7 @@ function loadMenuRedirectionsLogin() {
 
     document.querySelector("#logout").addEventListener("click", () => {
         if(document.querySelector("body").id !== "index-body"){
-            location.assign("/html/index/index.html");
+            location.assign("../../html/index-page/index.html");
         }
     });
 

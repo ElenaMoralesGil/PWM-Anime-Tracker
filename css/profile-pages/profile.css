@@ -124,9 +124,25 @@
 .nav-item:hover {
     color: #646465;
 }
+#mobile-menu {
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    display: none;
+}
 
 @media screen and (width < 40rem) {
+    .container{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        position: relative;
 
+    }
 
     .user-profile-details {
         flex:10;
@@ -152,3 +168,10 @@
     }
 
 }
+@media screen and (width >= 35rem) {
+    #mobile-menu {
+        display: none;
+    }
+}
+
+
