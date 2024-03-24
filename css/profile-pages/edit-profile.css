@@ -133,7 +133,44 @@
     height: auto;
     margin-top: 1em;
 }
-
+.edit-profile-button-group {
+    overflow: hidden;
+}
 .deleteProfile {
     background-color: #dc3545;
+}
+@media screen and (max-width:50em){
+
+
+    .container-edit-profile {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 50%;
+        max-width: 90%;
+        max-height: 85%;
+        padding: 2em;
+        background-color: #272735;
+        border-radius: 1em;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow: auto;
+    }
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .container-edit-pfp, .container-edit-password, .container-edit-details{
+        width: 100%;
+    }
+
 }
