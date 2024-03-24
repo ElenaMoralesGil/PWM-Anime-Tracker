@@ -49,6 +49,7 @@
 
     .anime-data {
         white-space: nowrap;
+        font-size: var(--medium-small-font-size);
     }
 
 }
