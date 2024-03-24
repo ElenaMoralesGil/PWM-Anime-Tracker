@@ -6,16 +6,15 @@
     <form action="endpoint" class="container-form" method="post">
         <label class="container-form-label" for="username">
             <input class="container-form-input" id="username" name="username" placeholder="Enter your username"
-                   required type="text">
+                   required type="text"  title="needs to have at least 2 characters" minlength="2" maxlength="10">
         </label>
         <label class="container-form-label" for="email">
-
             <input class="container-form-input" id="email" name="email" placeholder="Enter your email" required
-                   type="email">
+                   type="email" title="Insert a valid email">
         </label>
         <label class="container-form-label" for="password">
             <input class="container-form-input" id="password" name="password" placeholder="Enter your password"
-                   required type="password">
+                   required type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
         </label>
         <label class="container-form-label" for="repeat_password">
             <input class="container-form-input" id="repeat_password" name="repeat_password"

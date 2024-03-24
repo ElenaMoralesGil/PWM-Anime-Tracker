@@ -1,13 +1,4 @@
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(2px);
-    z-index: 9998;
-}
+
 .container {
     background-color: #ffffff;
     display: flex;
@@ -23,7 +14,7 @@
     border: none;
     position: fixed;
     z-index: 9999;
-    top: 50%;
+    top:22.5em;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -100,4 +91,23 @@
     font-size: var(--big-font-size);
     margin-bottom: 3em;
     color: #333;
+}
+.container-form-input:valid {
+    border-color: green;
+}
+.container-form-input:invalid {
+    border-color: red;
+}
+
+@media screen and (width <= 30em){
+    .overlay {
+        display: none;
+    }
+
+    .container {
+        border-radius: 0;
+        min-width:100%
+
+    }
+
 }
