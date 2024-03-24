@@ -1,4 +1,4 @@
-#anime-body main {
+.anime-body main {
     width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -50,4 +50,30 @@
     color: white;
     box-sizing: border-box;
     box-shadow: 0 0 3px black;
+}
+
+#mobile-menu {
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+}
+
+/*----------------- Media Querys ------------------ */
+
+@media screen and (width >= 35rem){
+    #mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (width < 35rem) {
+    .anime-body main {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        position: relative;
+    }
 }

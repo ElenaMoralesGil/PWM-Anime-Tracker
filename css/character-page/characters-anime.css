@@ -3,8 +3,8 @@
     display: flex;
     flex-flow: column nowrap;
     overflow: auto;
-    max-height: 98%;
-    height: 98%;
+    height: 100%;
+    max-height: 150rem;
 }
 .characters::-webkit-scrollbar {
     display: none;
