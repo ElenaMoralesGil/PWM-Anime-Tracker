@@ -35,7 +35,7 @@ function loadMenuRedirections() {
 function addMobileMenuEvent(){
     document.querySelector("#header-mobile-menu-button").addEventListener("click", () => {
         let wrapper_display = document.querySelector("#mobile-menu");
-        (wrapper_display.style.display === "none") ? wrapper_display.setAttribute("style", "display:block") :
-         wrapper_display.setAttribute("style", "display:none");
+        wrapper_display.classList[0] === "hidden" ? wrapper_display.classList.remove("hidden") :
+         wrapper_display.classList.add("hidden");
     })
 }
