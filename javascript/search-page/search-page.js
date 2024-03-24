@@ -22,7 +22,7 @@ function loadResultImage(resultContainer) {
     let image = resultContainer.querySelector("img");
     image.alt = "cover of anime result";
     image.title = "cover of anime result";
-    image.src = "../../resources/images/image.png";
+    image.src = "../../resources/images/frieren.jpg";
 }
 
 function loadResult(resultContainer) {
@@ -68,7 +68,7 @@ function addResultEvents(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadTopHeader().then(addHeaderEvent);
+    loadTopHeader();
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
     initSearchBar();
     loadResults().then(addResultEvents);

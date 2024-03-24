@@ -39,15 +39,17 @@ async function openLoginPopup() {
 function closeLoginPopup() {
     document.getElementById('loginPopup').style.display = 'none';
 }
+
 async function loadTopHeader() {
     await loadById('../templates/top-header.html', 'header').then(() => {
         document.getElementById('signInButton').addEventListener('click', openSignInPopup);
         document.getElementById('signUpButton').addEventListener('click', openLoginPopup);
-
+        addHeaderEvent();
     }).catch(error => {
         console.error('Error loading top header:', error);
     });
 }
+
 function addHeaderEvent(){
     document.querySelector("#home-anchor").addEventListener("click", ()=>{
         if (document.querySelector("body").id !== "index-body"){

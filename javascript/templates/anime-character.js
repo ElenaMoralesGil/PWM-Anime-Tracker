@@ -3,7 +3,7 @@ function loadCharacterName(element) {
 }
 
 function loadCharacterImage(element) {
-    element.querySelector(".anime-character-name-image img").src="../../resources/images/image.png";
+    element.querySelector(".anime-character-name-image img").src="../../resources/images/frieren.jpg";
 }
 
 function loadCharacterDescription(element) {

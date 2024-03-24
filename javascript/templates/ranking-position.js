@@ -6,5 +6,5 @@ function loadRankingPosition(positionContainer){
     let image = positionContainer.querySelector("img");
     image.alt="ranking anime cover";
     image.title="ranking anime cover";
-    image.src="../../resources/images/image.png";
+    image.src="../../resources/images/frieren.jpg";
 }

@@ -90,3 +90,52 @@ Width and height defined in relation to the container.*/
     background: #4f4f4f;
     color:white;
 }
+
+/*---------------------- Responsive Menu --------------------*/
+
+.top-header-mobile-menu {
+    height: 100%;
+}
+
+.top-header-mobile-menu button {
+    height: 100%;
+    width: 5em;
+    background: #1d1d1f;
+    color: white;
+    border: none;
+    border-radius: 0;
+}
+
+/* ----------------------- Media Querys ------------------------*/
+
+@media screen and (width > 35rem) {
+    .top-header-mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (width <= 35rem) {
+
+    .top-header-content-buttons {
+        display: none;
+    }
+
+    .top-header-content {
+        position: relative;
+    }
+    
+    .top-header-content img {
+        position: absolute;
+        height: 100%;
+        left: 0;
+    }
+
+    .top-header-content nav {
+        display: none;
+    }
+
+    .top-header-mobile-menu {
+        position: absolute;
+        right: 0;
+    }
+}

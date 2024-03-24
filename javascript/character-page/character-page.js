@@ -2,7 +2,7 @@ function loadMainImage() {
     let topImage = document.createElement("img");
     topImage.alt="A wide image based on the anime show that displays in the top part of the page.";
     topImage.title="A wide image based on the anime";
-    topImage.src="../../resources/images/image.png";
+    topImage.src="../../resources/images/frieren.jpg";
     document.querySelector(".top-image").appendChild(topImage);
 }
 
@@ -49,7 +49,7 @@ function loadAnimeCharacters() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadTopHeader().then(addHeaderEvent);
+    loadTopHeader();
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
     loadMainImage();
     loadAnimeTopDescription();

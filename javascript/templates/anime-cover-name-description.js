@@ -3,7 +3,7 @@ function loadAnimeName() {
 }
 
 function loadAnimeCover() {
-    document.querySelector(".cover-name img").src = "../../resources/images/image.png";
+    document.querySelector(".cover-name img").src = "../../resources/images/frieren.jpg";
 }
 
 function loadAnimeDescription() {
