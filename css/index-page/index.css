@@ -137,7 +137,7 @@ a flex container to the hero image elements in the embedded html file. */
     border-radius: 10px;
 }
 
-#wrapper {
+#mobile-menu {
     height: 100%;
     width: 50%;
     z-index: 1;
@@ -145,12 +145,6 @@ a flex container to the hero image elements in the embedded html file. */
     right: 0;
     box-sizing: border-box;
     display: none;
-}
-
-#mobile-menu {
-    position: sticky;
-    height: 100vh;
-    top: 0;
 }
 
 /*----------------- Media Querys ------------------ */
