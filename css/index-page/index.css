@@ -166,9 +166,5 @@ a flex container to the hero image elements in the embedded html file. */
     #hero-anime-description {
         max-width: 75%;
     }
-
-    .search-bar-input {
-        display: none;
-    }
 }
 

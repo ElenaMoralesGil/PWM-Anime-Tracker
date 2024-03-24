@@ -7,19 +7,19 @@ function loadMobileMenu() {
 function loadMenuRedirections() {
     document.querySelector("#home").addEventListener("click", () => {
         if(document.querySelector("body").id !== "index-body"){
-            location.assign("/html/index/index.html");
+            location.assign("../../html/index-page/index.html");
         }
     });
 
     document.querySelector("#search").addEventListener("click", () => {
         if(document.querySelector("body").id !== "search-body"){
-            location.assign("/html/search-page/search-page.html");
+            location.assign("../../html/search-page/search-page.html");
         }
     });
 
     document.querySelector("#ranking").addEventListener("click", () => {
         if(document.querySelector("body").id !== "ranking-body"){
-            location.assign("/html/ranking-page/ranking-page.html");
+            location.assign("../../html/ranking-page/ranking-page.html");
         }
     });
 

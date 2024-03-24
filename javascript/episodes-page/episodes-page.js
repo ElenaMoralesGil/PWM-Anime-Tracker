@@ -21,7 +21,7 @@ function loadAnimeEpisodes() {
 
     episodeFetch.then(()=>{
         let documentFragment = new DocumentFragment();
-        for (let i = 0; i < 20; i++){
+        for (let i = 0; i < 40; i++){
             let episode = document.createElement("article");
             episode.className="episode";
             episode.innerHTML = episodeHTML;
@@ -33,7 +33,7 @@ function loadAnimeEpisodes() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadTopHeader();
+    loadTopHeader().then(loadMobileMenu);
     loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
     loadMainImage();
     loadAnimeEpisodes();
