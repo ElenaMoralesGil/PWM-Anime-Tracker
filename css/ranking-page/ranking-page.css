@@ -100,4 +100,8 @@
     .ranking-table .positions {
         margin: 0 2.5% 3% 2.5%;
     }
+
+    .table-descriptor #descriptor-status {
+        display: none;
+    }
 }

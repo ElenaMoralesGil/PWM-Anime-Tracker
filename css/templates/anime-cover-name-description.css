@@ -8,10 +8,10 @@
 
 .top-description-and-buttons .anime-score-container {
     position: absolute;
-    width: 10%;
-    font-size: var(--extra-big-font-size);
-    top: 5%;
-    right: 1%;
+    width: 7.5%;
+    font-size:xx-large;
+    top: -35%;
+    right: 0.75%;
     text-align: center;
     background: #1d1d1fcc;
     color: white;
@@ -20,6 +20,8 @@
     align-items: center;
     justify-content: center;
     gap: 10%;
+    min-width: 5rem;
+
 }
 
 .anime-score-container i {
@@ -57,7 +59,7 @@
     position: absolute;
     top: 25%;
     left: 32.5%;
-    max-width: 50%;
+    max-width: 60%;
     max-height: 55%;
     color: white;
     opacity: 0.8;
@@ -163,7 +165,6 @@
 /* ------------------------ Media Querys ------------------------ */
 
 @media screen and (width < 70rem){
-
     .top-description-and-buttons .cover-name p {
         left: 40%;
     }
@@ -177,16 +178,13 @@
         max-width: 55%;
     }
 
-    .top-description-and-buttons .anime-score-container {
-        top: -28%;
-        font-size: var(--medium-font-size);
-        right: 1%;
-        height: 25%;
-        width: 15%;
-    }
-
     .top-description-and-buttons .button-palette {
         width: 27.5%;
+    }
+
+    .top-description-and-buttons .anime-score-container {
+        top: -27%;
+        font-size: x-large;
     }
 }
 
