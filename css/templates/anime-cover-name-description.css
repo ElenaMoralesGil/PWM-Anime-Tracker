@@ -190,7 +190,7 @@
     }
 }
 
-@media screen and (width < 36rem){
+@media screen and (width < 35rem){
     .top-description-and-buttons .cover-name img {
         top: -60%;
         width: 35%;
