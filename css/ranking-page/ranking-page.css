@@ -49,11 +49,16 @@
 .ranking-table .positions {
     max-height: 40cm;
     overflow: auto;
-    margin: 0 10% 0 10%;
+    margin: 0 10% 3% 10%;
 }
 
-#footer {
-    margin-top: 3%;
+#mobile-menu {
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
 }
 
 /* ------------ Media Querys ------------- */
@@ -69,11 +74,20 @@
     }
 
     .ranking-table .positions {
-        margin: 0 5% 0 5%;
+        margin: 0 5% 3% 5%;
     }
 }
 
 @media screen and (width < 35rem){
+
+    #ranking-body main {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        position: relative;
+    }
+
     .info-ban {
         margin: 3% 2.5% 0 2.5%;
         font-size: var(--small-font-size);
@@ -84,6 +98,6 @@
     }
 
     .ranking-table .positions {
-        margin: 0 2.5% 0 2.5%;
+        margin: 0 2.5% 3% 2.5%;
     }
 }

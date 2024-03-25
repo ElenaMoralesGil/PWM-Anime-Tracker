@@ -1,7 +1,7 @@
 function loadRankingPosition(positionContainer){
     let rankingData = positionContainer.querySelectorAll("p");
     for (let data of rankingData){
-        data.innerHTML="Ano Hi Mita Hana No Wa Bokutachi Wa Mada Shiranai";
+        data.innerHTML="Text";
     }
     let image = positionContainer.querySelector("img");
     image.alt="ranking anime cover";
