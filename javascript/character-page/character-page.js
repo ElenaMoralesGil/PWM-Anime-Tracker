@@ -61,10 +61,18 @@ document.addEventListener("DOMContentLoaded", function() {
     getContent().then(content => {
         loadMainImage(content.images[1]);
         loadAnimeTopDescription(content.title, content.synopsis, content.images[0], content.score);
-        loadInfoAside(content.type, content.source, content.episodes, content.duration,
-             content.status, content.season, content.year, content.studios, content.genres, content.rating);
+        loadInfoAside({
+            Type:content.type,
+            Source:content.source, 
+            Episodes:content.episodes, 
+            Duration:content.duration,
+            Status:content.status, 
+            Season:content.season, 
+            Year:content.year, 
+            Studios:content.studios, 
+            Genres:content.genres, 
+            Rating:content.rating});
     });
-    loadInfoAside();
     loadAnimeCharacters();
     addNavbarEvents();
 });

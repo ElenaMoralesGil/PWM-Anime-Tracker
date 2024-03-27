@@ -33,6 +33,10 @@
     height: auto;
 }
 
+.aside-anime-information p {
+    margin-bottom: 0;
+}
+
 .navbar-main-content {
     box-sizing: border-box;
     height: auto;
@@ -80,5 +84,9 @@
     .aside-main-content-container {
         flex-flow: column nowrap;
         gap: 2rem;
+    }
+
+    .aside-anime-information .anime-data {
+        margin: auto;
     }
 }
