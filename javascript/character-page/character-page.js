@@ -50,7 +50,7 @@ function loadAnimeCharacters() {
 
 document.addEventListener("DOMContentLoaded", function() {
     loadTopHeader().then(loadMobileMenu);
-    loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
+    loadFooter();
     loadMainImage();
     loadAnimeTopDescription();
     loadInfoAside();
