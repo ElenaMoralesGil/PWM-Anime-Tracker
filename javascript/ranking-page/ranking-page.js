@@ -36,8 +36,8 @@ function addPositionsEvent() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadTopHeaderUser();
-    loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
+    loadTopHeaderUser().then(loadMobileMenuUser);
+    loadFooter();
     loadRankingPositions().
     then(addPositionsEvent);
 });

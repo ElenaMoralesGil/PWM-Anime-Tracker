@@ -49,3 +49,31 @@
     color: white;
     top: 8%;
 }
+
+/* --------------- Media Querys ------------------ */
+
+@media screen and (width < 35rem){
+
+    .anime-character-container {
+        min-height: 10cm;
+    }
+
+    .anime-character-container .character-description {
+        inset: 0;
+        top: 30%;
+        margin: auto;
+    }
+    
+    .anime-character-name-image p {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        top: 25%;
+        font-weight: bold;
+    }
+    
+    .anime-character-name-image img {
+        width: 100%;
+        opacity: 0.2;
+    }
+}

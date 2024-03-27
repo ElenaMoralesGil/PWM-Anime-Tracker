@@ -1,22 +1,18 @@
-function loadAnimeName() {
-    document.querySelector(".cover-name p").innerHTML = "Text";
+function loadAnimeName(name) {
+    document.querySelector(".cover-name p").innerHTML = name;
 }
 
-function loadAnimeCover() {
-    document.querySelector(".cover-name img").src = "../../resources/images/frieren.jpg";
+function loadAnimeCover(cover) {
+    document.querySelector(".cover-name img").src = cover;
 }
 
-function loadAnimeDescription() {
+function loadAnimeDescription(description) {
     document.querySelector(".anime-description").innerHTML=
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n" +
-        "sed do eiusmod tempor incididunt ut labore et dolore magna\n" +
-        "aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n" +
-        "ullamco laboris nisi ut aliquip ex ea commodo consequat\n" +
-        "Duis aute irure dolor in reprehenderit.";
+        description;
 }
 
-function loadAnimeRate() {
-    document.querySelector(".anime-score-container p").innerHTML="5";
+function loadAnimeRate(rate) {
+    document.querySelector(".anime-score-container p").innerHTML=rate;
 }
 
 function getContainer(dropDown){
@@ -79,16 +75,21 @@ function loadDropDownButtonsEvent() {
     })
 }
 
-function loadAnimeTopDescription() {
+function loadAnimeTopDescription(contentData) {
     loadByClass('../templates/anime-cover-name-description.html', 'top-cover-image-and-description').
     then(()=> loadByClass('../templates/name-image.html', 'cover-name')).
     then(()=>{
-        loadAnimeName();
-        loadAnimeCover();
-        loadAnimeDescription();
+        loadAnimeName(contentData ? contentData.title : "Text");
+        loadAnimeCover(contentData ? contentData.cover : "../../../resources/images/frieren.jpg");
+        loadAnimeDescription(contentData ? contentData.synopsis : "Lorem ipsum dolor sit amet,\
+        consectetur adipiscing elit. Donec et lorem et erat suscipit sodales tempor eu eros. Morbi\
+        ullamcorper justo ac dolor tristique rutrum. Vestibulum gravida a nisl ac accumsan. Praesent\
+        sagittis nulla eget quam volutpat venenatis. Cras gravida sem nisl, vel sollicitudin diam\
+        molestie in. Fusce imperdiet eros nibh, vitae hendrerit dolor ultrices eu. Integer imperdiet\
+        vehicula purus quis aliquet.");
+        loadAnimeRate(contentData ? contentData.score : 5);
         loadRateDropDown();
         loadListDropDown();
-        loadAnimeRate();
         loadDropDownButtonsEvent();
     })
 }

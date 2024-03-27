@@ -1,8 +1,15 @@
-function loadMainImage() {
+import ContentModel from "../../models/contentmodel.js";
+
+function getContent() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return new ContentModel().findById(urlParams.get('id'));
+}
+
+function loadMainImage(source) {
     let topImage = document.createElement("img");
     topImage.alt="A wide image based on the anime show that displays in the top part of the page.";
     topImage.title="A wide image based on the anime";
-    topImage.src="../../resources/images/frieren.jpg";
+    topImage.src= source ? source : "../../resources/images/frieren.jpg";
     document.querySelector(".top-image").appendChild(topImage);
 }
 
@@ -50,10 +57,28 @@ function loadAnimeCharacters() {
 
 document.addEventListener("DOMContentLoaded", function() {
     loadTopHeaderUser().then(loadMobileMenu);
-    loadById('../templates/bottom-footer.html', 'footer').then(/*doNothing*/);
-    loadMainImage();
-    loadAnimeTopDescription();
-    loadInfoAside();
+    loadFooter();
+    getContent().then(content => {
+        loadMainImage(content ? content.images[1] : null);
+        loadAnimeTopDescription(content ? {
+            title:content.title,
+            synopsis:content.synopsis,
+            cover:content.images[0],
+            score:content.score}
+            : null);
+        loadInfoAside(content ? {
+            Type:content.type,
+            Source:content.source, 
+            Episodes:content.episodes, 
+            Duration:content.duration,
+            Status:content.status, 
+            Season:content.season, 
+            Year:content.year, 
+            Studios:content.studios, 
+            Genres:content.genres, 
+            Rating:content.rating} 
+            : null);
+    });
     loadAnimeCharacters();
     addNavbarEvents();
 });

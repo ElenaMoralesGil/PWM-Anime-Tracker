@@ -52,6 +52,7 @@ a flex container to the hero image elements in the embedded html file. */
 .hero-box article img {
     width: 100vw;
     height: 100vh;
+    min-height: 25rem;
 }
 
 /* Anime name embedded in the container styled above. Overflow set. */
@@ -165,10 +166,6 @@ a flex container to the hero image elements in the embedded html file. */
 
     #hero-anime-description {
         max-width: 75%;
-    }
-
-    .search-bar-input {
-        display: none;
     }
 }
 
