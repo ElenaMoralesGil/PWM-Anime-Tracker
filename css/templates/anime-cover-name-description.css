@@ -47,12 +47,12 @@
 .top-description-and-buttons .cover-name p {
     position: absolute;
     left: 32.5%;
-    top: 20%;
-    bottom: 0;
+    top: 17%;
     margin: auto;
     font-size: var(--medium-big-font-size);
     font-weight: bold;
     color: white;
+    height: fit-content;
 }
 
 .top-description-and-buttons .anime-description {
@@ -197,15 +197,18 @@
     }
 
     .top-description-and-buttons .cover-name p {
-        top: 50%;
+        top: 47.5%;
         left: 8%;
+        font-size: var(--medium-font-size);
     }
 
     .top-description-and-buttons .anime-description {
+        margin-top: 0.5cm;
         top: 45%;
         left: 8%;
         max-width: 85%;
         max-height: 45%;
+        font-size: var(--medium-small-font-size);
     }
 
     .top-description-and-buttons .button-palette {
