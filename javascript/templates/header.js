@@ -61,6 +61,23 @@ async function loadTopHeaderLogin() {
         console.error('Error loading top header:', error);
     });
 }
+async function loadTopHeaderUser() {
+    // Check if the user is logged in
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+    if (isLoggedIn) {
+        // User is logged in, load the top header for logged-in users
+        await loadTopHeaderLogin().catch(error => {
+            console.error('Error loading top header:', error);
+        });
+    } else {
+        // User is not logged in, load the top header for non-logged-in users
+        await loadTopHeader().catch(error => {
+            console.error('Error loading top header:', error);
+        });
+    }
+}
+
 function validateForm() {
     let form = document.querySelector('.container-form');
     let passwordInput = document.getElementById("password");

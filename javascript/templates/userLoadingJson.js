@@ -5,7 +5,7 @@ const userData = [
 ];
 
 
-function loginUser() {
+async function loginUser() {
 
     let username = document.querySelector('.container-form-input[name="username"]').value;
     let password = document.querySelector('.container-form-input[name="password"]').value;
@@ -15,6 +15,12 @@ function loginUser() {
 
     if (user) {
         alert("Login successful! Welcome, " + username);
+        localStorage.setItem('isLoggedIn', true);
+        try {
+            await loadTopHeader();
+        } catch (error) {
+            console.error('Error loading top header:', error);
+        }
         return true;
     } else {
         alert("Invalid username or password. Please try again.");

@@ -26,7 +26,7 @@ function addHeroImageEvent() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadTopHeader().then(loadMobileMenu);
+    loadTopHeaderUser().then(loadMobileMenu);
     loadFooter();
     loadHeroImage();
     initSearchBar();
