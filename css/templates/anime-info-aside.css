@@ -47,9 +47,14 @@
         gap: 20%;
     }
 
-    .anime-data, .anime-data p {
-        font-size: var(--medium-small-font-size);
+    .anime-data  p:first-child {
+        font-size: var(--medium-font-size);
+    }
+    
+    .anime-data p {
+        font-size: var(--small-madium-font-size);
         white-space: nowrap;
+        margin: 0.2rem;
     }
 
 }
