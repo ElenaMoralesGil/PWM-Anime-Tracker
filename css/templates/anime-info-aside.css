@@ -47,12 +47,9 @@
         gap: 20%;
     }
 
-    .anime-data {
+    .anime-data, .anime-data p {
         font-size: var(--medium-small-font-size);
         white-space: nowrap;
-        max-height: 85%;
-        min-width: fit-content;
-        overflow: auto;
     }
 
 }
