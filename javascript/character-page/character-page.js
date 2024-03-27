@@ -1,8 +1,13 @@
 import ContentModel from "../../models/contentmodel.js";
+const urlParams = new URLSearchParams(window.location.search);
+const contentmodel = new ContentModel();
 
 function getContent() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return new ContentModel().findById(urlParams.get('id'));
+    return contentmodel.findById(urlParams.get('id'));
+}
+
+function getCharacters(id) {
+    return contentmodel.animeCharacters(id);
 }
 
 function loadMainImage(source) {
@@ -13,7 +18,7 @@ function loadMainImage(source) {
     document.querySelector(".top-image").appendChild(topImage);
 }
 
-function loadAnimeCharacters() {
+function loadAnimeCharacters(characters) {
     const routeCharacter = "../../html/templates/anime-character.html";
     const imageRoute = "../../html/templates/name-image.html";
     let contentHTML = undefined;
@@ -43,14 +48,14 @@ function loadAnimeCharacters() {
 
     ]).then(()=>{
         let documentFragment = new DocumentFragment();
-        for (let i = 0; i < 10; i++){
+        characters.forEach(characterData => {
             let animeCharacter = document.createElement("article");
             animeCharacter.innerHTML = contentHTML;
             animeCharacter.className = "anime-character";
             animeCharacter.querySelector(".anime-character-name-image").innerHTML = imageHTML;
-            loadAnimeCharacter(animeCharacter);
+            loadAnimeCharacter(animeCharacter, characterData);
             documentFragment.appendChild(animeCharacter);
-        }
+        })
         document.querySelector(".characters").appendChild(documentFragment);
     })
 }
@@ -59,7 +64,11 @@ document.addEventListener("DOMContentLoaded", function() {
     loadTopHeader().then(loadMobileMenu);
     loadFooter();
     getContent().then(content => {
-        loadMainImage(content ? content.images[1] : null);
+        getCharacters(content.mal_id).
+        then(characters => {
+            loadAnimeCharacters(characters.characters);
+        })
+        loadMainImage(content ? (content.images[1] ? content.images[1] : content.images[0]) : null);
         loadAnimeTopDescription(content ? {
             title:content.title,
             synopsis:content.synopsis,
@@ -79,6 +88,5 @@ document.addEventListener("DOMContentLoaded", function() {
             Rating:content.rating} 
             : null);
     });
-    loadAnimeCharacters();
     addNavbarEvents();
 });

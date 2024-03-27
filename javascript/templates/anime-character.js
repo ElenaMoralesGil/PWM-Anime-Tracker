@@ -1,9 +1,10 @@
-function loadCharacterName(element) {
-    element.querySelector(".anime-character-name-image p").innerHTML="Text";
+function loadCharacterName(element, characterData) {
+    console.log(characterData)
+    element.querySelector(".anime-character-name-image p").innerHTML=characterData.character.name;
 }
 
-function loadCharacterImage(element) {
-    element.querySelector(".anime-character-name-image img").src="../../resources/images/shoujo-shuumatsu.jpeg";
+function loadCharacterImage(element, characterData) {
+    element.querySelector(".anime-character-name-image img").src=characterData.character.images.jpg.image_url;
 }
 
 function loadCharacterDescription(element) {
@@ -15,8 +16,8 @@ function loadCharacterDescription(element) {
         "Duis aute irure dolor in reprehenderit.";
 }
 
-function loadAnimeCharacter(element) {
-    loadCharacterName(element);
-    loadCharacterImage(element);
+function loadAnimeCharacter(element, characterData) {
+    loadCharacterName(element, characterData);
+    loadCharacterImage(element, characterData);
     loadCharacterDescription(element);
 }
