@@ -11,7 +11,7 @@
 
 .container-edit-profile {
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
@@ -139,12 +139,12 @@
 .deleteProfile {
     background-color: #dc3545;
 }
-@media screen and (width < 40rem) {
+@media screen and (width < 50rem) {
 
 
     .container-edit-profile {
         position: fixed;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 9999;

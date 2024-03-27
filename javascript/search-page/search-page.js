@@ -68,7 +68,7 @@ function addResultEvents(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadTopHeaderUser();
+    loadTopHeaderUser().then(loadMobileMenuUser);
     loadFooter();
     initSearchBar();
     loadResults().then(addResultEvents);

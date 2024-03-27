@@ -133,7 +133,7 @@
     box-sizing: border-box;
 }
 
-@media screen and (width < 40rem) {
+@media screen and (width < 50rem) {
     .container{
         width: 100%;
         height: auto;

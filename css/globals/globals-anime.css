@@ -85,8 +85,4 @@
         flex-flow: column nowrap;
         gap: 2rem;
     }
-
-    .aside-anime-information .anime-data {
-        margin: auto;
-    }
 }

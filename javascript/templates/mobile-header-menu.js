@@ -8,6 +8,14 @@ function loadMobileMenuLogin() {
     then(loadMenuRedirectionsLogin).
     then(addMobileMenuEvent);
 }
+function loadMobileMenuUser() {
+    if (localStorage.getItem('isLoggedIn') === 'true') {
+        loadMobileMenuLogin();
+    } else {
+        loadMobileMenu();
+    }
+
+}
 function loadMenuRedirections() {
     document.querySelector("#home").addEventListener("click", () => {
         if(document.querySelector("body").id !== "index-body"){
@@ -34,9 +42,15 @@ function loadMenuRedirections() {
     });
 
     document.querySelector("#signin").addEventListener("click", () => {
+        let wrapper_display = document.querySelector("#mobile-menu");
+        wrapper_display.classList[0] === "hidden" ? wrapper_display.classList.remove("hidden") :
+            wrapper_display.classList.add("hidden");
         openSignInPopup();
     });
     document.querySelector("#login").addEventListener("click", () => {
+        let wrapper_display = document.querySelector("#mobile-menu");
+        wrapper_display.classList[0] === "hidden" ? wrapper_display.classList.remove("hidden") :
+            wrapper_display.classList.add("hidden");
         openLoginPopup();
     });
 
