@@ -1,9 +1,10 @@
-import JikanService from "../services/jikanservice";
-import Content from "../schemes/content";
+const JikanService = require("../services/jikanservice");
+const contentscheme = require("../schemes/content");
 
-export default class ContentModel {
+
+module.exports = class ContentModel {
     constructor() {
         this.api = new JikanService();
     }
-    findById = (id) => this.api.findById(id).then(content => content ? Content.parse(content) : null);
+    findById = (id) => this.api.findById(id).then(content => content ? contentscheme.parse(content) : null);
 }

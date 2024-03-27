@@ -1,4 +1,4 @@
-export default class JikanService {
+module.exports = class JikanService {
     constructor() {
         this.contentpath = 'https://api.jikan.moe/v4/anime';
         this.characterspath = 'https://api.jikan.moe/v4/characters';
