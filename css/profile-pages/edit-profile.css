@@ -139,6 +139,20 @@
 .deleteProfile {
     background-color: #dc3545;
 }
+
+
+.edit-details-form-input,
+.container-form-input,
+.edit-details-form-input textarea:invalid{
+    border-color: red;
+}
+.edit-details-form-input,
+.container-form-input,
+.edit-details-form-input textarea:valid{
+    border-color: green;
+}
+
+
 @media screen and (width < 50rem) {
 
 
@@ -172,5 +186,11 @@
     .container-edit-pfp, .container-edit-password, .container-edit-details{
         width: 100%;
     }
+    .edit-details-form-input:invalid,
+    .container-form-input:invalid,
+    .edit-details-form-input textarea:invalid {
+        border-color: red;
+    }
+
 
 }
