@@ -50,7 +50,7 @@
     .anime-data {
         font-size: var(--medium-small-font-size);
         white-space: nowrap;
-        max-height: 75%;
+        max-height: 85%;
         min-width: fit-content;
         overflow: auto;
     }
