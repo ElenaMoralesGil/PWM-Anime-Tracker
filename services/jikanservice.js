@@ -9,4 +9,7 @@ export default class JikanService {
 
     // Queries Jikan API for an anime set of characters by id.
     animeCharacters = (animeid) => fetch(`${this.contentpath}/${animeid}/characters`).then(res => res.json()).then(res => res.data);
+
+    // Queries Jikan API for the information of a anime character.
+    characterInfo = (characterid) => fetch(`${this.characterspath}/${characterid}`).then(res => res.json()).then(res => res.data);
 }

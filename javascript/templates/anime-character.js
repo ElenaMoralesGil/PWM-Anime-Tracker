@@ -16,7 +16,7 @@ function loadCharacterDescription(element) {
         "Duis aute irure dolor in reprehenderit.";
 }
 
-function loadAnimeCharacter(element, characterData) {
+export default function loadAnimeCharacter(element, characterData) {
     loadCharacterName(element, characterData);
     loadCharacterImage(element, characterData);
     loadCharacterDescription(element);

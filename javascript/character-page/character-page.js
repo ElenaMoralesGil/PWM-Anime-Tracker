@@ -1,4 +1,5 @@
 import ContentModel from "../../models/contentmodel.js";
+import loadAnimeCharacter from "../templates/anime-character.js"
 const urlParams = new URLSearchParams(window.location.search);
 const contentmodel = new ContentModel();
 
