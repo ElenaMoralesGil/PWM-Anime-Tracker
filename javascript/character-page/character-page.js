@@ -18,6 +18,17 @@ function loadMainImage(source) {
     document.querySelector(".top-image").appendChild(topImage);
 }
 
+function mockCharactersLoad(documentFragment, contentHTML, imageHTML){
+    for (let i = 0; i < 10; i++){
+        let animeCharacter = document.createElement("article");
+        animeCharacter.innerHTML = contentHTML;
+        animeCharacter.className = "anime-character";
+        animeCharacter.querySelector(".anime-character-name-image").innerHTML = imageHTML;
+        loadAnimeCharacter(animeCharacter);
+        documentFragment.appendChild(animeCharacter);
+    }
+}
+
 function loadAnimeCharacters(characters) {
     const routeCharacter = "../../html/templates/anime-character.html";
     const imageRoute = "../../html/templates/name-image.html";
@@ -48,14 +59,18 @@ function loadAnimeCharacters(characters) {
 
     ]).then(()=>{
         let documentFragment = new DocumentFragment();
-        characters.forEach(characterData => {
-            let animeCharacter = document.createElement("article");
-            animeCharacter.innerHTML = contentHTML;
-            animeCharacter.className = "anime-character";
-            animeCharacter.querySelector(".anime-character-name-image").innerHTML = imageHTML;
-            loadAnimeCharacter(animeCharacter, characterData);
-            documentFragment.appendChild(animeCharacter);
-        })
+        if (characters){
+            characters.forEach(characterData => {
+                let animeCharacter = document.createElement("article");
+                animeCharacter.innerHTML = contentHTML;
+                animeCharacter.className = "anime-character";
+                animeCharacter.querySelector(".anime-character-name-image").innerHTML = imageHTML;
+                loadAnimeCharacter(animeCharacter, characterData);
+                documentFragment.appendChild(animeCharacter);
+            })
+        } else {
+            mockCharactersLoad(documentFragment, contentHTML, imageHTML);
+        }
         document.querySelector(".characters").appendChild(documentFragment);
     })
 }
@@ -64,9 +79,9 @@ document.addEventListener("DOMContentLoaded", function() {
     loadTopHeader().then(loadMobileMenu);
     loadFooter();
     getContent().then(content => {
-        getCharacters(content.mal_id).
+        getCharacters(content ? content.mal_id : null).
         then(characters => {
-            loadAnimeCharacters(characters.characters);
+            loadAnimeCharacters(content ? characters.characters : null);
         })
         loadMainImage(content ? (content.images[1] ? content.images[1] : content.images[0]) : null);
         loadAnimeTopDescription(content ? {

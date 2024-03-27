@@ -1,10 +1,10 @@
 function loadCharacterName(element, characterData) {
     console.log(characterData)
-    element.querySelector(".anime-character-name-image p").innerHTML=characterData.character.name;
+    element.querySelector(".anime-character-name-image p").innerHTML= characterData ? characterData.character.name : "Text";
 }
 
 function loadCharacterImage(element, characterData) {
-    element.querySelector(".anime-character-name-image img").src=characterData.character.images.jpg.image_url;
+    element.querySelector(".anime-character-name-image img").src= characterData ? characterData.character.images.jpg.image_url : "../../../resources/images/frieren.jpg";
 }
 
 function loadCharacterDescription(element) {
