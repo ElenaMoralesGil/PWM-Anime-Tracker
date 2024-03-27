@@ -75,14 +75,19 @@ function loadDropDownButtonsEvent() {
     })
 }
 
-function loadAnimeTopDescription(title, synopsis, cover, score) {
+function loadAnimeTopDescription(contentData) {
     loadByClass('../templates/anime-cover-name-description.html', 'top-cover-image-and-description').
     then(()=> loadByClass('../templates/name-image.html', 'cover-name')).
     then(()=>{
-        loadAnimeName(title);
-        loadAnimeCover(cover);
-        loadAnimeDescription(synopsis);
-        loadAnimeRate(score);
+        loadAnimeName(contentData ? contentData.title : "Text");
+        loadAnimeCover(contentData ? contentData.cover : "../../../resources/images/frieren.jpg");
+        loadAnimeDescription(contentData ? contentData.synopsis : "Lorem ipsum dolor sit amet,\
+        consectetur adipiscing elit. Donec et lorem et erat suscipit sodales tempor eu eros. Morbi\
+        ullamcorper justo ac dolor tristique rutrum. Vestibulum gravida a nisl ac accumsan. Praesent\
+        sagittis nulla eget quam volutpat venenatis. Cras gravida sem nisl, vel sollicitudin diam\
+        molestie in. Fusce imperdiet eros nibh, vitae hendrerit dolor ultrices eu. Integer imperdiet\
+        vehicula purus quis aliquet.");
+        loadAnimeRate(contentData ? contentData.score : 5);
         loadRateDropDown();
         loadListDropDown();
         loadDropDownButtonsEvent();
