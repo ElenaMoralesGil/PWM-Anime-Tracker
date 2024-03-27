@@ -48,8 +48,11 @@
     }
 
     .anime-data {
-        white-space: nowrap;
         font-size: var(--medium-small-font-size);
+        white-space: nowrap;
+        max-height: 75%;
+        min-width: fit-content;
+        overflow: auto;
     }
 
 }
