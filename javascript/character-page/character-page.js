@@ -1,3 +1,10 @@
+import ContentModel from "../../models/contentmodel.js";
+
+function getContent() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return new ContentModel().findById(urlParams.get('id'));
+}
+
 function loadMainImage() {
     let topImage = document.createElement("img");
     topImage.alt="A wide image based on the anime show that displays in the top part of the page.";
@@ -56,4 +63,5 @@ document.addEventListener("DOMContentLoaded", function() {
     loadInfoAside();
     loadAnimeCharacters();
     addNavbarEvents();
+    getContent().then(content => console.log(content));
 });

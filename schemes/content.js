@@ -1,4 +1,4 @@
-module.exports = class Content {
+export default class Content {
     constructor({mal_id, title, synopsis, images, trailer, score,
          type, source, episodes, duration, status,
           season, year, studios, genres, rating}) {
