@@ -11,9 +11,8 @@
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/999e77a4f5.js"></script>
 </head>
 
-<body>
 <div id="overlay"></div>
-<main class="container-edit-profile">
+<section class="container-edit-profile">
         <span class="edit-profile-header">
             <h1>Edit Profile</h1>
             <i aria-hidden="true" class="fa fa-times" id="closeBtn"></i>
@@ -23,18 +22,18 @@
                 <span class="edit-details-header">
                     <h2>Edit Details</h2>
                 </span>
-            <form action="endpoint" class="edit-details-form" method="post">
+            <form  class="edit-details-form" >
                 <label class="edit-details-form-label">
                     <input class="edit-details-form-input" name="username" placeholder="Username" required
-                           type="text">
+                           type="text" minlength="2" title="Enter a valid username, it has to have a min of 2 characters">
                 </label>
                 <label class="edit-details-form-label">
                     <input class="edit-details-form-input" name="email" placeholder="Email" required
-                           type="email">
+                           type="email" >
                 </label>
                 <label class="edit-details-form-label">
                         <textarea class="edit-details-form-input" name="description" placeholder="Description"
-                                  required></textarea>
+                                   minlength="10" title=" Enter a valid description, it has to have minimum of 10 characters"></textarea>
                 </label>
                 <button class="container-form-button" type="submit">Update</button>
             </form>
@@ -43,14 +42,14 @@
                 <span class="edit-password-header">
                     <h2>Edit Password</h2>
                 </span>
-            <form action="endpoint" class="edit-password-form" method="post">
+            <form class="edit-password-form"  onsubmit="validateForm()" >
                 <label class="container-form-label">
                     <input class="container-form-input" name="password" placeholder="New Password" required
-                           type="password">
+                           type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
                 </label>
                 <label class="container-form-label">
                     <input class="container-form-input" name="repeat_password" placeholder="Repeat Password"
-                           required type="password">
+                           required type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must match the password field">
                 </label>
                 <button class="container-form-button" type="submit">Update</button>
             </form>
@@ -70,8 +69,8 @@
     </section>
     <section id="deleteProfilePopup"></section>
     <button class="deleteProfile" onclick="loadDeleteProfilePopup()">Delete Profile</button>
-</main>
-</body>
+</section>
 </html>
+
 <script src="../../javascript/profile-pages/edit-profile.js"></script>
 <script src="../../javascript/include.js" type="text/javascript"></script>

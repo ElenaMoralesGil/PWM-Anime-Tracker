@@ -112,8 +112,13 @@ function addHeaderEvent(){
         }
     })
     document.querySelector("#profile-anchor").addEventListener("click", ()=>{
-        if (document.querySelector("body").id !== "profile-body"){
-            location.assign("../../html/profile-pages/profileOverview.html");
+        if (localStorage.getItem('isLoggedIn') === 'true') {
+
+            if (document.querySelector("body").id !== "profile-body") {
+                location.assign("../../html/profile-pages/profileCompleted.html");
+            }
+        }else {
+            openLoginPopup()
         }
     })
 }

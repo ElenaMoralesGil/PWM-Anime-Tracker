@@ -36,8 +36,16 @@ function loadMenuRedirections() {
     });
 
     document.querySelector("#profile").addEventListener("click", () => {
-        if(document.querySelector("body").id !== "ranking-body"){
-            location.assign("../../html/profile-pages/profileCompleted.html");
+        if (localStorage.getItem('isLoggedIn') === 'true') {
+
+            if (document.querySelector("body").id !== "profile-body") {
+                location.assign("../../html/profile-pages/profileCompleted.html");
+            }
+        }else {
+            let wrapper_display = document.querySelector("#mobile-menu");
+            wrapper_display.classList[0] === "hidden" ? wrapper_display.classList.remove("hidden") :
+                wrapper_display.classList.add("hidden");
+            openLoginPopup()
         }
     });
 
@@ -75,9 +83,17 @@ function loadMenuRedirectionsLogin() {
     });
 
     document.querySelector("#profile").addEventListener("click", () => {
-        if(document.querySelector("body").id !== "ranking-body"){
-            location.assign("../../html/profile-pages/profileCompleted.html");
-        }
+        if (localStorage.getItem('isLoggedIn') === 'true') {
+
+            if (document.querySelector("body").id !== "profile-body") {
+                location.assign("../../html/profile-pages/profileCompleted.html");
+            }
+        }else {
+            let wrapper_display = document.querySelector("#mobile-menu");
+            wrapper_display.classList[0] === "hidden" ? wrapper_display.classList.remove("hidden") :
+                wrapper_display.classList.add("hidden");
+                openLoginPopup()
+            }
     });
 
     document.querySelector("#logout").addEventListener("click", () => {

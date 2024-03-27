@@ -49,6 +49,7 @@ function loadDeleteProfilePopup() {
 
 function accept() {
     document.getElementById('deleteProfilePopup').style.display = 'none';
+    localStorage.clear();
     window.location.href = '../../html/index-page/index.html';
 }
 
