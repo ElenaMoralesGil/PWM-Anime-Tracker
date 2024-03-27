@@ -53,30 +53,32 @@ async function loadTopHeaderLogin() {
     await loadById('../templates/top-header-login.html', 'header').then(() => {
         addHeaderEvent();
         document.querySelector("#logOutButton").addEventListener("click", ()=>{
+
+
             if (document.querySelector("body").id !== "index-body"){
                 location.assign("../../html/index-page/index.html");
             }
+            localStorage.setItem('isLoggedIn', 'false');
+            loadTopHeader();
         })
     }).catch(error => {
         console.error('Error loading top header:', error);
     });
 }
 async function loadTopHeaderUser() {
-    // Check if the user is logged in
     const isLoggedIn = localStorage.getItem('isLoggedIn');
 
-    if (isLoggedIn) {
-        // User is logged in, load the top header for logged-in users
+    if (isLoggedIn && isLoggedIn !== 'false') { // Check if the user is logged in
         await loadTopHeaderLogin().catch(error => {
             console.error('Error loading top header:', error);
         });
     } else {
-        // User is not logged in, load the top header for non-logged-in users
-        await loadTopHeader().catch(error => {
+        await loadTopHeader().catch(error => { // Load the normal header if user is not logged in
             console.error('Error loading top header:', error);
         });
     }
 }
+
 
 function validateForm() {
     let form = document.querySelector('.container-form');
