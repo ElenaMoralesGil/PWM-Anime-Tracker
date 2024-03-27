@@ -144,11 +144,11 @@ a flex container to the hero image elements in the embedded html file. */
     position: absolute;
     right: 0;
     box-sizing: border-box;
-    display: none;
 }
 
 /*----------------- Media Querys ------------------ */
-@media screen and (width >= 35rem) {
+
+@media screen and (width >= 35rem){
     #mobile-menu {
         display: none;
     }
@@ -169,11 +169,6 @@ a flex container to the hero image elements in the embedded html file. */
 
     .search-bar-input {
         display: none;
-    }
-
-    .anime-row {
-        gap: 10%;
-        row-gap: 2rem;
     }
 }
 

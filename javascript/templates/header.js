@@ -61,7 +61,25 @@ async function loadTopHeaderLogin() {
         console.error('Error loading top header:', error);
     });
 }
+function validateForm() {
+    let form = document.querySelector('.container-form');
+    let passwordInput = document.getElementById("password");
+    let repeatPasswordInput = document.getElementById("repeat_password");
 
+    // Password validation
+    if (passwordInput.value !== repeatPasswordInput.value) {
+        repeatPasswordInput.setCustomValidity("Passwords do not match");
+    } else {
+        repeatPasswordInput.setCustomValidity("");
+    }
+
+    // Check if all form validations pass
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return false;
+    }
+    return true;
+}
 
 function addHeaderEvent(){
     document.querySelector("#home-anchor").addEventListener("click", ()=>{

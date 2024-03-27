@@ -101,13 +101,18 @@
     margin-bottom: 3em;
     color: #333;
 }
+.container-form-input:valid {
+    border-color: green;
+}
+.container-form-input:invalid:focus {
+    border-color: red;
+}
 
 @media screen and (width <= 35rem) {
     #overlay {
         display: none;
     }
 
-    /* Esto es lo que hice para que se vea el container de esa manera */
     .container {
         inset: 0;
         min-width: 100vw;

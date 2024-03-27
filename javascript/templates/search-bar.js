@@ -46,7 +46,7 @@ function addButtonListeners(){
         button.addEventListener("click", ()=>{
             let listId = button.id.split("-").filter(elem => elem !== "button");
             let displayList = document.querySelector("#" + listId.concat("list").join("-"));
-            displayList.style.display = displayList.style.display === "none" ? "flex" : "none";
+            displayList.classList.contains("hidden") ? displayList.classList.remove("hidden") : displayList.classList.add("hidden");
         });
     }
 }

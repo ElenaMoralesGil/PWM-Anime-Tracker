@@ -6,7 +6,7 @@ function loadMobileMenu() {
 function loadMobileMenuLogin() {
     loadById('../../html/templates/mobile-login-header-menu.html', 'mobile-menu').
     then(loadMenuRedirectionsLogin).
-    then(addMobileMenuEventLogin);
+    then(addMobileMenuEvent);
 }
 function loadMenuRedirections() {
     document.querySelector("#home").addEventListener("click", () => {
@@ -79,12 +79,5 @@ function addMobileMenuEvent(){
         let wrapper_display = document.querySelector("#mobile-menu");
         wrapper_display.classList[0] === "hidden" ? wrapper_display.classList.remove("hidden") :
          wrapper_display.classList.add("hidden");
-    })
-}
-function addMobileMenuEventLogin(){
-    document.querySelector("#header-mobile-menu-button").addEventListener("click", () => {
-        let wrapper_display = document.querySelector("#mobile-menu");
-        (wrapper_display.style.display === "none") ? wrapper_display.setAttribute("style", "display:block") :
-            wrapper_display.setAttribute("style", "display:none");
     })
 }

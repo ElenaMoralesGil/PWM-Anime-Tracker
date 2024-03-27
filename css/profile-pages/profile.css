@@ -131,7 +131,6 @@
     position: absolute;
     right: 0;
     box-sizing: border-box;
-    display: none;
 }
 
 @media screen and (width < 40rem) {
