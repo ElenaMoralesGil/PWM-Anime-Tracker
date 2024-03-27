@@ -1,22 +1,21 @@
 
 <link href="../../css/templates/signIn.css" rel="stylesheet">
 <div id="overlay"></div>
-<section class="container">
+<main class="container">
 
     <h1 class="container-title">Log In</h1>
     <i aria-hidden="true" class="fa fa-times" id="closeLoginBtn"></i>
 
-    <form action="endpoint" class="container-form" method="post">
+    <form  class="container-form"  onsubmit="return loginUser()">
         <label class="container-form-label">
             <input class="container-form-input" name="username" placeholder="Username" required type="text">
         </label>
         <label class="container-form-label">
-            <input class="container-form-input" name="email" placeholder="Email" required type="email">
+            <input class="container-form-input" name="password" placeholder="password" required type="password">
         </label>
         <p class="container-form-message">Already signed up? <a class="container-form-link" id="signinLink" href="#">Sign
             in</a></p>
         <button class="container-form-button" type="submit">Log In</button>
     </form>
-</section>
-
+</main>
 
