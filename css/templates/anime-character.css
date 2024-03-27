@@ -6,21 +6,23 @@
     box-shadow: 0 0 3px black;
     min-height: 8cm;
     max-height: 8cm;
+    z-index: 0;
 }
 
 .anime-character-container .character-description {
     position: absolute;
     width: 70%;
-    height: fit-content;
-    max-height: 8rem;
     overflow: auto;
+    height: 50%;
+    max-height: 50%;
     inset: 0;
     margin: auto;
     color: white;
     text-align: center;
-    overflow: scroll;
     font-weight: bold;
+    z-index: 1;
 }
+
 .character-description::-webkit-scrollbar {
     display: none;
 }
@@ -62,11 +64,5 @@
 
     .anime-character-container {
         min-height: 10cm;
-    }
-
-    .anime-character-container .character-description {
-        inset: 0;
-        top: 30%;
-        margin: auto;
     }
 }
